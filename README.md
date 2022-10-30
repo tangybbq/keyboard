@@ -57,3 +57,6 @@ board.
 I have also a case design that can be 3d printed.  The models are for
 the right side. Use your slicing software to mirror about the X axis
 to print the pieces for the other side.
+
+The firmware I am using for this keyboard is in my fork of
+[QMK](https://github.com/tangybbq/qmk_firmware/tree/proto2).
