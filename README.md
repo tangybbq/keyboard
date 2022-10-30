@@ -17,11 +17,11 @@ design, you should talk to me.
 
 For lack of a better name, this first design is called the "proto2".
 
-[full-proto2](img/full-proto2.jpg)
+![full-proto2](img/full-proto2.jpg)
 
-[left-proto2](img/left-proto2.jpg)
+![left-proto2](img/left-proto2.jpg)
 
-[right-proto2](img/right-proto2.jpg)
+![right-proto2](img/right-proto2.jpg)
 
 There was an earlier prototype, that was handwired, and rather
 fragile.  This is the first version I would consider to be a usable
