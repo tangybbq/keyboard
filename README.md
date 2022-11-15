@@ -13,6 +13,17 @@ releasing the designs under the [CC BY-NC
 Specifically, this means if you wish to sell a product based on the
 design, you should talk to me.
 
+## The "proto3"
+
+This is basically the same design as the proto2, but with a third row.
+The qmk supports an easier qwerty mode, but still with a modified
+homerow modifier support (I use the lower row as it has slightly fewer
+rollover conflicts).
+
+![proto3](img/proto3.jpg)
+
+The BOM is the same as the proto2, but it will need 42 diodes.
+
 ## The "proto2"
 
 For lack of a better name, this first design is called the "proto2".
