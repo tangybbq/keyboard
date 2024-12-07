@@ -149,7 +149,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 0 12.446 0)
+				(at 0 37.592 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -477,7 +477,7 @@
 			)
 			(symbol "MDBT53_1M_3_1"
 				(rectangle
-					(start -7.62 12.7)
+					(start -8.89 12.7)
 					(end 10.16 -12.7)
 					(stroke
 						(width 0)
@@ -513,10 +513,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at 12.7 -2.54 180)
 					(length 2.54)
-					(name "TRACEDATA0"
+					(name "TRACEDATA0/P0.11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -531,7 +531,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin input line
 					(at 12.7 2.54 180)
 					(length 2.54)
 					(name "SWDCLK"
@@ -568,7 +568,7 @@
 					)
 				)
 				(pin input line
-					(at -10.16 0 0)
+					(at -11.43 0 0)
 					(length 2.54)
 					(name "RESET"
 						(effects
@@ -609,7 +609,7 @@
 				(pin output line
 					(at 10.16 5.08 180)
 					(length 2.54)
-					(name "QSPI_CSN"
+					(name "QSPI_CSN/P0.18"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -627,7 +627,7 @@
 				(pin output line
 					(at 10.16 0 180)
 					(length 2.54)
-					(name "QSPI_0"
+					(name "QSPI_0/P0.13"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -645,7 +645,7 @@
 				(pin output line
 					(at 10.16 -5.08 180)
 					(length 2.54)
-					(name "QSPI_2"
+					(name "QSPI_2/P0.15"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -663,7 +663,7 @@
 				(pin output line
 					(at 10.16 7.62 180)
 					(length 2.54)
-					(name "QSPI_SCK"
+					(name "QSPI_SCK/P0.17"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -681,7 +681,7 @@
 				(pin output line
 					(at 10.16 -2.54 180)
 					(length 2.54)
-					(name "QSPI_1"
+					(name "QSPI_1/P0.14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -699,7 +699,7 @@
 				(pin output line
 					(at 10.16 -7.62 180)
 					(length 2.54)
-					(name "QSPI_3"
+					(name "QSPI_3/P0.16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -789,42 +789,6 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 -12.7 180)
-					(length 2.54)
-					(name "P0.18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 5.08 180)
-					(length 2.54)
-					(name "P0.11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at 12.7 7.62 180)
 					(length 2.54)
 					(name "P0.10"
@@ -861,60 +825,6 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 15.24 180)
-					(length 2.54)
-					(name "P0.07"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 0 180)
-					(length 2.54)
-					(name "P0.13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -5.08 180)
-					(length 2.54)
-					(name "P0.15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at 12.7 -22.86 180)
 					(length 2.54)
 					(name "P0.22"
@@ -925,60 +835,6 @@
 						)
 					)
 					(number "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -10.16 180)
-					(length 2.54)
-					(name "P0.17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -2.54 180)
-					(length 2.54)
-					(name "P0.14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "27"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -7.62 180)
-					(length 2.54)
-					(name "P0.16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "28"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1041,78 +897,6 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 17.78 180)
-					(length 2.54)
-					(name "P0.06"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "35"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 22.86 180)
-					(length 2.54)
-					(name "P0.04"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "37"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 20.32 180)
-					(length 2.54)
-					(name "P0.05"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "39"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -35.56 180)
-					(length 2.54)
-					(name "P0.27"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at 12.7 -45.72 180)
 					(length 2.54)
 					(name "P0.31"
@@ -1141,24 +925,6 @@
 						)
 					)
 					(number "57"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -38.1 180)
-					(length 2.54)
-					(name "P0.28"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "60"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1203,24 +969,6 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 -33.02 180)
-					(length 2.54)
-					(name "P0.26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at 12.7 -27.94 180)
 					(length 2.54)
 					(name "P0.24"
@@ -1231,24 +979,6 @@
 						)
 					)
 					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -30.48 180)
-					(length 2.54)
-					(name "P0.25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1271,6 +1001,46 @@
 				)
 				(text "MDBT53_1M\nGPIO0"
 					(at 0.254 41.148 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "P0.00 Unit B\nP0.01 Unit B"
+					(at 2.54 31.75 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "P0.04 Unit G\nP0.05 Unit G\nP0.06 Unit G\nP0.07 Unit G"
+					(at 2.54 19.304 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "P0.11 Unit C"
+					(at 3.048 5.08 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "P0.13 Unit D\nP0.14 Unit D\nP0.15 Unit D\nP0.16 Unit D\nP0.17 Unit D\nP0.18 Unit D"
+					(at 2.794 -7.62 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "P0.25 Unit G\nP0.26 Unit G\nP0.27 Unit G\nP0.28 Unit G"
+					(at 3.048 -34.29 0)
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1593,7 +1363,7 @@
 				(pin input line
 					(at -12.7 0 0)
 					(length 2.54)
-					(name "AIN3"
+					(name "AIN3/P0.07"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1611,7 +1381,7 @@
 				(pin input line
 					(at -12.7 2.54 0)
 					(length 2.54)
-					(name "AIN2"
+					(name "AIN2/P0.06"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1629,7 +1399,7 @@
 				(pin input line
 					(at -12.7 7.62 0)
 					(length 2.54)
-					(name "AIN0"
+					(name "AIN0/P0.04"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1647,7 +1417,7 @@
 				(pin input line
 					(at -12.7 5.08 0)
 					(length 2.54)
-					(name "AIN1"
+					(name "AIN1/P0.05"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1665,7 +1435,7 @@
 				(pin input line
 					(at -12.7 -7.62 0)
 					(length 2.54)
-					(name "AIN6"
+					(name "AIN6/P0.27"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1683,7 +1453,7 @@
 				(pin input line
 					(at -12.7 -10.16 0)
 					(length 2.54)
-					(name "AIN7"
+					(name "AIN7/P0.28"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1701,7 +1471,7 @@
 				(pin input line
 					(at -12.7 -5.08 0)
 					(length 2.54)
-					(name "AIN5"
+					(name "AIN5/P0.26"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1719,7 +1489,7 @@
 				(pin input line
 					(at -12.7 -2.54 0)
 					(length 2.54)
-					(name "AIN4"
+					(name "AIN4/P0.25"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2411,12 +2181,114 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 114.3 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "03ae3caa-5e91-4fa5-9666-bb6e2eeca9fc")
+	)
+	(junction
+		(at 114.3 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4146f373-0307-4e53-a5d1-dde015723efb")
 	)
 	(wire
 		(pts
@@ -2437,6 +2309,16 @@
 			(type default)
 		)
 		(uuid "1faf84ec-3fa7-4be8-a47e-dc3fe8ac338f")
+	)
+	(wire
+		(pts
+			(xy 114.3 64.77) (xy 114.3 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e6b76cd-6bf9-402c-bd45-c984303210de")
 	)
 	(wire
 		(pts
@@ -2470,7 +2352,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 62.23) (xy 114.3 68.58)
+			(xy 114.3 62.23) (xy 114.3 64.77)
 		)
 		(stroke
 			(width 0)
@@ -2777,15 +2659,6 @@
 		(pin "16"
 			(uuid "c7cae278-23f6-4f83-9250-a555b8414a7a")
 		)
-		(pin "21"
-			(uuid "c69b8f5f-282f-4c93-bee4-7284f57fdfd3")
-		)
-		(pin "23"
-			(uuid "e79d43e3-01a4-41aa-a204-0709ac7ddec0")
-		)
-		(pin "26"
-			(uuid "ec7fd7ce-8d46-4c67-a648-113b77ca5434")
-		)
 		(pin "27"
 			(uuid "9a97e331-1428-41a6-a6dc-b142e20c4bd8")
 		)
@@ -2798,26 +2671,11 @@
 		(pin "13"
 			(uuid "27cc32bd-4332-403e-b002-57743000e7da")
 		)
-		(pin "14"
-			(uuid "8d3254d2-dc50-43ec-abe5-830746415563")
-		)
 		(pin "15"
 			(uuid "2c910e2d-b463-4fda-8c88-55bf33add28b")
 		)
-		(pin "16"
-			(uuid "b2d5091b-004b-4a0f-abb2-e86bb9cc029e")
-		)
-		(pin "17"
-			(uuid "5afd5387-e5b9-4d1e-97fd-4eef5c65e9c2")
-		)
 		(pin "18"
 			(uuid "5d30fd81-2b54-41e2-925b-e57af147846b")
-		)
-		(pin "27"
-			(uuid "c3fe9eef-5de3-4170-8222-5afa1208ce29")
-		)
-		(pin "28"
-			(uuid "abca6a5f-2c5f-4b12-b2a0-bd0fa5534744")
 		)
 		(pin "29"
 			(uuid "0c4d7f52-e1b3-4694-8a4b-19debe3c2d74")
@@ -2827,21 +2685,6 @@
 		)
 		(pin "32"
 			(uuid "ceff0ab3-7289-4a65-b0cd-f2a52d0a355b")
-		)
-		(pin "39"
-			(uuid "010a8545-75d3-4cbd-ad2e-86ba7f1c6b5f")
-		)
-		(pin "5"
-			(uuid "6664a146-a888-4830-8de9-19eb7b06e0e3")
-		)
-		(pin "60"
-			(uuid "884f462d-79e4-4aec-9d53-4f0388e89dc5")
-		)
-		(pin "7"
-			(uuid "b72b67d0-5f1e-43c6-8086-2ae118011160")
-		)
-		(pin "9"
-			(uuid "fdccb585-9376-4615-bc6b-c3a01526f83c")
 		)
 		(pin "44"
 			(uuid "084811f9-aed8-46dd-8f57-afc06a2a323c")
@@ -2863,15 +2706,6 @@
 		)
 		(pin "64"
 			(uuid "67180e32-0c85-4e5f-b486-58bf1e709fe5")
-		)
-		(pin "20"
-			(uuid "935759c8-9e8f-4120-b3d1-4c13e5110cdd")
-		)
-		(pin "35"
-			(uuid "712094cc-d8a0-4957-8fb4-60c01580e104")
-		)
-		(pin "37"
-			(uuid "7031e343-a499-4a4b-b9d2-8a2ea41b10d8")
 		)
 		(pin "24"
 			(uuid "d14433e8-dfc8-4c01-aad4-4e587effcbc8")
@@ -2903,11 +2737,81 @@
 		(pin "38"
 			(uuid "31894b1d-518f-4190-b444-c2c73ef74ad9")
 		)
+		(pin "14"
+			(uuid "6f29ebc8-e2e2-4740-9b4e-6fe3871ed671")
+		)
 		(instances
 			(project "bletest-2"
 				(path "/8765e634-cc5d-4e93-a9fe-a7a0a02791b6/1b765584-d95c-49e7-9dfc-58741c7180f6"
 					(reference "U3")
 					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 114.3 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23aeea55-2815-4bf5-8fd2-e31128ea82c1")
+		(property "Reference" "#FLG08"
+			(at 112.395 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 110.49 64.7699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 114.3 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a907587-0ebb-40d8-b026-d85039ab28f1")
+		)
+		(instances
+			(project "bletest-2"
+				(path "/8765e634-cc5d-4e93-a9fe-a7a0a02791b6/1b765584-d95c-49e7-9dfc-58741c7180f6"
+					(reference "#FLG08")
+					(unit 1)
 				)
 			)
 		)
