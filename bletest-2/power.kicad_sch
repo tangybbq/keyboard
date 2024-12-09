@@ -3,7 +3,13 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "7fed7234-a122-4eeb-b412-40f3a379fc6d")
-	(paper "A4")
+	(paper "A")
+	(title_block
+		(title "BLETEXT-2")
+		(date "2024-12-07")
+		(rev "REVA")
+		(company "David Brown")
+	)
 	(lib_symbols
 		(symbol "Analog_Switch:MAX40200AUK"
 			(exclude_from_sim no)
@@ -4131,7 +4137,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A105KA8NNNC/3886760"
 			(at 114.3 124.46 0)
 			(effects
 				(font
@@ -4528,7 +4534,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/taiyo-yuden/LBR2012T100K/1788937"
 			(at 92.71 120.65 0)
 			(effects
 				(font
@@ -4596,7 +4602,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX40200.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX40200AUK-T/7392218"
 			(at 68.58 45.72 0)
 			(effects
 				(font
@@ -4675,7 +4681,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A475KP8NNNC/3886702"
 			(at 49.53 114.3 0)
 			(effects
 				(font
@@ -4745,7 +4751,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A105KA8NNNC/3886760"
 			(at 105.41 132.08 0)
 			(effects
 				(font
@@ -4796,7 +4802,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "MDBT53_1M"
 			(at 223.52 53.34 0)
 			(effects
 				(font
@@ -4813,7 +4819,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.amazon.com/dp/B0B4BC8Z1V"
 			(at 223.52 76.2 0)
 			(effects
 				(font
@@ -5075,7 +5081,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/te-connectivity-passive-product/CPF0603B1M0E/4966442"
 			(at 128.27 58.42 0)
 			(effects
 				(font
@@ -5145,7 +5151,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.amazon.com/gp/product/B0CGZQF3LR/"
 			(at 31.75 59.436 90)
 			(effects
 				(font
@@ -5281,7 +5287,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERA-3AEB184V/1465908"
 			(at 128.27 69.85 0)
 			(effects
 				(font
@@ -5349,7 +5355,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/taiyo-yuden/CB2012T4R7M/1169459"
 			(at 92.71 53.34 0)
 			(effects
 				(font
@@ -5483,7 +5489,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/micro-commercial-co/BAV19W-TP/717233"
 			(at 68.58 40.64 0)
 			(effects
 				(font
@@ -5571,7 +5577,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A475KP8NNNC/3886702"
 			(at 142.24 59.69 0)
 			(effects
 				(font
@@ -6246,7 +6252,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERA-3AEB184V/1465908"
 			(at 204.47 66.04 0)
 			(effects
 				(font
@@ -6314,7 +6320,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/taiyo-yuden/LBR2012T100K/1788937"
 			(at 92.71 128.27 0)
 			(effects
 				(font
@@ -6499,7 +6505,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "MDBT53_1M"
 			(at 58.42 127 0)
 			(effects
 				(font
@@ -6517,7 +6523,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.amazon.com/dp/B0B4BC8Z1V"
 			(at 68.58 128.27 0)
 			(effects
 				(font
@@ -6845,7 +6851,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A475KP8NNNC/3886702"
 			(at 88.9 63.5 0)
 			(effects
 				(font
@@ -7292,7 +7298,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "TPS61070DDCR"
 			(at 110.49 45.72 0)
 			(effects
 				(font
@@ -7309,7 +7315,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/texas-instruments/TPS61070DDCR/665929"
 			(at 107.95 60.96 0)
 			(effects
 				(font

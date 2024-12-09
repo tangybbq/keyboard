@@ -3,7 +3,13 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "21de5675-590c-4083-9f83-7c19b1d453dc")
-	(paper "A4")
+	(paper "A")
+	(title_block
+		(title "BLETEXT-2")
+		(date "2024-12-07")
+		(rev "REVA")
+		(company "David Brown")
+	)
 	(lib_symbols
 		(symbol "Device:D"
 			(pin_numbers hide)
@@ -525,7 +531,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/micro-commercial-co/BAV19W-TP/717233"
 			(at 134.62 71.12 0)
 			(effects
 				(font
@@ -679,7 +685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/micro-commercial-co/BAV19W-TP/717233"
 			(at 134.62 54.61 0)
 			(effects
 				(font
@@ -901,7 +907,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/micro-commercial-co/BAV19W-TP/717233"
 			(at 72.39 71.12 0)
 			(effects
 				(font
@@ -1055,7 +1061,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/micro-commercial-co/BAV19W-TP/717233"
 			(at 72.39 54.61 0)
 			(effects
 				(font

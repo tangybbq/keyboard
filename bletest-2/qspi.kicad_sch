@@ -3,7 +3,13 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "76b929c5-cffd-4f23-b862-25377a387225")
-	(paper "A4")
+	(paper "A")
+	(title_block
+		(title "BLETEXT-2")
+		(date "2024-12-07")
+		(rev "REVA")
+		(company "David Brown")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
@@ -2507,7 +2513,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "MDBT53_1M"
 			(at 73.66 59.69 0)
 			(effects
 				(font
@@ -2524,7 +2530,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.amazon.com/dp/B0B4BC8Z1V"
 			(at 73.66 82.55 0)
 			(effects
 				(font
@@ -2919,7 +2925,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB104/302822"
 			(at 143.51 72.39 0)
 			(effects
 				(font
@@ -3055,7 +3061,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/winbond-electronics/W25Q128JVPIQ/6819668"
 			(at 114.3 57.15 0)
 			(effects
 				(font
