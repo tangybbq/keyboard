@@ -1,0 +1,4 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"D3,D1,D2";"Nexperia_CFP3_SOD-123W";3;"BAV19W";;;
+2;"SW1,SW3,SW2";"Kailh_socket_PG1350";3;"SW_SPST";;;
+3;"J1,J3,J2,J4";"PinHeader_1x01_P2.54mm_Vertical";4;"Conn_01x01_Pin";;;

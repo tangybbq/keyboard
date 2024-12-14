@@ -1,0 +1,16 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "cfe58ba4-a23d-431e-9061-3b42aeb287b7")
+	(paper "A")
+	(title_block
+		(title "Jolt 2 - Main PCB")
+	)
+	(lib_symbols)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
