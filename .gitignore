@@ -1,0 +1,8 @@
+# Backup files from KiCad
+*-backups/
+
+# Don't commit the gerbers
+gerber_to_order/
+
+# Cache of footprints.
+fp-info-cache
