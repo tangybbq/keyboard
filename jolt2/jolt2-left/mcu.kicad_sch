@@ -2297,10 +2297,6 @@
 		(uuid "f5378082-6590-4859-a4ed-376da41c1aee")
 	)
 	(no_connect
-		(at 144.78 179.07)
-		(uuid "01d82e54-8897-4cfa-af59-c4be9396a327")
-	)
-	(no_connect
 		(at 132.08 161.29)
 		(uuid "02f80243-ac4b-4ae7-9cba-6dc460825f44")
 	)
@@ -2319,10 +2315,6 @@
 	(no_connect
 		(at 132.08 143.51)
 		(uuid "23b6b164-9474-411f-b84b-b63ae3786d97")
-	)
-	(no_connect
-		(at 144.78 181.61)
-		(uuid "353bddd2-1f35-45ac-83ad-fae60439dbb8")
 	)
 	(no_connect
 		(at 132.08 163.83)
@@ -2357,8 +2349,8 @@
 		(uuid "8d7cf635-f70b-47a0-b5df-80d7fb129a3e")
 	)
 	(no_connect
-		(at 132.08 184.15)
-		(uuid "a7b5c8ea-1ee5-4659-b3a9-c6411a3dea16")
+		(at 132.08 179.07)
+		(uuid "b69dc6ee-d010-4831-9de0-2496d0eafc08")
 	)
 	(no_connect
 		(at 132.08 138.43)
@@ -2381,6 +2373,16 @@
 			(type default)
 		)
 		(uuid "03371b5b-4485-427e-bdfd-89ae13206670")
+	)
+	(wire
+		(pts
+			(xy 132.08 184.15) (xy 139.7 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "062cba8d-b79f-487e-928d-214e0dcba5e4")
 	)
 	(wire
 		(pts
@@ -2554,16 +2556,6 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 113.03) (xy 152.4 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29b3f456-f782-4346-8afe-97a23985f0da")
-	)
-	(wire
-		(pts
 			(xy 166.37 41.91) (xy 166.37 44.45)
 		)
 		(stroke
@@ -2664,6 +2656,26 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 113.03) (xy 152.4 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41fc8380-79a0-453f-8e82-9fef53c1560c")
+	)
+	(wire
+		(pts
+			(xy 132.08 181.61) (xy 139.7 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4417a784-3a6c-4d05-8754-f3723054521b")
+	)
+	(wire
+		(pts
 			(xy 153.67 33.02) (xy 153.67 34.29)
 		)
 		(stroke
@@ -2731,26 +2743,6 @@
 			(type default)
 		)
 		(uuid "519847f9-8dff-4fc9-86eb-52db00fa2308")
-	)
-	(wire
-		(pts
-			(xy 132.08 181.61) (xy 144.78 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "539602f6-047c-412b-8169-d05fbc0bb698")
-	)
-	(wire
-		(pts
-			(xy 132.08 107.95) (xy 152.4 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "553ccfee-692b-4b7c-80f9-0a31b87f25b9")
 	)
 	(wire
 		(pts
@@ -2831,16 +2823,6 @@
 			(type default)
 		)
 		(uuid "657e8fcf-62a5-4107-b128-0c38b4f2941a")
-	)
-	(wire
-		(pts
-			(xy 132.08 110.49) (xy 152.4 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6672c3ae-4bac-40c3-a038-a8bd3746f0e8")
 	)
 	(wire
 		(pts
@@ -3224,6 +3206,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 107.95) (xy 152.4 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8c6e478-f9d8-41c5-98d8-e391ae53c559")
+	)
+	(wire
+		(pts
 			(xy 204.47 33.02) (xy 204.47 34.29)
 		)
 		(stroke
@@ -3514,16 +3506,6 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 179.07) (xy 144.78 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa9e68ea-6f47-4491-9358-abfd4461c2e9")
-	)
-	(wire
-		(pts
 			(xy 132.08 140.97) (xy 152.4 140.97)
 		)
 		(stroke
@@ -3541,6 +3523,16 @@
 			(type default)
 		)
 		(uuid "fe1aa3ee-6a27-405c-9b14-ffa21da25744")
+	)
+	(wire
+		(pts
+			(xy 132.08 110.49) (xy 152.4 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe9631e8-9b38-482a-9a03-1c795ce3211a")
 	)
 	(text "Make sure R1 and R2 are close to RP2040"
 		(exclude_from_sim no)
@@ -3602,6 +3594,50 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SERTX"
+		(shape input)
+		(at 139.7 181.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "52afa69d-6075-4c85-92dd-00a4c2048078")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.4908 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SERRX"
+		(shape input)
+		(at 139.7 184.15 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5c5fc5e3-9135-46d4-ac88-66eca8dbf9ac")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.7932 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -3844,7 +3880,7 @@
 	)
 	(hierarchical_label "COL-C"
 		(shape input)
-		(at 152.4 113.03 0)
+		(at 152.4 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3880,7 +3916,7 @@
 	)
 	(hierarchical_label "COL-A"
 		(shape input)
-		(at 152.4 107.95 0)
+		(at 152.4 113.03 0)
 		(fields_autoplaced yes)
 		(effects
 			(font

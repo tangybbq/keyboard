@@ -3905,7 +3905,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4085"
+		(property "Footprint" "davidb-keyboard-foot:USB_C_Receptacle_GCT_USB4085"
 			(at 55.88 66.04 0)
 			(effects
 				(font
