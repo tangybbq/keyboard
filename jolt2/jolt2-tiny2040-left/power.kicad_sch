@@ -891,7 +891,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec5b2d2b-88e9-41cd-9655-5dd1930dbc57")
-		(property "Reference" "J31"
+		(property "Reference" "J30"
 			(at 144.78 118.1099 0)
 			(effects
 				(font
@@ -969,7 +969,7 @@
 		(instances
 			(project ""
 				(path "/5e404b8e-7f18-4204-bb67-87c83d2db771/a1c76de4-528d-42ab-822c-b4e73696ff22"
-					(reference "J31")
+					(reference "J30")
 					(unit 1)
 				)
 			)
