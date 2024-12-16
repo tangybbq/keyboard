@@ -504,7 +504,7 @@
         "name": "USB",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.6,
+        "track_width": 0.2,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -541,7 +541,7 @@
       "netlist": "",
       "plot": "",
       "pos_files": "",
-      "specctra_dsn": "",
+      "specctra_dsn": "jolt2-pim-left.dsn",
       "step": "jolt2-pim-left.step",
       "svg": "",
       "vrml": ""
@@ -681,16 +681,8 @@
       "Vertical-7"
     ],
     [
-      "71e7df0f-b1c8-4404-9fb3-fe16e4220fb1",
-      "MCU"
-    ],
-    [
       "a1c76de4-528d-42ab-822c-b4e73696ff22",
       "Power+USB"
-    ],
-    [
-      "83902f8d-393e-44e1-a57d-86e4f1895520",
-      "Flash"
     ]
   ],
   "text_variables": {}
