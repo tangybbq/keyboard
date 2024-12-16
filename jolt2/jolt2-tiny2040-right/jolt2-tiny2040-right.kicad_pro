@@ -453,7 +453,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "jolt-tiny2040-right.kicad_pro",
+    "filename": "jolt2-tiny2040-right.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -541,8 +541,8 @@
       "netlist": "",
       "plot": "",
       "pos_files": "",
-      "specctra_dsn": "jolt-tiny2040-right.dsn",
-      "step": "jolt-tiny2040-right.step",
+      "specctra_dsn": "jolt2-tiny2040-right.dsn",
+      "step": "jolt2-tiny2040-right.step",
       "svg": "",
       "vrml": ""
     },
