@@ -1,4 +1,4 @@
-24467265621517206
+24469001593286972
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -98804,6 +98804,13 @@ QFN DFN_QFN
 0
 70
 57
+davidb-keyboard-foot
+SK6812-MINI-HS
+
+
+0
+4
+4
 davidb-keyboard-foot
 SparkFun_Pro_Micro_RP2350
 
