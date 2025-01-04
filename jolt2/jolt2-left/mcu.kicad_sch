@@ -4904,7 +4904,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "12p"
 			(at 27.94 130.81 90)
 			(effects
 				(font
@@ -6191,7 +6191,7 @@
 				)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "12p"
 			(at 27.94 143.51 90)
 			(effects
 				(font

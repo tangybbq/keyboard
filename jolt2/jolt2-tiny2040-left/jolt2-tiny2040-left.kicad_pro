@@ -539,7 +539,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "board-dxf/",
       "pos_files": "",
       "specctra_dsn": "jolt2-tiny2040-left.dsn",
       "step": "jolt2-tiny2040-left.step",

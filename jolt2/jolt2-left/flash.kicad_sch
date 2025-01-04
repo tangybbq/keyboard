@@ -2041,7 +2041,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100n"
 			(at 102.87 53.3399 0)
 			(effects
 				(font
@@ -2633,10 +2633,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "37ea52fb-72bd-462f-a9f8-9385d1644b22")
+			(uuid "37ea52fb-72bd-462f-a9f8-9385d1644b23")
 		)
 		(pin "1"
-			(uuid "03e128e4-2017-4445-8267-940466312326")
+			(uuid "03e128e4-2017-4445-8267-940466312327")
 		)
 		(instances
 			(project ""
