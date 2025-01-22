@@ -1,0 +1,250 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "5e404b8e-7f18-4204-bb67-87c83d2db771")
+	(paper "A")
+	(title_block
+		(title "Jolt 2 - Left")
+	)
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 114.3 152.4) (xy 127 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41760b33-754e-4ebf-8e74-1371f1509a51")
+	)
+	(wire
+		(pts
+			(xy 114.3 149.86) (xy 127 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68d8e9bb-6219-4482-8d58-2e0e735c2c7c")
+	)
+	(wire
+		(pts
+			(xy 134.62 83.82) (xy 158.75 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4fa4ea6-51fa-4069-b0e6-cd3f76df1763")
+	)
+	(wire
+		(pts
+			(xy 134.62 86.36) (xy 158.75 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc49fd1c-8b10-44a6-9996-52193e428b74")
+	)
+	(label "USB_D-"
+		(at 127 152.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "46dad326-c7b3-4ff5-9b0f-6f374467e5e9")
+	)
+	(label "USB_D+"
+		(at 158.75 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "86471945-aabd-44e3-a617-e0dd9b5877fd")
+	)
+	(label "USB_D+"
+		(at 127 149.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8b1f597e-c3b0-4122-8c01-9f5db8ee1511")
+	)
+	(label "USB_D-"
+		(at 158.75 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bfac9d0e-d783-4fd5-8c00-25af4b0a85f1")
+	)
+	(sheet
+		(at 101.6 81.28)
+		(size 33.02 37.465)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "71e7df0f-b1c8-4404-9fb3-fe16e4220fb1")
+		(property "Sheetname" "MCU"
+			(at 101.6 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 101.6 119.3296 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB_D+" input
+			(at 134.62 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c759838a-fc2c-4ac2-a8dc-b1552f1099ca")
+		)
+		(pin "USB-D-" input
+			(at 134.62 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "631b9577-9d61-4ae0-b095-e9df5ce97a26")
+		)
+		(instances
+			(project "j3-mez-2040"
+				(path "/5e404b8e-7f18-4204-bb67-87c83d2db771"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 66.04)
+		(size 15.24 5.08)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "83902f8d-393e-44e1-a57d-86e4f1895520")
+		(property "Sheetname" "Flash"
+			(at 101.6 65.3284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "flash.kicad_sch"
+			(at 101.6 71.7046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "j3-mez-2040"
+				(path "/5e404b8e-7f18-4204-bb67-87c83d2db771"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 147.32)
+		(size 12.7 13.335)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a1c76de4-528d-42ab-822c-b4e73696ff22")
+		(property "Sheetname" "Power+USB"
+			(at 101.6 146.6084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 101.6 161.2396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB_D+" input
+			(at 114.3 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f2111a2e-cdfb-4b46-b745-14fc8aa2d0f8")
+		)
+		(pin "USB_D-" input
+			(at 114.3 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "4d1f435f-c437-407e-bf91-2886f53652a5")
+		)
+		(instances
+			(project "j3-mez-2040"
+				(path "/5e404b8e-7f18-4204-bb67-87c83d2db771"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
