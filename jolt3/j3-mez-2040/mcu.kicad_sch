@@ -3557,6 +3557,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 134.62) (xy 148.59 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "498d3598-7e12-4fe7-9c55-b28bb4f89a1c")
+	)
+	(wire
+		(pts
 			(xy 233.68 127) (xy 237.49 127)
 		)
 		(stroke
@@ -3667,7 +3677,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 138.43) (xy 140.97 138.43)
+			(xy 132.08 138.43) (xy 146.05 138.43)
 		)
 		(stroke
 			(width 0)
@@ -4267,6 +4277,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 143.51) (xy 148.59 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc501c83-2ffb-4f4d-b802-f29c1e257225")
+	)
+	(wire
+		(pts
 			(xy 204.47 33.02) (xy 204.47 34.29)
 		)
 		(stroke
@@ -4377,6 +4397,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 140.97) (xy 146.05 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c961d4b8-2ce2-45da-b5e2-e7c7aa673b14")
+	)
+	(wire
+		(pts
 			(xy 116.84 33.02) (xy 116.84 52.07)
 		)
 		(stroke
@@ -4467,6 +4497,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 138.43) (xy 146.05 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d35071e4-36ea-4eb8-bb38-64ef21b816a6")
+	)
+	(wire
+		(pts
 			(xy 179.07 41.91) (xy 179.07 44.45)
 		)
 		(stroke
@@ -4547,6 +4587,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 143.51) (xy 165.1 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2439385-99ae-4b5a-8b9a-f3d3b4380943")
+	)
+	(wire
+		(pts
 			(xy 116.84 63.5) (xy 116.84 90.17)
 		)
 		(stroke
@@ -4617,7 +4667,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 140.97) (xy 140.97 140.97)
+			(xy 132.08 140.97) (xy 146.05 140.97)
 		)
 		(stroke
 			(width 0)
@@ -4765,6 +4815,16 @@
 		)
 		(uuid "fe94fa70-afed-474e-b909-899318cf4ee1")
 	)
+	(wire
+		(pts
+			(xy 156.21 134.62) (xy 165.1 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff2c8ba4-5ab0-4660-a3f3-8e4b7e7ede47")
+	)
 	(text "Make sure R1 and R2 are close to RP2040"
 		(exclude_from_sim no)
 		(at 177.292 95.25 0)
@@ -4866,7 +4926,7 @@
 		(uuid "41df00b2-b6df-4da0-b04c-dcd8b52107d9")
 	)
 	(label "SERTX"
-		(at 140.97 138.43 180)
+		(at 165.1 134.62 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5016,7 +5076,7 @@
 		(uuid "d9860931-a2eb-44a7-ad51-d2fa0bac89eb")
 	)
 	(label "SERRX"
-		(at 140.97 140.97 180)
+		(at 165.1 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5306,6 +5366,140 @@
 			(justify left)
 		)
 		(uuid "f55c76b1-6bfc-4093-8d83-4e7f29291ae2")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 152.4 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "025493f6-f174-40a8-8908-119b3cf8e2d0")
+		(property "Reference" "R10"
+			(at 152.908 145.796 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "27"
+			(at 152.4 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 152.4 145.288 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 152.4 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "757f789d-8ec0-4c97-949d-c1ca6cea4691")
+		)
+		(pin "1"
+			(uuid "c80081c7-5396-4012-ac8d-93c3a21c9237")
+		)
+		(instances
+			(project "j3-mez-2040"
+				(path "/5e404b8e-7f18-4204-bb67-87c83d2db771/71e7df0f-b1c8-4404-9fb3-fe16e4220fb1"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 152.4 134.62 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "04c407ae-ee60-4f9d-b81d-79640c272745")
+		(property "Reference" "R9"
+			(at 152.4 136.906 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "27"
+			(at 152.4 132.588 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 152.4 136.398 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 152.4 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "247ba19b-6bf2-405f-ab09-197598cc6b78")
+		)
+		(pin "1"
+			(uuid "e033b1ad-e433-47ae-95ce-0ee087cb7f59")
+		)
+		(instances
+			(project "j3-mez-2040"
+				(path "/5e404b8e-7f18-4204-bb67-87c83d2db771/71e7df0f-b1c8-4404-9fb3-fe16e4220fb1"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
