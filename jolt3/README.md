@@ -61,3 +61,17 @@ The main boards will be jolt3-left, and jolt3-right, with the same connector on 
 
 The smallest M-2 size is 22x42, which would fit (but give half the available area.
 
+I've ended up going for the [DF40C](https://www.hirose.com/product/p/CL0684-4010-9-51#) series of
+connectors, 30 pin with a 3mm board spacing.  I could probably do 2mm, but the pins on the RJ-45 are
+fairly long, and 3mm avoids the need to trim.  I'll use 3 1mm thick nylon washers for each standoff.
+
+Rev A implements the following:
+
+- jolt3-left: The left side.  The only components are the holes to mount the risers, the RJ-45, a
+  place to mount the 2AA battery holder, and two pull up resistors for I2C.
+- jolt3-right: The same as left, with minor changes: no pullups on I2C, Tx and Rx on the serial
+  lines are swapped.
+- jolt3-mez2040: The rp2040 circuitry on the mezzanine board.  I ended up with 38x38mm, to bring the
+  mounting holes in enough on the main board to clear the stand.  The rp2040 is rotated 90 degrees
+  to better route gpios to the connector (moves the crystal out of the way).
+- Use the same riser boards "jolt2-verts" from the Jolt2.
