@@ -75,3 +75,9 @@ Rev A implements the following:
   mounting holes in enough on the main board to clear the stand.  The rp2040 is rotated 90 degrees
   to better route gpios to the connector (moves the crystal out of the way).
 - Use the same riser boards "jolt2-verts" from the Jolt2.
+
+The biggest change from previous designs is moving away from the Arm Cortex-M debug header to the
+6-pin [Tag Connect](https://www.tag-connect.com/).  This requires no components on the board, just
+some holes and pads, taking about the same area as the Cortex-M connector.  There is a smaller one,
+but for these prototypes, the definitive connection seems better.  The cable is about $45 and should
+last a long time.
