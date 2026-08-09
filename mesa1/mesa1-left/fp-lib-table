@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "mesa1")(type "KiCad")(uri "${KIPRJMOD}/../mesa1.pretty")(options "")(descr "mesa1 project footprints: Choc socket, Tiny2040"))
+)

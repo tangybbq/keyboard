@@ -1,0 +1,15 @@
+(version 1)
+
+# Tiny 2040 castellations.
+#
+# A1's land pattern and its component-clearance cutout are both taken verbatim
+# from Pimoroni's pimoroni-boards.lbr: pads are 3.0 mm tall centred at y=+/-8.17
+# (inner edge +/-6.670) and the cutout runs at y=+/-6.300, leaving 0.370 mm.
+# That is below the 0.5 mm global edge clearance but comfortably inside fab
+# capability (JLCPCB allows 0.2 mm copper-to-outline, 0.3 mm preferred).
+#
+# Scoped to A1's *pads* only, so the global 0.5 mm still applies to the Kailh
+# socket pads near the board outline and to any trace routed near the cutout.
+(rule "Tiny2040 castellation edge clearance"
+	(constraint edge_clearance (min 0.25mm))
+	(condition "(A.Type == 'Pad' && A.memberOfFootprint('A1')) || (B.Type == 'Pad' && B.memberOfFootprint('A1'))"))
