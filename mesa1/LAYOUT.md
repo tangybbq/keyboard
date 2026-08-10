@@ -104,51 +104,116 @@ labelled backwards on the right board.
 
 ## Matrix
 
-Carried over from proto4. **5 columns shared across both halves; 3 rows per half.** The
-RJ-45 carries exactly 8 conductors — `ROW_4/5/6` and `COL_A..COL_E` — so the left MCU scans
-a 5 × 6 matrix covering all 30 keys. The right half has no MCU; its rows return over the
-cable.
+**5 rows shared across both halves; 3 columns per half.** Rows `A`–`E` are driven, columns
+`1`–`6` are sensed. The left half owns columns 1–3, the right half 4–6, so the RJ-45 carries
+exactly 8 conductors — `ROW_A..E` plus `COL_4/5/6`. The left MCU scans a 5 × 6 matrix
+covering all 30 keys. The right half has no MCU.
 
-RJ-45 pinout (identical both ends): `P$1..P$3` = ROW_4/5/6, `P$4..P$8` = COL_A..COL_E.
+> **Nothing here is carried over from proto4.** Compatibility with earlier boards was
+> deliberately dropped (2026-08-09) so the assignment could be chosen for routing instead.
+> The previous arrangement was the transpose of this one — 3 rows per half, 5 shared
+> columns — and used the names `ROW_1..6` / `COL_A..E`. Firmware written against proto4 or
+> against the first mesa1 draft will not work; use the table below.
 
-MCU pins (mesa1-left): COL_A..E on `6, 7, A0, A1, A2`; ROW_1..3 on `0, 1, 2`;
-ROW_4..6 on `3, 4, 5`. `A3` drives the RGB chain. That is 12 of the Tiny2040's 12 GPIO —
-**fully allocated, no spares.**
+Resource cost is identical to the old scheme: 11 GPIO + RGB = 12, and 8 conductors on the
+cable. It is a transpose, not an expense.
 
-### Assignment rule — by position, not by name
+### Structure
 
-Keys in physical order (column-major, outer → inner, upper then lower, then thumbs
-outer → inner), chunked into five groups of three. Group index gives the column, position
-within the group gives the row.
+- **Rows are horizontal triplets.** `A` = outer three of the top row, `B` = inner three of
+  the top row, `C`/`D` likewise for the bottom row, `E` = the three thumbs. Each row is
+  three physically adjacent keys, and the same five rows span both hands.
+- **Columns pair a physical column with the one three positions inboard, plus one thumb.**
+  Left: col 1 = phys 0+3 + outer thumb; col 2 = phys 1+4 + middle thumb; col 3 = phys 2+5 +
+  inner thumb. The right half mirrors this as 4/5/6.
+
+Pairing 0↔3, 1↔4, 2↔5 (rather than 0↔5) costs the same total copper but makes the three
+column nets sweep inboard *nested*, without crossing each other.
+
+Physical layout, both hands, as seen from the front:
+
+```
+    A1  A2  A3   B1  B2  B3        B6  B5  B4   A6  A5  A4
+    C1  C2  C3   D1  D2  D3        D6  D5  D4   C6  C5  C4
+
+                 E1  E2  E3        E6  E5  E4
+```
 
 **mesa1-left**
 
-| | ROW_1 | ROW_2 | ROW_3 |
+| | COL_1 | COL_2 | COL_3 |
 |---|---|---|---|
-| COL_A | LF1 | LF2 | L-STAR0 |
-| COL_B | L-S0 | L-T0 | L-K0 |
-| COL_C | L-P0 | L-W0 | L-H0 |
-| COL_D | L-R0 | LS1 | LS2 |
-| COL_E | LNUM0 | L-A0 | L-O0 |
+| ROW_A | LF1 | L-STAR0 | L-T0 |
+| ROW_B | L-P0 | L-H0 | LS1 |
+| ROW_C | LF2 | L-S0 | L-K0 |
+| ROW_D | L-W0 | L-R0 | LS2 |
+| ROW_E | LNUM0 | L-A0 | L-O0 |
 
-**mesa1-right** — same rule applied to its own (mirrored) geometry, so each key occupies the
+**mesa1-right** — the same structure on its mirrored geometry, so each key occupies the
 mirror-image cell of its left-hand counterpart:
 
-| | ROW_4 | ROW_5 | ROW_6 |
+| | COL_4 | COL_5 | COL_6 |
 |---|---|---|---|
-| COL_A | RD0 | RZ0 | RT0 |
-| COL_B | TS0 | RL0 | RG0 |
-| COL_C | RP0 | RB0 | RF0 |
-| COL_D | RR0 | RS3 | RS4 |
-| COL_E | RNUM0 | RU0 | RE0 |
+| ROW_A | RD0 | RT0 | RL0 |
+| ROW_B | RP0 | RF0 | RS3 |
+| ROW_C | RZ0 | TS0 | RG0 |
+| ROW_D | RB0 | RR0 | RS4 |
+| ROW_E | RNUM0 | RU0 | RE0 |
 
-> **This differs from proto4-right, deliberately.** proto4's right-hand rows run backwards
-> relative to the left (its ROW_4/5/6 map to the left's ROW_3/2/1 by position) because that
-> board was *flipped* rather than mirrored. mesa1 mirrors properly, so the rows run the same
-> way on both halves. Firmware written against proto4 will need its right-hand row order
-> reversed.
+Column 4 is the outer pinky group on the right, matching column 1 on the left; column 6 is
+the inner group, matching column 3. Rows run the same way on both halves.
 
-Diodes are cathode-to-row, anode-to-switch; switch other side to column.
+Diodes are cathode-to-row, anode-to-switch; switch other side to column. With rows driven
+this is QMK's `COL2ROW` sense: drive a row low, read the pulled-up columns.
+
+### Pin assignment
+
+Chosen for routing, not for any external convention — see `DESIGN.md` for the reasoning.
+Both tables are free to permute if routing demands it; regenerate the firmware table if so.
+
+**A1 (Tiny2040), mesa1-left.** The module's cutout is open to the top board edge, so its two
+pad rows are separate territories: the left row faces the key field, the right row can only
+be fed from below, up the channel between the pads and the right board edge.
+
+| pad | rel y | net | | pad | rel y | net |
+|---|---|---|---|---|---|---|
+| 5V | 9.98 | +5V | | 0 | 9.98 | ROW_E |
+| GND1 | 12.52 | GND | | 1 | 12.52 | ROW_D |
+| 3V3 | 15.06 | +3V3 | | 2 | 15.06 | ROW_C |
+| A3 | 17.60 | COL_3 | | 3 | 17.60 | ROW_B |
+| A2 | 20.14 | COL_2 | | 4 | 20.14 | ROW_A |
+| A1 | 22.68 | COL_1 | | 5 | 22.68 | COL_6 |
+| A0 | 25.22 | RGB | | 6 | 25.22 | COL_5 |
+| GND2 | 27.76 | GND | | 7 | 27.76 | COL_4 |
+
+COL_1/2/3 take the left face because they are the only matrix nets arriving purely from the
+key field, and they arrive nested — COL_3 innermost — so 3/2/1 onto A3/A2/A1 needs no
+crossings. RGB sits at the bottom of that face and exits downward to LED1.
+
+**RJ-45, identical at both ends (straight-through cable).**
+
+| pin | net | left J1 rel y | right J1 rel y |
+|---|---|---|---|
+| 1 | COL_4 | 52.77 (top) | 61.66 (bottom) |
+| 2 | COL_5 | 54.04 | 60.39 |
+| 3 | COL_6 | 55.31 | 59.12 |
+| 4 | ROW_A | 56.58 | 57.85 |
+| 5 | ROW_B | 57.85 | 56.58 |
+| 6 | ROW_C | 59.12 | 55.31 |
+| 7 | ROW_D | 60.39 | 54.04 |
+| 8 | ROW_E | 61.66 (bottom) | 52.77 (top) |
+
+On the left board COL_4/5/6 never touch the key field — they are pure J1→A1 hops — so they
+take the short end of the connector and stay clear of the rows arriving from the left.
+ROW_E takes pin 8 because it is the only net arriving from below (the thumbs).
+
+Because the connector mirrors, pin 1 is at the top on the left board and at the bottom on
+the right, so ROW_E enters at the far end on the right half. That costs ~9 mm and no
+assignment avoids it; the left board was favoured since it carries all the congestion.
+
+All eight cable nets continue from J1 up to A1 on the left board. To keep that bundle
+crossing-free the leftmost lane must serve the lowest pad, which forces **J1 pin *N* → A1
+pad *8−N***; the two tables above already satisfy this.
 
 ## Key semantics — a steno variant, not standard steno
 
@@ -400,3 +465,90 @@ consequences for the socket footprint.
 - Switches and outline: `proto4/proto4-left/proto4-left.kicad_pcb`
 - Socket footprint: `keyswitches.pretty/Kailh_socket_PG1350.kicad_mod`
   (registered globally as library `Keyboard Switches`)
+
+---
+
+## Firmware
+
+Rows are driven, columns sensed with pull-ups (`COL2ROW`). All GPIO are on the left
+half's Tiny 2040; the right half is passive and returns over the cable.
+
+| net | A1 pad | RP2040 |
+|---|---|---|
+| `ROW_A` | `4` | `GP4` |
+| `ROW_B` | `3` | `GP3` |
+| `ROW_C` | `2` | `GP2` |
+| `ROW_D` | `1` | `GP1` |
+| `ROW_E` | `0` | `GP0` |
+| `COL_1` | `A1` | `GP27` |
+| `COL_2` | `A2` | `GP28` |
+| `COL_3` | `A3` | `GP29` |
+| `COL_4` | `7` | `GP7` |
+| `COL_5` | `6` | `GP6` |
+| `COL_6` | `5` | `GP5` |
+| `RGB` | `A0` | `GP26` |
+
+So rows A–E are `GP4, GP3, GP2, GP1, GP0` and columns 1–6 are
+`GP27, GP28, GP29, GP7, GP6, GP5`.
+
+### Physical position → matrix cell
+
+Left-to-right as the keyboard sits in front of you.
+
+**Top row**
+
+| | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| key | `LF1` | `L-STAR0` | `L-T0` | `L-P0` | `L-H0` | `LS1` | `RS3` | `RF0` | `RP0` | `RL0` | `RT0` | `RD0` |
+| cell | A1 | A2 | A3 | B1 | B2 | B3 | B6 | B5 | B4 | A6 | A5 | A4 |
+
+**Bottom row**
+
+| | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| key | `LF2` | `L-S0` | `L-K0` | `L-W0` | `L-R0` | `LS2` | `RS4` | `RR0` | `RB0` | `RG0` | `TS0` | `RZ0` |
+| cell | C1 | C2 | C3 | D1 | D2 | D3 | D6 | D5 | D4 | C6 | C5 | C4 |
+
+**Thumbs**
+
+| | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| key | `LNUM0` | `L-A0` | `L-O0` | `RE0` | `RU0` | `RNUM0` |
+| cell | E1 | E2 | E3 | E6 | E5 | E4 |
+
+Full list, sorted by cell:
+
+| cell | row | col | key |
+|---|---|---|---|
+| A1 | `ROW_A` | `COL_1` | `LF1` |
+| A2 | `ROW_A` | `COL_2` | `L-STAR0` |
+| A3 | `ROW_A` | `COL_3` | `L-T0` |
+| A4 | `ROW_A` | `COL_4` | `RD0` |
+| A5 | `ROW_A` | `COL_5` | `RT0` |
+| A6 | `ROW_A` | `COL_6` | `RL0` |
+| B1 | `ROW_B` | `COL_1` | `L-P0` |
+| B2 | `ROW_B` | `COL_2` | `L-H0` |
+| B3 | `ROW_B` | `COL_3` | `LS1` |
+| B4 | `ROW_B` | `COL_4` | `RP0` |
+| B5 | `ROW_B` | `COL_5` | `RF0` |
+| B6 | `ROW_B` | `COL_6` | `RS3` |
+| C1 | `ROW_C` | `COL_1` | `LF2` |
+| C2 | `ROW_C` | `COL_2` | `L-S0` |
+| C3 | `ROW_C` | `COL_3` | `L-K0` |
+| C4 | `ROW_C` | `COL_4` | `RZ0` |
+| C5 | `ROW_C` | `COL_5` | `TS0` |
+| C6 | `ROW_C` | `COL_6` | `RG0` |
+| D1 | `ROW_D` | `COL_1` | `L-W0` |
+| D2 | `ROW_D` | `COL_2` | `L-R0` |
+| D3 | `ROW_D` | `COL_3` | `LS2` |
+| D4 | `ROW_D` | `COL_4` | `RB0` |
+| D5 | `ROW_D` | `COL_5` | `RR0` |
+| D6 | `ROW_D` | `COL_6` | `RS4` |
+| E1 | `ROW_E` | `COL_1` | `LNUM0` |
+| E2 | `ROW_E` | `COL_2` | `L-A0` |
+| E3 | `ROW_E` | `COL_3` | `L-O0` |
+| E4 | `ROW_E` | `COL_4` | `RNUM0` |
+| E5 | `ROW_E` | `COL_5` | `RU0` |
+| E6 | `ROW_E` | `COL_6` | `RE0` |
+
+All 30 cells of the 5 × 6 matrix are populated — there are no empty positions.

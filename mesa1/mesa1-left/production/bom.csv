@@ -1,0 +1,8 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+A1,Pimoroni_Tiny2040,1,Pimoroni_Tiny2040,
+"D_LA0, D_LF1, D_LF2, D_LH0, D_LK0, D_LNUM0, D_LO0, D_LP0, D_LR0, D_LS0, D_LS1, D_LS2, D_LSTAR0, D_LT0, D_LW0",D_SOD-123,15,1N4148W,
+J1,RJ45_Amphenol_54602-x08_Horizontal,1,RJ45,
+J2,Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical,1,Tag-Connect TC2030,
+"L-A0, L-H0, L-K0, L-O0, L-P0, L-R0, L-S0, L-STAR0, L-T0, L-W0, LF1, LF2, LNUM0, LS1, LS2",Kailh_socket_PG1350,15,SW_PG1350,
+"LED1, LED2, LED3, LED4",SK6812-MINI-HS,4,SK6812MINI-HS,
+RESET1,TestPoint_Pad_2.0x2.0mm,1,RESET_WIRE,

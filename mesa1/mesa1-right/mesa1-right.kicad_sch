@@ -1,2155 +1,711 @@
 (kicad_sch
-  (version 20250610)
-  (generator "konnect")
-  (generator_version "10.0")
-  (uuid "f569e8ed-7cec-4a9b-af5c-e96bce1a25b6")
-  (paper "A4")
-
-  (lib_symbols
-    (symbol "Switch:SW_SPST"
-      (pin_names
-        (offset 0)
-        (hide yes))
-      (exclude_from_sim no)
-      (in_bom yes)
-      (on_board yes)
-      (in_pos_files yes)
-      (duplicate_pin_numbers_are_jumpers no)
-      (property "Reference" "SW"
-        (at 0 3.175 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Value" "SW_SPST"
-        (at 0 -2.54 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Footprint" ""
-        (at 0 0 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Datasheet" ""
-        (at 0 0 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Description" "Single Pole Single Throw (SPST) switch"
-        (at 0 0 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "ki_keywords" "switch lever"
-        (at 0 0 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (symbol "SW_SPST_0_0"
-        (circle
-          (center -2.032 0)
-          (radius 0.508)
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none)))
-        (polyline
-          (pts
-            (xy -1.524 0.254)
-            (xy 1.524 1.778))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none)))
-        (circle
-          (center 2.032 0)
-          (radius 0.508)
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none))))
-      (symbol "SW_SPST_1_1"
-        (pin passive line
-          (at -5.08 0 0)
-          (length 2.54)
-          (name "A"
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "1"
-            (effects
-              (font
-                (size 1.27 1.27)))))
-        (pin passive line
-          (at 5.08 0 180)
-          (length 2.54)
-          (name "B"
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "2"
-            (effects
-              (font
-                (size 1.27 1.27))))))
-      (embedded_fonts no))
-    (symbol "Device:D"
-      (pin_numbers
-        (hide yes))
-      (pin_names
-        (offset 1.016)
-        (hide yes))
-      (exclude_from_sim no)
-      (in_bom yes)
-      (on_board yes)
-      (in_pos_files yes)
-      (duplicate_pin_numbers_are_jumpers no)
-      (property "Reference" "D"
-        (at 0 2.54 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Value" "D"
-        (at 0 -2.54 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Footprint" ""
-        (at 0 0 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Datasheet" ""
-        (at 0 0 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Description" "Diode"
-        (at 0 0 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Sim.Device" "D"
-        (at 0 0 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Sim.Pins" "1=K 2=A"
-        (at 0 0 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "ki_keywords" "diode"
-        (at 0 0 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-        (at 0 0 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (symbol "D_0_1"
-        (polyline
-          (pts
-            (xy -1.27 1.27)
-            (xy -1.27 -1.27))
-          (stroke
-            (width 0.254)
-            (type default))
-          (fill
-            (type none)))
-        (polyline
-          (pts
-            (xy 1.27 1.27)
-            (xy 1.27 -1.27)
-            (xy -1.27 0)
-            (xy 1.27 1.27))
-          (stroke
-            (width 0.254)
-            (type default))
-          (fill
-            (type none)))
-        (polyline
-          (pts
-            (xy 1.27 0)
-            (xy -1.27 0))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none))))
-      (symbol "D_1_1"
-        (pin passive line
-          (at -3.81 0 0)
-          (length 2.54)
-          (name "K"
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "1"
-            (effects
-              (font
-                (size 1.27 1.27)))))
-        (pin passive line
-          (at 3.81 0 180)
-          (length 2.54)
-          (name "A"
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "2"
-            (effects
-              (font
-                (size 1.27 1.27))))))
-      (embedded_fonts no))
-    (symbol "Connector:RJ45"
-      (property "Reference" "J"
-        (at -5.08 13.97 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (justify right)))
-      (property "Value" "RJ45"
-        (at 2.54 13.97 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (justify left)))
-      (property "Footprint" ""
-        (at 0 0.635 90)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Datasheet" ""
-        (at 0 0.635 90)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
-        (at 0 0 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "ki_keywords" "8P8C RJ socket connector"
-        (at 0 0 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "ki_fp_filters" "8P8C* RJ31* RJ32* RJ33* RJ34* RJ35* RJ41* RJ45* RJ49* RJ61*"
-        (at 0 0 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (embedded_fonts no)
-      (pin_names
-        (offset 1.016))
-      (exclude_from_sim no)
-      (in_bom yes)
-      (on_board yes)
-      (in_pos_files yes)
-      (duplicate_pin_numbers_are_jumpers no)
-      (symbol "RJ45_0_1"
-        (polyline
-          (pts
-            (xy -6.35 1.905)
-            (xy -5.08 1.905)
-            (xy -5.08 1.905))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none)))
-        (polyline
-          (pts
-            (xy -6.35 0.635)
-            (xy -5.08 0.635)
-            (xy -5.08 0.635))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none)))
-        (polyline
-          (pts
-            (xy -6.35 -0.635)
-            (xy -5.08 -0.635)
-            (xy -5.08 -0.635))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none)))
-        (polyline
-          (pts
-            (xy -6.35 -1.905)
-            (xy -5.08 -1.905)
-            (xy -5.08 -1.905))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none)))
-        (polyline
-          (pts
-            (xy -6.35 -3.175)
-            (xy -5.08 -3.175)
-            (xy -5.08 -3.175))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none)))
-        (polyline
-          (pts
-            (xy -6.35 -4.445)
-            (xy -6.35 6.985)
-            (xy 3.81 6.985)
-            (xy 3.81 4.445)
-            (xy 5.08 4.445)
-            (xy 5.08 3.175)
-            (xy 6.35 3.175)
-            (xy 6.35 -0.635)
-            (xy 5.08 -0.635)
-            (xy 5.08 -1.905)
-            (xy 3.81 -1.905)
-            (xy 3.81 -4.445)
-            (xy -6.35 -4.445)
-            (xy -6.35 -4.445))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none)))
-        (polyline
-          (pts
-            (xy -5.08 5.715)
-            (xy -6.35 5.715))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none)))
-        (polyline
-          (pts
-            (xy -5.08 4.445)
-            (xy -6.35 4.445))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none)))
-        (polyline
-          (pts
-            (xy -5.08 3.175)
-            (xy -6.35 3.175)
-            (xy -6.35 3.175))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none)))
-        (rectangle
-          (start 7.62 12.7)
-          (end -7.62 -10.16)
-          (stroke
-            (width 0.254)
-            (type default))
-          (fill
-            (type background))))
-      (symbol "RJ45_1_1"
-        (pin passive line
-          (at 10.16 -7.62 180)
-          (length 2.54)
-          (name ""
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "1"
-            (effects
-              (font
-                (size 1.27 1.27)))))
-        (pin passive line
-          (at 10.16 -5.08 180)
-          (length 2.54)
-          (name ""
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "2"
-            (effects
-              (font
-                (size 1.27 1.27)))))
-        (pin passive line
-          (at 10.16 -2.54 180)
-          (length 2.54)
-          (name ""
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "3"
-            (effects
-              (font
-                (size 1.27 1.27)))))
-        (pin passive line
-          (at 10.16 0 180)
-          (length 2.54)
-          (name ""
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "4"
-            (effects
-              (font
-                (size 1.27 1.27)))))
-        (pin passive line
-          (at 10.16 2.54 180)
-          (length 2.54)
-          (name ""
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "5"
-            (effects
-              (font
-                (size 1.27 1.27)))))
-        (pin passive line
-          (at 10.16 5.08 180)
-          (length 2.54)
-          (name ""
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "6"
-            (effects
-              (font
-                (size 1.27 1.27)))))
-        (pin passive line
-          (at 10.16 7.62 180)
-          (length 2.54)
-          (name ""
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "7"
-            (effects
-              (font
-                (size 1.27 1.27)))))
-        (pin passive line
-          (at 10.16 10.16 180)
-          (length 2.54)
-          (name ""
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "8"
-            (effects
-              (font
-                (size 1.27 1.27))))))))
-
-  (wire
-		(pts
-			(xy 35.56 30.48) (xy 44.449999999999996 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ba881cb-588f-40e5-b945-55562968191e")
-	)(wire
-		(pts
-			(xy 35.56 54.61) (xy 44.449999999999996 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbd46f8c-a4a6-48c1-a685-9c08e7fdc92e")
-	)(wire
-		(pts
-			(xy 35.56 80.01) (xy 44.449999999999996 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a871bde-4ff7-4f48-8434-bb0ce83c7b36")
-	)(wire
-		(pts
-			(xy 80.01 30.48) (xy 88.89999999999999 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76188142-044a-40aa-8d1d-00e0b28bfdab")
-	)(wire
-		(pts
-			(xy 80.01 54.61) (xy 88.89999999999999 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45937d13-738e-4bb1-9460-efbbc42fa7ba")
-	)(wire
-		(pts
-			(xy 80.01 80.01) (xy 88.89999999999999 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1bf80323-fd44-4474-9946-2d6a23c1e98f")
-	)(wire
-		(pts
-			(xy 124.46 30.48) (xy 134.62 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3dc1c5ae-f28a-4a37-bc67-f482f090aebd")
-	)(wire
-		(pts
-			(xy 124.46 54.61) (xy 134.62 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac4fa75a-cbf3-42e7-9a53-74101bb6cde2")
-	)(wire
-		(pts
-			(xy 124.46 80.01) (xy 134.62 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c00b5e93-0c27-4c3a-9e47-c55c229413b2")
-	)(wire
-		(pts
-			(xy 170.18 30.48) (xy 179.07 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44296a12-36b5-4727-a451-131730e52566")
-	)(wire
-		(pts
-			(xy 170.18 54.61) (xy 179.07 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31e90b5d-e406-4642-94b0-6ea8d7e7d943")
-	)(wire
-		(pts
-			(xy 170.18 80.01) (xy 179.07 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f00b2107-5996-48fb-bd57-131bfa951da5")
-	)(wire
-		(pts
-			(xy 214.63000000000002 30.48) (xy 224.79 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ac212c9-09e9-45a7-aab5-23c80ab8ac30")
-	)(wire
-		(pts
-			(xy 214.63000000000002 54.61) (xy 224.79 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d442a1dc-8bb7-4cb1-b21b-f21c94cf4365")
-	)(wire
-		(pts
-			(xy 214.63000000000002 80.01) (xy 224.79 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26796d82-ebdf-4b56-8851-b729808fd704")
-	)(symbol
-    (lib_id "Switch:SW_SPST")
-    (at 30.48 30.48 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "5f518d1c-6a26-4f92-a0e6-45f8d8145070")
-    (property "Reference" "RD0"
-      (at 30.48 26.67 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "SW_PG1350"
-      (at 30.48 34.29 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "mesa1:Kailh_socket_PG1350"
-      (at 30.48 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 30.48 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "RD0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Device:D")
-    (at 48.26 30.48 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "e154e7ee-11a1-4e63-9f98-5c730119edf7")
-    (property "Reference" "D_RD0"
-      (at 48.26 26.67 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "1N4148W"
-      (at 48.26 34.29 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Diode_SMD:D_SOD-123"
-      (at 48.26 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 48.26 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "D_RD0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Switch:SW_SPST")
-    (at 30.48 54.61 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "576b7e8e-fa96-428f-89ed-6a54d419fb6b")
-    (property "Reference" "RZ0"
-      (at 30.48 50.8 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "SW_PG1350"
-      (at 30.48 58.42 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "mesa1:Kailh_socket_PG1350"
-      (at 30.48 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 30.48 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "RZ0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Device:D")
-    (at 48.26 54.61 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "4e33399f-c1e3-47a6-beca-3ba1faa30c10")
-    (property "Reference" "D_RZ0"
-      (at 48.26 50.8 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "1N4148W"
-      (at 48.26 58.42 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Diode_SMD:D_SOD-123"
-      (at 48.26 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 48.26 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "D_RZ0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Switch:SW_SPST")
-    (at 30.48 80.01 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "60cf612c-150e-4c7a-928b-db49ed310f52")
-    (property "Reference" "RT0"
-      (at 30.48 76.2 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "SW_PG1350"
-      (at 30.48 83.82 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "mesa1:Kailh_socket_PG1350"
-      (at 30.48 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 30.48 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "RT0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Device:D")
-    (at 48.26 80.01 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "6c3998e5-2510-4c56-a142-022a4f48daf1")
-    (property "Reference" "D_RT0"
-      (at 48.26 76.2 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "1N4148W"
-      (at 48.26 83.82 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Diode_SMD:D_SOD-123"
-      (at 48.26 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 48.26 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "D_RT0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Switch:SW_SPST")
-    (at 74.93 30.48 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "b85967cd-00c2-4635-ade6-3f3c59430015")
-    (property "Reference" "TS0"
-      (at 74.93 26.67 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "SW_PG1350"
-      (at 74.93 34.29 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "mesa1:Kailh_socket_PG1350"
-      (at 74.93 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 74.93 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "TS0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Device:D")
-    (at 92.71 30.48 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "7eff9342-a86f-4346-b8ff-2c86035e625e")
-    (property "Reference" "D_TS0"
-      (at 92.71 26.67 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "1N4148W"
-      (at 92.71 34.29 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Diode_SMD:D_SOD-123"
-      (at 92.71 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 92.71 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "D_TS0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Switch:SW_SPST")
-    (at 74.93 54.61 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "fe16cf3d-6bde-4d68-a482-ac2acff2bc09")
-    (property "Reference" "RL0"
-      (at 74.93 50.8 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "SW_PG1350"
-      (at 74.93 58.42 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "mesa1:Kailh_socket_PG1350"
-      (at 74.93 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 74.93 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "RL0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Device:D")
-    (at 92.71 54.61 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "bfce0c75-e351-4098-b3b7-b84af1212ed2")
-    (property "Reference" "D_RL0"
-      (at 92.71 50.8 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "1N4148W"
-      (at 92.71 58.42 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Diode_SMD:D_SOD-123"
-      (at 92.71 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 92.71 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "D_RL0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Switch:SW_SPST")
-    (at 74.93 80.01 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "18f711bd-9f78-4b38-a8b3-ee02fd7efe5a")
-    (property "Reference" "RG0"
-      (at 74.93 76.2 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "SW_PG1350"
-      (at 74.93 83.82 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "mesa1:Kailh_socket_PG1350"
-      (at 74.93 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 74.93 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "RG0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Device:D")
-    (at 92.71 80.01 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "c8d85a61-2436-4c14-a6c7-4a868d0725b8")
-    (property "Reference" "D_RG0"
-      (at 92.71 76.2 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "1N4148W"
-      (at 92.71 83.82 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Diode_SMD:D_SOD-123"
-      (at 92.71 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 92.71 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "D_RG0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Switch:SW_SPST")
-    (at 119.38 30.48 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "4c29bfc1-abda-4820-88dd-f982b17bf06b")
-    (property "Reference" "RP0"
-      (at 119.38 26.67 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "SW_PG1350"
-      (at 119.38 34.29 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "mesa1:Kailh_socket_PG1350"
-      (at 119.38 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 119.38 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "RP0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Device:D")
-    (at 138.43 30.48 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "7505f9a3-3285-4e3f-990c-e222b7ea7296")
-    (property "Reference" "D_RP0"
-      (at 138.43 26.67 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "1N4148W"
-      (at 138.43 34.29 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Diode_SMD:D_SOD-123"
-      (at 138.43 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 138.43 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "D_RP0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Switch:SW_SPST")
-    (at 119.38 54.61 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "2e90f4cb-90c7-42f8-9cf0-807bc5000ec4")
-    (property "Reference" "RB0"
-      (at 119.38 50.8 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "SW_PG1350"
-      (at 119.38 58.42 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "mesa1:Kailh_socket_PG1350"
-      (at 119.38 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 119.38 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "RB0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Device:D")
-    (at 138.43 54.61 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "ff39a6fd-40a6-42cb-a2db-71ed81920850")
-    (property "Reference" "D_RB0"
-      (at 138.43 50.8 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "1N4148W"
-      (at 138.43 58.42 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Diode_SMD:D_SOD-123"
-      (at 138.43 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 138.43 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "D_RB0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Switch:SW_SPST")
-    (at 119.38 80.01 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "2c7ee05a-e3d7-483f-a90e-58155be25095")
-    (property "Reference" "RF0"
-      (at 119.38 76.2 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "SW_PG1350"
-      (at 119.38 83.82 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "mesa1:Kailh_socket_PG1350"
-      (at 119.38 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 119.38 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "RF0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Device:D")
-    (at 138.43 80.01 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "6069a197-6635-4fb2-be04-3fda7a2df9fe")
-    (property "Reference" "D_RF0"
-      (at 138.43 76.2 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "1N4148W"
-      (at 138.43 83.82 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Diode_SMD:D_SOD-123"
-      (at 138.43 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 138.43 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "D_RF0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Switch:SW_SPST")
-    (at 165.1 30.48 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "c96e7626-a26b-4393-b6ad-59cc010d831d")
-    (property "Reference" "RR0"
-      (at 165.1 26.67 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "SW_PG1350"
-      (at 165.1 34.29 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "mesa1:Kailh_socket_PG1350"
-      (at 165.1 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 165.1 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "RR0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Device:D")
-    (at 182.88 30.48 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "dc672f31-5b9f-484b-a73f-1c7f47a7327e")
-    (property "Reference" "D_RR0"
-      (at 182.88 26.67 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "1N4148W"
-      (at 182.88 34.29 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Diode_SMD:D_SOD-123"
-      (at 182.88 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 182.88 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "D_RR0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Switch:SW_SPST")
-    (at 165.1 54.61 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "782143d4-26eb-4388-aefa-49d13855b589")
-    (property "Reference" "RS3"
-      (at 165.1 50.8 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "SW_PG1350"
-      (at 165.1 58.42 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "mesa1:Kailh_socket_PG1350"
-      (at 165.1 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 165.1 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "RS3")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Device:D")
-    (at 182.88 54.61 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "dc9f01a4-0bc2-4f92-b2b0-a3609b7550db")
-    (property "Reference" "D_RS3"
-      (at 182.88 50.8 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "1N4148W"
-      (at 182.88 58.42 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Diode_SMD:D_SOD-123"
-      (at 182.88 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 182.88 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "D_RS3")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Switch:SW_SPST")
-    (at 165.1 80.01 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "821136cf-da7c-4a09-82a6-075c8ec3fc9f")
-    (property "Reference" "RS4"
-      (at 165.1 76.2 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "SW_PG1350"
-      (at 165.1 83.82 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "mesa1:Kailh_socket_PG1350"
-      (at 165.1 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 165.1 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "RS4")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Device:D")
-    (at 182.88 80.01 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "d9488b30-7ce0-427e-8a49-7b9d6e162e02")
-    (property "Reference" "D_RS4"
-      (at 182.88 76.2 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "1N4148W"
-      (at 182.88 83.82 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Diode_SMD:D_SOD-123"
-      (at 182.88 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 182.88 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "D_RS4")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Switch:SW_SPST")
-    (at 209.55 30.48 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "2b3ab174-5151-4465-916a-4ef1c4b879d8")
-    (property "Reference" "RNUM0"
-      (at 209.55 26.67 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "SW_PG1350"
-      (at 209.55 34.29 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "mesa1:Kailh_socket_PG1350"
-      (at 209.55 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 209.55 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "RNUM0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Device:D")
-    (at 228.6 30.48 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "f2af0cdb-c0fb-466a-9a2a-206712dbf291")
-    (property "Reference" "D_RNUM0"
-      (at 228.6 26.67 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "1N4148W"
-      (at 228.6 34.29 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Diode_SMD:D_SOD-123"
-      (at 228.6 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 228.6 30.48 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "D_RNUM0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Switch:SW_SPST")
-    (at 209.55 54.61 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "469d6389-7ee8-4ff4-9f9e-3ce729329423")
-    (property "Reference" "RU0"
-      (at 209.55 50.8 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "SW_PG1350"
-      (at 209.55 58.42 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "mesa1:Kailh_socket_PG1350"
-      (at 209.55 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 209.55 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "RU0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Device:D")
-    (at 228.6 54.61 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "9d664d84-a480-4b73-95b5-b83602b4499d")
-    (property "Reference" "D_RU0"
-      (at 228.6 50.8 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "1N4148W"
-      (at 228.6 58.42 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Diode_SMD:D_SOD-123"
-      (at 228.6 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 228.6 54.61 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "D_RU0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Switch:SW_SPST")
-    (at 209.55 80.01 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "88bcab3a-347f-4914-9086-4bb99d1cd027")
-    (property "Reference" "RE0"
-      (at 209.55 76.2 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "SW_PG1350"
-      (at 209.55 83.82 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "mesa1:Kailh_socket_PG1350"
-      (at 209.55 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 209.55 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "RE0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Device:D")
-    (at 228.6 80.01 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "75a83fbd-f86c-4584-9f0b-bbdc0c4f7c00")
-    (property "Reference" "D_RE0"
-      (at 228.6 76.2 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "1N4148W"
-      (at 228.6 83.82 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Diode_SMD:D_SOD-123"
-      (at 228.6 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 228.6 80.01 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "D_RE0")
-          (unit 1)))))
-
-  (symbol
-    (lib_id "Connector:RJ45")
-    (at 119.38 129.54 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "44cdebdc-4d45-4ad9-8ad6-75435093d97b")
-    (property "Reference" "J1"
-      (at 119.38 125.73 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "RJ45"
-      (at 119.38 133.35 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal"
-      (at 119.38 129.54 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 119.38 129.54 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (instances
-      (project "mesa1-right"
-        (path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
-          (reference "J1")
-          (unit 1)))))
-(wire
-		(pts
-			(xy 25.4 30.48) (xy 22.86 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96320a67-3683-4943-99a7-e65fb28cdd2a")
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "f569e8ed-7cec-4a9b-af5c-e96bce1a25b6")
+	(paper "USLetter")
+	(title_block
+		(title "mesa1-right")
+		(rev "A")
 	)
-  (label "COL_A"
-    (at 22.86 30.48 180)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid "4e9a2328-08c2-473f-80d1-f72dc863d4db")
-  )(wire
-		(pts
-			(xy 25.4 54.61) (xy 22.86 54.61)
+	(lib_symbols
+		(symbol "Connector:RJ45"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at -5.08 13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "RJ45"
+				(at 2.54 13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0.635 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0.635 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "8P8C RJ socket connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "8P8C* RJ31* RJ32* RJ33* RJ34* RJ35* RJ41* RJ45* RJ49* RJ61*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "RJ45_0_1"
+				(polyline
+					(pts
+						(xy -6.35 1.905) (xy -5.08 1.905) (xy -5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 0.635) (xy -5.08 0.635) (xy -5.08 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -0.635) (xy -5.08 -0.635) (xy -5.08 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -1.905) (xy -5.08 -1.905) (xy -5.08 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -3.175) (xy -5.08 -3.175) (xy -5.08 -3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -4.445) (xy -6.35 6.985) (xy 3.81 6.985) (xy 3.81 4.445) (xy 5.08 4.445) (xy 5.08 3.175)
+						(xy 6.35 3.175) (xy 6.35 -0.635) (xy 5.08 -0.635) (xy 5.08 -1.905) (xy 3.81 -1.905) (xy 3.81 -4.445)
+						(xy -6.35 -4.445) (xy -6.35 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 5.715) (xy -6.35 5.715)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 4.445) (xy -6.35 4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 3.175) (xy -6.35 3.175) (xy -6.35 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 7.62 12.7)
+					(end -7.62 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "RJ45_1_1"
+				(pin passive line
+					(at 10.16 -7.62 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 10.16 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(symbol "Device:D"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
 		)
-		(uuid "a1e3fe5f-b03d-47ac-91eb-c060bda800e4")
+		(symbol "Switch:SW_SPST"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPST"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_SPST_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
-  (label "COL_A"
-    (at 22.86 54.61 180)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid "26a9ffdf-e7eb-4e19-8711-0521b7fa437f")
-  )(wire
-		(pts
-			(xy 25.4 80.01) (xy 22.86 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42ade2ab-5c94-4c91-b3e6-c2de1263f707")
-	)
-  (label "COL_A"
-    (at 22.86 80.01 180)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid "ea2a0707-7aec-405c-8e7f-bb93e0a84762")
-  )(wire
-		(pts
-			(xy 69.85 30.48) (xy 67.30999999999999 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7335925e-8c7d-4497-89b1-fba1b1266856")
-	)
-  (label "COL_B"
-    (at 67.30999999999999 30.48 180)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid "a73a1425-e101-4337-84bd-01b180648d4d")
-  )(wire
-		(pts
-			(xy 69.85 54.61) (xy 67.30999999999999 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "697715e3-301b-44a7-a47f-ab45543ddbf0")
-	)
-  (label "COL_B"
-    (at 67.30999999999999 54.61 180)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid "cdaaf220-6888-4597-b279-9b908bcf18e5")
-  )(wire
-		(pts
-			(xy 69.85 80.01) (xy 67.30999999999999 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12f8376f-7e0d-4067-9709-e6582a997074")
-	)
-  (label "COL_B"
-    (at 67.30999999999999 80.01 180)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid "b57c0b5c-c2be-4728-93a5-4d1d95a7a043")
-  )(wire
-		(pts
-			(xy 114.3 30.48) (xy 111.75999999999999 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8461d44-cd84-4ac2-836a-293f43ff45af")
-	)
-  (label "COL_C"
-    (at 111.75999999999999 30.48 180)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid "bad36768-188a-4c96-be6c-3eedadb2cd56")
-  )(wire
-		(pts
-			(xy 114.3 54.61) (xy 111.75999999999999 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0888151f-fecc-4e38-86da-e2bb4df9a0de")
-	)
-  (label "COL_C"
-    (at 111.75999999999999 54.61 180)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid "776d483a-0bf3-4112-b312-e868b165af8b")
-  )(wire
-		(pts
-			(xy 114.3 80.01) (xy 111.75999999999999 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1f54b0e-0a62-43da-af2a-e0396e1571fd")
-	)
-  (label "COL_C"
-    (at 111.75999999999999 80.01 180)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid "b0577546-eef7-450e-9a3b-81352b137632")
-  )(wire
-		(pts
-			(xy 160.02 30.48) (xy 157.48000000000002 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c47c795-2f9a-402d-934d-a951e5493ec4")
-	)
-  (label "COL_D"
-    (at 157.48000000000002 30.48 180)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid "ee7ca9a1-0b82-45dc-9ad1-6882d47055e4")
-  )(wire
-		(pts
-			(xy 160.02 54.61) (xy 157.48000000000002 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d765dae3-72ca-4b61-acbb-e005e7a54af9")
-	)
-  (label "COL_D"
-    (at 157.48000000000002 54.61 180)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid "769f294e-da7a-4cb4-b806-d4403057574c")
-  )(wire
-		(pts
-			(xy 160.02 80.01) (xy 157.48000000000002 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f01d9373-165c-4da4-aa33-e4a49d495bf2")
-	)
-  (label "COL_D"
-    (at 157.48000000000002 80.01 180)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid "c3aaf92c-21a7-4449-be3f-2196b92adb37")
-  )(wire
-		(pts
-			(xy 204.47 30.48) (xy 201.93 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43bca21b-b150-4961-bbcf-8b46e5df4351")
-	)
-  (label "COL_E"
-    (at 201.93 30.48 180)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid "b4d5d42d-5f98-44ae-a452-af84a4edf9c8")
-  )(wire
-		(pts
-			(xy 204.47 54.61) (xy 201.93 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6b284c8-2def-48d4-ab16-595c1c966660")
-	)
-  (label "COL_E"
-    (at 201.93 54.61 180)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid "d4235fd1-9b1e-426f-85f1-c6ac7e8e02c2")
-  )(wire
-		(pts
-			(xy 204.47 80.01) (xy 201.93 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0d8fcf5-8f68-4559-a5ff-029322e050c6")
-	)
-  (label "COL_E"
-    (at 201.93 80.01 180)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid "25da4b75-fd88-4a60-a63d-8657e7a45794")
-  )(wire
-		(pts
-			(xy 52.07 30.48) (xy 54.61 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b2f4b90-1a6c-41a8-80a7-f05e562c26f4")
-	)
-  (label "ROW_4"
-    (at 54.61 30.48 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "e6cf0830-b06d-4150-b048-c22a3c8238a6")
-  )(wire
-		(pts
-			(xy 96.52 30.48) (xy 99.06 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f020d8d-2408-4e36-8ffd-e6e7f509ccb3")
-	)
-  (label "ROW_4"
-    (at 99.06 30.48 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "082bd624-8369-4cc1-9e0d-7e1327d43cd1")
-  )(wire
-		(pts
-			(xy 142.24 30.48) (xy 144.78 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "def94a28-bab6-4e26-8f95-431336f80379")
-	)
-  (label "ROW_4"
-    (at 144.78 30.48 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "32d38175-731f-4902-95e7-2ab2e4e04bba")
-  )(wire
-		(pts
-			(xy 186.69 30.48) (xy 189.23 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5379a3a-b908-462f-8293-d25fc835d377")
-	)
-  (label "ROW_4"
-    (at 189.23 30.48 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "cb326a63-e083-4305-b2ce-f2e08c5cb2b9")
-  )(wire
-		(pts
-			(xy 232.41 30.48) (xy 234.95 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40b50c23-5b4d-4956-9d8b-da8b700a9e21")
-	)
-  (label "ROW_4"
-    (at 234.95 30.48 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "42722863-ba96-4a11-ab59-1823d6de3e12")
-  )(wire
-		(pts
-			(xy 52.07 54.61) (xy 54.61 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1bee310-9149-42b1-b582-38d3e188598b")
-	)
-  (label "ROW_5"
-    (at 54.61 54.61 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "b3a9d0c0-6228-4a7b-a1cb-d35c7066bda2")
-  )(wire
-		(pts
-			(xy 96.52 54.61) (xy 99.06 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "074dfe6b-90a0-4b14-9397-59e377266059")
-	)
-  (label "ROW_5"
-    (at 99.06 54.61 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "23c8cc2b-01a7-4b9f-9e29-27e489adfa7b")
-  )(wire
-		(pts
-			(xy 142.24 54.61) (xy 144.78 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b13e3ea2-2a47-4b3d-a968-502220a4df1c")
-	)
-  (label "ROW_5"
-    (at 144.78 54.61 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "44cee7c9-e986-4af0-ad28-a36fcd515014")
-  )(wire
-		(pts
-			(xy 186.69 54.61) (xy 189.23 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e39cfb5-4c8f-4e3f-9e10-2848ff8e91f4")
-	)
-  (label "ROW_5"
-    (at 189.23 54.61 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "26278d39-70f2-4f14-a72c-abfcfa4b627e")
-  )(wire
-		(pts
-			(xy 232.41 54.61) (xy 234.95 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca19d1a7-fa76-432c-acd0-acd4d8cccc3a")
-	)
-  (label "ROW_5"
-    (at 234.95 54.61 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "809d8ef9-0061-454e-beab-bd58a3833667")
-  )(wire
-		(pts
-			(xy 52.07 80.01) (xy 54.61 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61262970-90c9-4145-b535-417d65248c57")
-	)
-  (label "ROW_6"
-    (at 54.61 80.01 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "c4cd00fd-53b2-4fa6-ac77-40d267b34fa0")
-  )(wire
+	(wire
 		(pts
 			(xy 96.52 80.01) (xy 99.06 80.01)
 		)
@@ -2159,29 +715,29 @@
 		)
 		(uuid "03ffa11c-745e-4237-8651-01ef53a6c3cf")
 	)
-  (label "ROW_6"
-    (at 99.06 80.01 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "4efbd820-ca3f-415a-8bfe-7edca7e2a345")
-  )(wire
+	(wire
 		(pts
-			(xy 142.24 80.01) (xy 144.78 80.01)
+			(xy 96.52 54.61) (xy 99.06 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "804e08de-539c-4ac6-a960-4cbfd1599f0f")
+		(uuid "074dfe6b-90a0-4b14-9397-59e377266059")
 	)
-  (label "ROW_6"
-    (at 144.78 80.01 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "9eced044-2fcb-4338-a4c6-981cc567fa13")
-  )(wire
+	(wire
 		(pts
-			(xy 186.69 80.01) (xy 189.23 80.01)
+			(xy 114.3 54.61) (xy 111.76 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0888151f-fecc-4e38-86da-e2bb4df9a0de")
+	)
+	(wire
+		(pts
+			(xy 200.66 80.01) (xy 203.2 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2189,14 +745,229 @@
 		)
 		(uuid "11f7b33b-b182-4e46-a231-42ac7670ef80")
 	)
-  (label "ROW_6"
-    (at 189.23 80.01 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "62580ea3-11d4-4e9f-9e5e-779c5f213a8a")
-  )(wire
+	(wire
 		(pts
-			(xy 232.41 80.01) (xy 234.95 80.01)
+			(xy 69.85 80.01) (xy 67.31 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12f8376f-7e0d-4067-9709-e6582a997074")
+	)
+	(wire
+		(pts
+			(xy 80.01 80.01) (xy 88.9 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bf80323-fd44-4474-9946-2d6a23c1e98f")
+	)
+	(wire
+		(pts
+			(xy 173.99 30.48) (xy 171.45 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c47c795-2f9a-402d-934d-a951e5493ec4")
+	)
+	(wire
+		(pts
+			(xy 236.22 80.01) (xy 246.38 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26796d82-ebdf-4b56-8851-b729808fd704")
+	)
+	(wire
+		(pts
+			(xy 184.15 54.61) (xy 193.04 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31e90b5d-e406-4642-94b0-6ea8d7e7d943")
+	)
+	(wire
+		(pts
+			(xy 124.46 30.48) (xy 134.62 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dc1c5ae-f28a-4a37-bc67-f482f090aebd")
+	)
+	(wire
+		(pts
+			(xy 200.66 54.61) (xy 203.2 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e39cfb5-4c8f-4e3f-9e10-2848ff8e91f4")
+	)
+	(wire
+		(pts
+			(xy 254 30.48) (xy 256.54 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40b50c23-5b4d-4956-9d8b-da8b700a9e21")
+	)
+	(wire
+		(pts
+			(xy 25.4 80.01) (xy 22.86 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42ade2ab-5c94-4c91-b3e6-c2de1263f707")
+	)
+	(wire
+		(pts
+			(xy 226.06 30.48) (xy 223.52 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43bca21b-b150-4961-bbcf-8b46e5df4351")
+	)
+	(wire
+		(pts
+			(xy 184.15 30.48) (xy 193.04 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44296a12-36b5-4727-a451-131730e52566")
+	)
+	(wire
+		(pts
+			(xy 80.01 54.61) (xy 88.9 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45937d13-738e-4bb1-9460-efbbc42fa7ba")
+	)
+	(wire
+		(pts
+			(xy 52.07 30.48) (xy 54.61 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b2f4b90-1a6c-41a8-80a7-f05e562c26f4")
+	)
+	(wire
+		(pts
+			(xy 35.56 80.01) (xy 44.45 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a871bde-4ff7-4f48-8434-bb0ce83c7b36")
+	)
+	(wire
+		(pts
+			(xy 52.07 80.01) (xy 54.61 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61262970-90c9-4145-b535-417d65248c57")
+	)
+	(wire
+		(pts
+			(xy 69.85 54.61) (xy 67.31 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "697715e3-301b-44a7-a47f-ab45543ddbf0")
+	)
+	(wire
+		(pts
+			(xy 236.22 30.48) (xy 246.38 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ac212c9-09e9-45a7-aab5-23c80ab8ac30")
+	)
+	(wire
+		(pts
+			(xy 69.85 30.48) (xy 67.31 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7335925e-8c7d-4497-89b1-fba1b1266856")
+	)
+	(wire
+		(pts
+			(xy 80.01 30.48) (xy 88.9 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76188142-044a-40aa-8d1d-00e0b28bfdab")
+	)
+	(wire
+		(pts
+			(xy 142.24 80.01) (xy 152.4 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "804e08de-539c-4ac6-a960-4cbfd1599f0f")
+	)
+	(wire
+		(pts
+			(xy 35.56 30.48) (xy 44.45 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ba881cb-588f-40e5-b945-55562968191e")
+	)
+	(wire
+		(pts
+			(xy 96.52 30.48) (xy 99.06 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f020d8d-2408-4e36-8ffd-e6e7f509ccb3")
+	)
+	(wire
+		(pts
+			(xy 254 80.01) (xy 256.54 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2204,57 +975,3006 @@
 		)
 		(uuid "910b9062-6c01-4488-ad11-88bb293f5c39")
 	)
-  (label "ROW_6"
-    (at 234.95 80.01 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "39fd4c7e-ea46-497f-af95-e4be95a346a8")
-  )
-  (label "ROW_4"
-    (at 129.54 137.16 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "d260a291-1ac7-4044-84a5-4de6eeff133b")
-  )
-  (label "ROW_5"
-    (at 129.54 134.62 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "f284fdd8-e8c5-4ae2-b8ba-924427e66a2e")
-  )
-  (label "ROW_6"
-    (at 129.54 132.07999999999998 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "d8f07244-4008-400a-aa3f-a6a1b79e4d05")
-  )
-  (label "COL_A"
-    (at 129.54 129.54 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "55845076-4d3f-4d19-932a-f11b7099e18a")
-  )
-  (label "COL_B"
-    (at 129.54 126.99999999999999 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "92785368-00a3-458a-a1a2-8d540da2c03c")
-  )
-  (label "COL_C"
-    (at 129.54 124.46 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "d6d3708a-ee49-4cd1-9827-857a60a5b93f")
-  )
-  (label "COL_D"
-    (at 129.54 121.91999999999999 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "0ddc6a1e-fe5c-421a-8090-9e96a4f00aee")
-  )
-  (label "COL_E"
-    (at 129.54 119.38 0)
-    (fields_autoplaced yes)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "dd9032e4-3639-450a-8359-e010667404a3")
-  ))
+	(wire
+		(pts
+			(xy 25.4 30.48) (xy 22.86 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96320a67-3683-4943-99a7-e65fb28cdd2a")
+	)
+	(wire
+		(pts
+			(xy 25.4 54.61) (xy 22.86 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1e3fe5f-b03d-47ac-91eb-c060bda800e4")
+	)
+	(wire
+		(pts
+			(xy 226.06 54.61) (xy 223.52 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6b284c8-2def-48d4-ab16-595c1c966660")
+	)
+	(wire
+		(pts
+			(xy 124.46 54.61) (xy 134.62 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac4fa75a-cbf3-42e7-9a53-74101bb6cde2")
+	)
+	(wire
+		(pts
+			(xy 142.24 54.61) (xy 152.4 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b13e3ea2-2a47-4b3d-a968-502220a4df1c")
+	)
+	(wire
+		(pts
+			(xy 114.3 30.48) (xy 111.76 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8461d44-cd84-4ac2-836a-293f43ff45af")
+	)
+	(wire
+		(pts
+			(xy 124.46 80.01) (xy 134.62 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c00b5e93-0c27-4c3a-9e47-c55c229413b2")
+	)
+	(wire
+		(pts
+			(xy 52.07 54.61) (xy 54.61 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1bee310-9149-42b1-b582-38d3e188598b")
+	)
+	(wire
+		(pts
+			(xy 254 54.61) (xy 256.54 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca19d1a7-fa76-432c-acd0-acd4d8cccc3a")
+	)
+	(wire
+		(pts
+			(xy 236.22 54.61) (xy 246.38 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d442a1dc-8bb7-4cb1-b21b-f21c94cf4365")
+	)
+	(wire
+		(pts
+			(xy 173.99 54.61) (xy 171.45 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d765dae3-72ca-4b61-acbb-e005e7a54af9")
+	)
+	(wire
+		(pts
+			(xy 35.56 54.61) (xy 44.45 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbd46f8c-a4a6-48c1-a685-9c08e7fdc92e")
+	)
+	(wire
+		(pts
+			(xy 142.24 30.48) (xy 152.4 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "def94a28-bab6-4e26-8f95-431336f80379")
+	)
+	(wire
+		(pts
+			(xy 226.06 80.01) (xy 223.52 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0d8fcf5-8f68-4559-a5ff-029322e050c6")
+	)
+	(wire
+		(pts
+			(xy 114.3 80.01) (xy 111.76 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1f54b0e-0a62-43da-af2a-e0396e1571fd")
+	)
+	(wire
+		(pts
+			(xy 184.15 80.01) (xy 193.04 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f00b2107-5996-48fb-bd57-131bfa951da5")
+	)
+	(wire
+		(pts
+			(xy 173.99 80.01) (xy 171.45 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f01d9373-165c-4da4-aa33-e4a49d495bf2")
+	)
+	(wire
+		(pts
+			(xy 200.66 30.48) (xy 203.2 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5379a3a-b908-462f-8293-d25fc835d377")
+	)
+	(label "COL_5"
+		(at 171.45 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0290704f-905f-46b5-86df-4b46a53e5130")
+	)
+	(label "COL_6"
+		(at 171.45 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0750f638-2f0f-4135-8a18-0634bfaec0c4")
+	)
+	(label "COL_6"
+		(at 223.52 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0e0e2bd7-0230-4dc1-882a-9de19c30044b")
+	)
+	(label "COL_4"
+		(at 22.86 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0e944223-3f0e-4d90-baa4-3699ace0493a")
+	)
+	(label "ROW_B"
+		(at 203.2 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "10c002bd-31c7-4768-a343-a1f1119bf0a9")
+	)
+	(label "COL_4"
+		(at 22.86 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "13d4821b-ae13-45f4-b0b0-919a87d854bf")
+	)
+	(label "ROW_D"
+		(at 203.2 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b1ae533-8810-407e-b700-36f06fa2bb89")
+	)
+	(label "ROW_D"
+		(at 129.54 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ec96382-ed1b-4381-a70d-3a92c1d98523")
+	)
+	(label "COL_5"
+		(at 111.76 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "22d2b306-49d4-4a3b-a490-a26fe1315921")
+	)
+	(label "COL_5"
+		(at 223.52 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2602a4d6-055d-4d4e-8bbc-eb21d92c5bbf")
+	)
+	(label "ROW_A"
+		(at 129.54 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3afe4941-116a-4725-869c-d584fa7cf35c")
+	)
+	(label "COL_4"
+		(at 223.52 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "406b689d-fc13-49f4-83df-a1489991999d")
+	)
+	(label "ROW_C"
+		(at 129.54 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "43fb8b5f-bf79-4f3b-a997-6120a13d2feb")
+	)
+	(label "COL_6"
+		(at 67.31 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "44cc6915-46db-4c6e-b84f-6e30c77444f6")
+	)
+	(label "ROW_B"
+		(at 152.4 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "48a1918f-42d9-4d87-8f6c-c00f5e7b7b90")
+	)
+	(label "COL_5"
+		(at 67.31 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "59c5abf6-8b37-4c0d-aadd-a1cf59adb0a8")
+	)
+	(label "COL_4"
+		(at 111.76 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "63e9fc67-2dbc-4443-833a-610b7361af54")
+	)
+	(label "ROW_A"
+		(at 54.61 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7f69a489-e7da-4c55-963e-ee0b14d31f11")
+	)
+	(label "ROW_D"
+		(at 152.4 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "96abcb85-b58f-4959-a273-44e2b2e36ffe")
+	)
+	(label "COL_5"
+		(at 22.86 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "99fb5576-6c7c-4765-a697-d6a3f79a7aa2")
+	)
+	(label "ROW_D"
+		(at 203.2 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9a6f6dd5-590f-48a3-8b94-e483e36bcd76")
+	)
+	(label "ROW_A"
+		(at 54.61 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a40e7a9e-287c-444f-9a40-b623677a9f27")
+	)
+	(label "COL_4"
+		(at 111.76 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a7018b1f-5e9b-4259-a1e1-304c8781ae3f")
+	)
+	(label "ROW_B"
+		(at 129.54 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a919b226-5cf0-4864-9bed-e2edd04de3ff")
+	)
+	(label "COL_6"
+		(at 129.54 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ab74f13c-eebc-44ee-8a75-f61568afb539")
+	)
+	(label "COL_6"
+		(at 171.45 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "abecb14f-e8c4-4466-b0b3-f720fa79f87f")
+	)
+	(label "COL_4"
+		(at 129.54 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b2dd405e-c7b4-4318-b8e6-b5202b97822a")
+	)
+	(label "ROW_E"
+		(at 256.54 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bb3774cc-4309-4c2a-993a-d3977e9de176")
+	)
+	(label "ROW_C"
+		(at 54.61 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "be19d103-3ddc-443d-9910-24667b7a5629")
+	)
+	(label "COL_5"
+		(at 129.54 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c6267f6a-451b-4dd2-8d76-be89867196a5")
+	)
+	(label "ROW_C"
+		(at 99.06 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c7298521-38b0-41b4-994f-a0dae379cae8")
+	)
+	(label "ROW_A"
+		(at 99.06 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c76fcfbe-3aeb-4446-9e58-10046a453c03")
+	)
+	(label "COL_6"
+		(at 67.31 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c9d2128e-b9cf-40ad-892e-3e9fdb2c7056")
+	)
+	(label "ROW_E"
+		(at 256.54 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cd690cc7-571e-4aec-a0ce-24a0f1217d5a")
+	)
+	(label "ROW_E"
+		(at 256.54 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d0d5504a-0727-45aa-9775-02b35d4cdda0")
+	)
+	(label "ROW_C"
+		(at 99.06 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ef4c4efa-dd5c-47ea-8a79-d7398b8b5cb6")
+	)
+	(label "ROW_B"
+		(at 152.4 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f280704a-7e4a-4e02-af5b-013d35dcdada")
+	)
+	(label "ROW_E"
+		(at 129.54 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fbdfe71a-2ebd-496c-989e-f655c57e5262")
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 74.93 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "18f711bd-9f78-4b38-a8b3-ee02fd7efe5a")
+		(property "Reference" "RG0"
+			(at 74.93 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PG1350"
+			(at 74.93 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mesa1:Kailh_socket_PG1350"
+			(at 74.93 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "09b6b26f-d06e-40b7-ba52-28f04fc07b44")
+		)
+		(pin "1"
+			(uuid "388dc254-6e49-41d8-a341-10ea799b01e8")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "RG0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 231.14 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2b3ab174-5151-4465-916a-4ef1c4b879d8")
+		(property "Reference" "RNUM0"
+			(at 231.14 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PG1350"
+			(at 231.14 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mesa1:Kailh_socket_PG1350"
+			(at 231.14 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 231.14 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "42102f96-bcd8-4593-939e-e5540d7ca6bd")
+		)
+		(pin "1"
+			(uuid "389d39b9-db9f-42bc-a32c-c152a306a6ae")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "RNUM0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 119.38 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2c7ee05a-e3d7-483f-a90e-58155be25095")
+		(property "Reference" "RF0"
+			(at 119.38 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PG1350"
+			(at 119.38 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mesa1:Kailh_socket_PG1350"
+			(at 119.38 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7aa3a4cb-56cc-43dd-a651-c87bb9791553")
+		)
+		(pin "1"
+			(uuid "ea31fe12-5e07-40de-b650-6d246a123fb4")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "RF0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 119.38 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2e90f4cb-90c7-42f8-9cf0-807bc5000ec4")
+		(property "Reference" "RB0"
+			(at 119.38 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PG1350"
+			(at 119.38 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mesa1:Kailh_socket_PG1350"
+			(at 119.38 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cfa95f69-604c-4c8f-8436-42d10e0b9940")
+		)
+		(pin "2"
+			(uuid "5eabd773-2bd4-4083-a016-1dec60fea6c9")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "RB0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:RJ45")
+		(at 119.38 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "44cdebdc-4d45-4ad9-8ad6-75435093d97b")
+		(property "Reference" "J1"
+			(at 119.38 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RJ45"
+			(at 119.38 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal"
+			(at 119.38 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 129.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "8"
+			(uuid "7d106993-3477-4de3-b739-5430398688e3")
+		)
+		(pin "2"
+			(uuid "5fc5e1c5-a686-4aee-abbc-3c19789f632d")
+		)
+		(pin "3"
+			(uuid "d26a7cea-ad8e-4a30-8665-858610b8ee99")
+		)
+		(pin "6"
+			(uuid "a11ac61f-2578-4e30-b6a5-a44dd4b4ec9e")
+		)
+		(pin "5"
+			(uuid "4fb92dd8-9c9a-4533-bce5-2cbced2b7252")
+		)
+		(pin "1"
+			(uuid "e891ea95-0aaa-48cf-942e-8fe01b4ee546")
+		)
+		(pin "7"
+			(uuid "52900d45-70ad-4bfe-b06b-fb2b35ffe8e2")
+		)
+		(pin "4"
+			(uuid "0854f743-07e0-4326-a3c8-b0da12b9a8d4")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 231.14 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "469d6389-7ee8-4ff4-9f9e-3ce729329423")
+		(property "Reference" "RU0"
+			(at 231.14 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PG1350"
+			(at 231.14 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mesa1:Kailh_socket_PG1350"
+			(at 231.14 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 231.14 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "892a6437-f89d-40ef-a0c6-f1ec1b1301e5")
+		)
+		(pin "2"
+			(uuid "7a1bdf74-bfc6-406f-9ced-5b43e595d2c1")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "RU0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 119.38 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4c29bfc1-abda-4820-88dd-f982b17bf06b")
+		(property "Reference" "RP0"
+			(at 119.38 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PG1350"
+			(at 119.38 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mesa1:Kailh_socket_PG1350"
+			(at 119.38 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4154fe46-e62e-4736-820d-7d2bbd389e1d")
+		)
+		(pin "1"
+			(uuid "643fbda2-6be1-47c8-ae3f-bbc113f00ec2")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "RP0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 48.26 54.61 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4e33399f-c1e3-47a6-beca-3ba1faa30c10")
+		(property "Reference" "D_RZ0"
+			(at 48.26 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 48.26 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 48.26 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "26220eba-9372-487f-8415-6c7fe143b4e1")
+		)
+		(pin "2"
+			(uuid "bb1ebfd7-c307-479a-8d04-3ffd067c37d8")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "D_RZ0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 30.48 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "576b7e8e-fa96-428f-89ed-6a54d419fb6b")
+		(property "Reference" "RZ0"
+			(at 30.48 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PG1350"
+			(at 30.48 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mesa1:Kailh_socket_PG1350"
+			(at 30.48 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d6a95230-8164-4902-9875-175d6f8d3b6f")
+		)
+		(pin "2"
+			(uuid "292fc60f-e437-4da8-b098-96b3e881899c")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "RZ0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 30.48 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5f518d1c-6a26-4f92-a0e6-45f8d8145070")
+		(property "Reference" "RD0"
+			(at 30.48 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PG1350"
+			(at 30.48 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mesa1:Kailh_socket_PG1350"
+			(at 30.48 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c0ee153e-cce3-42ca-93e7-fc913c70be53")
+		)
+		(pin "1"
+			(uuid "851565f9-9a59-4ce2-99ee-1ce8d39d93a3")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "RD0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 138.43 80.01 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6069a197-6635-4fb2-be04-3fda7a2df9fe")
+		(property "Reference" "D_RF0"
+			(at 138.43 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 138.43 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 138.43 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "831642db-8d40-4505-9ed6-094ad4344dce")
+		)
+		(pin "1"
+			(uuid "0cba5dd6-8326-4487-933a-52fbc08454f7")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "D_RF0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 30.48 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "60cf612c-150e-4c7a-928b-db49ed310f52")
+		(property "Reference" "RT0"
+			(at 30.48 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PG1350"
+			(at 30.48 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mesa1:Kailh_socket_PG1350"
+			(at 30.48 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6eececac-b3dc-48d9-af6b-ae92c898fd67")
+		)
+		(pin "2"
+			(uuid "2ca7e262-0431-4cab-aa74-e983f0fe38d4")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "RT0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 48.26 80.01 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6c3998e5-2510-4c56-a142-022a4f48daf1")
+		(property "Reference" "D_RT0"
+			(at 48.26 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 48.26 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 48.26 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "522917a7-2814-4bef-9783-1ccbd66bdfe5")
+		)
+		(pin "1"
+			(uuid "14286718-9260-43fd-b275-0246546daeeb")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "D_RT0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 138.43 30.48 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7505f9a3-3285-4e3f-990c-e222b7ea7296")
+		(property "Reference" "D_RP0"
+			(at 138.43 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 138.43 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 138.43 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b1cf3306-d072-415f-ab45-48ed9ce9d530")
+		)
+		(pin "2"
+			(uuid "4245c66b-6338-4f20-a5a5-b33ae9a54223")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "D_RP0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 250.19 80.01 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "75a83fbd-f86c-4584-9f0b-bbdc0c4f7c00")
+		(property "Reference" "D_RE0"
+			(at 250.19 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 250.19 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 250.19 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 250.19 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "19bdcb81-cec0-47c5-bdb7-cb2e90e53ade")
+		)
+		(pin "2"
+			(uuid "da108cd9-02f9-469e-a324-a4223d293434")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "D_RE0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 179.07 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "782143d4-26eb-4388-aefa-49d13855b589")
+		(property "Reference" "RS3"
+			(at 179.07 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PG1350"
+			(at 179.07 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mesa1:Kailh_socket_PG1350"
+			(at 179.07 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 179.07 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d830ecc6-3035-4135-a78a-0091ba197a15")
+		)
+		(pin "1"
+			(uuid "525ad5a5-3697-4d7d-b45b-697ed29fb605")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "RS3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 92.71 30.48 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7eff9342-a86f-4346-b8ff-2c86035e625e")
+		(property "Reference" "D_TS0"
+			(at 92.71 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 92.71 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 92.71 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 92.71 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c4e24279-7f19-4c65-9355-ea999b732ec6")
+		)
+		(pin "2"
+			(uuid "152eff3f-ad37-4526-9396-71e20510621f")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "D_TS0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 179.07 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "821136cf-da7c-4a09-82a6-075c8ec3fc9f")
+		(property "Reference" "RS4"
+			(at 179.07 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PG1350"
+			(at 179.07 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mesa1:Kailh_socket_PG1350"
+			(at 179.07 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 179.07 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87e19ec1-202a-4d7e-87e9-2856db46fea5")
+		)
+		(pin "2"
+			(uuid "92488864-0dcc-4b68-a5fa-86a27a03c1ce")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "RS4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 231.14 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "88bcab3a-347f-4914-9086-4bb99d1cd027")
+		(property "Reference" "RE0"
+			(at 231.14 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PG1350"
+			(at 231.14 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mesa1:Kailh_socket_PG1350"
+			(at 231.14 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 231.14 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3cb80642-f601-42dc-82fa-6bde5acc6e4a")
+		)
+		(pin "1"
+			(uuid "8a737805-f24c-4af0-ac80-8b462f4a8990")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "RE0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 250.19 54.61 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9d664d84-a480-4b73-95b5-b83602b4499d")
+		(property "Reference" "D_RU0"
+			(at 250.19 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 250.19 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 250.19 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 250.19 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "208d1d05-eeab-4eae-b834-b2587887d2d5")
+		)
+		(pin "2"
+			(uuid "2e128030-60d4-4913-bb1a-631bc75151ca")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "D_RU0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 74.93 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b85967cd-00c2-4635-ade6-3f3c59430015")
+		(property "Reference" "TS0"
+			(at 74.93 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PG1350"
+			(at 74.93 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mesa1:Kailh_socket_PG1350"
+			(at 74.93 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f36c0625-6e05-4bf8-bdd5-28f2b4f4d4fa")
+		)
+		(pin "2"
+			(uuid "1265a212-af80-4624-b872-4a492de00f62")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "TS0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 92.71 54.61 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bfce0c75-e351-4098-b3b7-b84af1212ed2")
+		(property "Reference" "D_RL0"
+			(at 92.71 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 92.71 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 92.71 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 92.71 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d828cf10-e3c0-4832-8c8d-1062779e5257")
+		)
+		(pin "2"
+			(uuid "6caf4a19-947d-4478-86ec-a40cbe74af8a")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "D_RL0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 92.71 80.01 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c8d85a61-2436-4c14-a6c7-4a868d0725b8")
+		(property "Reference" "D_RG0"
+			(at 92.71 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 92.71 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 92.71 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 92.71 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "61926bd3-b4b5-4f31-97b5-856cc52fc59d")
+		)
+		(pin "2"
+			(uuid "9cd6c4c5-3a9c-44db-a379-8b5860b0135d")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "D_RG0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 179.07 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c96e7626-a26b-4393-b6ad-59cc010d831d")
+		(property "Reference" "RR0"
+			(at 179.07 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PG1350"
+			(at 179.07 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mesa1:Kailh_socket_PG1350"
+			(at 179.07 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 179.07 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "03719634-5ac4-4002-b2ce-e5da72c80b96")
+		)
+		(pin "2"
+			(uuid "5a5ad070-1b4f-4fab-9fe8-8396136354d1")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "RR0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 196.85 80.01 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d9488b30-7ce0-427e-8a49-7b9d6e162e02")
+		(property "Reference" "D_RS4"
+			(at 196.85 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 196.85 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 196.85 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 196.85 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "155e6c04-1ae9-40ed-97ad-51f910bf4b9c")
+		)
+		(pin "2"
+			(uuid "fd7a4f82-0b13-4fc0-aa96-89edfa5c38b1")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "D_RS4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 196.85 30.48 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dc672f31-5b9f-484b-a73f-1c7f47a7327e")
+		(property "Reference" "D_RR0"
+			(at 196.85 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 196.85 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 196.85 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 196.85 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b26f5341-f772-423b-a0bb-9e755e74c541")
+		)
+		(pin "1"
+			(uuid "b1dc9c27-5ddb-4a5f-9e6b-32795e720752")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "D_RR0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 196.85 54.61 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dc9f01a4-0bc2-4f92-b2b0-a3609b7550db")
+		(property "Reference" "D_RS3"
+			(at 196.85 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 196.85 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 196.85 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 196.85 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2a33b705-f9a3-4966-999e-4ef4dc24c010")
+		)
+		(pin "1"
+			(uuid "988ba0b5-5fd9-48fe-81dd-9d5869349297")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "D_RS3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 48.26 30.48 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e154e7ee-11a1-4e63-9f98-5c730119edf7")
+		(property "Reference" "D_RD0"
+			(at 48.26 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 48.26 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 48.26 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e08b870e-fcce-48a7-9866-e63e6ec862d7")
+		)
+		(pin "2"
+			(uuid "07a99ab5-a709-47a1-8997-210b36f8e6df")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "D_RD0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 250.19 30.48 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f2af0cdb-c0fb-466a-9a2a-206712dbf291")
+		(property "Reference" "D_RNUM0"
+			(at 250.19 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 250.19 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 250.19 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 250.19 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a4adfef0-d86d-41b2-94c8-ec98dcd8b23b")
+		)
+		(pin "1"
+			(uuid "68a70b44-ed97-46b5-8fde-807cb5cb2a3b")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "D_RNUM0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 74.93 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fe16cf3d-6bde-4d68-a482-ac2acff2bc09")
+		(property "Reference" "RL0"
+			(at 74.93 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PG1350"
+			(at 74.93 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mesa1:Kailh_socket_PG1350"
+			(at 74.93 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2eddb674-00a8-4f01-85a8-2208b58d7a5f")
+		)
+		(pin "1"
+			(uuid "66cc2268-5513-4ca4-8c9f-a6080a24d40a")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "RL0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 138.43 54.61 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ff39a6fd-40a6-42cb-a2db-71ed81920850")
+		(property "Reference" "D_RB0"
+			(at 138.43 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 138.43 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 138.43 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b3b2a481-f895-4526-a28d-03a4a90a331f")
+		)
+		(pin "1"
+			(uuid "de08f27d-21fb-4e6e-ae5e-da933fcac462")
+		)
+		(instances
+			(project "mesa1-right"
+				(path "/f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
+					(reference "D_RB0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

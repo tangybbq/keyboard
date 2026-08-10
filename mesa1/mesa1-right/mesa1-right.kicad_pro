@@ -156,7 +156,7 @@
         "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -240,7 +240,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "A"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -466,7 +466,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -658,13 +658,18 @@
       {
         "filename": "mesa1-right.kicad_sch",
         "name": "mesa1-right",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "f569e8ed-7cec-4a9b-af5c-e96bce1a25b6"
       }
     ],
     "used_designators": "",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "f569e8ed-7cec-4a9b-af5c-e96bce1a25b6",
+      "mesa1-right"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {
