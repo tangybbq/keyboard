@@ -555,7 +555,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "mesa1-left.dsn",
-      "step": "",
+      "step": "mesa1-left.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

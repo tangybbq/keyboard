@@ -1299,7 +1299,7 @@
 			(uuid "6e1b21ee-edaa-4251-8478-b046b77f486f")
 		)
 		(embedded_fonts no)
-		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/Kailh_socket_PG1350.step"
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1307,7 +1307,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -1987,7 +2009,7 @@
 			(uuid "3a80debc-6894-417b-84f3-0de7398aaffc")
 		)
 		(embedded_fonts no)
-		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/Kailh_socket_PG1350.step"
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1995,7 +2017,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -2675,7 +2719,7 @@
 			(uuid "aabd84d7-9786-4587-9e55-3a5dd3236505")
 		)
 		(embedded_fonts no)
-		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/Kailh_socket_PG1350.step"
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2683,7 +2727,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -3363,7 +3429,7 @@
 			(uuid "b66cf704-60b1-42ae-8dbb-8416d9d99a44")
 		)
 		(embedded_fonts no)
-		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/Kailh_socket_PG1350.step"
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3371,7 +3437,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -4051,7 +4139,7 @@
 			(uuid "cb91702f-50aa-4459-97a7-61392a76c111")
 		)
 		(embedded_fonts no)
-		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/Kailh_socket_PG1350.step"
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4059,7 +4147,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -4739,7 +4849,7 @@
 			(uuid "0517edd8-0a25-48a9-8eb6-b06e4988a991")
 		)
 		(embedded_fonts no)
-		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/Kailh_socket_PG1350.step"
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4747,7 +4857,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -5427,7 +5559,7 @@
 			(uuid "a556b4f7-4886-4bce-901e-322d4977c90d")
 		)
 		(embedded_fonts no)
-		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/Kailh_socket_PG1350.step"
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5435,7 +5567,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -6496,7 +6650,7 @@
 			(uuid "b18b3e0b-5849-46c1-8759-fef94f32fe5c")
 		)
 		(embedded_fonts no)
-		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/Kailh_socket_PG1350.step"
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6504,7 +6658,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -7184,7 +7360,7 @@
 			(uuid "6745583c-c161-49c3-b583-587aef58364d")
 		)
 		(embedded_fonts no)
-		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/Kailh_socket_PG1350.step"
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7192,7 +7368,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -8092,7 +8290,7 @@
 			(uuid "2ff039fe-8eba-4c6c-85a7-224d3e5b2c72")
 		)
 		(embedded_fonts no)
-		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/Kailh_socket_PG1350.step"
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8100,7 +8298,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -8780,7 +9000,7 @@
 			(uuid "789c4af5-bc88-4308-a67c-a8de31801d83")
 		)
 		(embedded_fonts no)
-		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/Kailh_socket_PG1350.step"
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8788,7 +9008,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -9468,7 +9710,7 @@
 			(uuid "be2bd82e-959e-45fc-a986-115452724cb9")
 		)
 		(embedded_fonts no)
-		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/Kailh_socket_PG1350.step"
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9476,7 +9718,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -10707,7 +10971,7 @@
 			(uuid "826f7ec6-1687-458d-9641-e340ba6dbe24")
 		)
 		(embedded_fonts no)
-		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/Kailh_socket_PG1350.step"
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10715,7 +10979,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -11395,7 +11681,7 @@
 			(uuid "1119fe3f-31e7-4d0a-b5d3-83425501055a")
 		)
 		(embedded_fonts no)
-		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/Kailh_socket_PG1350.step"
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11403,7 +11689,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -12303,7 +12611,7 @@
 			(uuid "e8f04d07-71cb-4f00-b6b5-6db5cb89624b")
 		)
 		(embedded_fonts no)
-		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/Kailh_socket_PG1350.step"
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12311,7 +12619,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)

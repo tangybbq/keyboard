@@ -1,20 +1,26 @@
 # mesa1 3D models
 
-Models attached to the `mesa1:Kailh_socket_PG1350` footprint so the switch
-stack shows up in the 3D viewer and in `File → Export → STEP`. That footprint
-is the whole key: switch on the front, hotswap socket on the back.
+Models for the parts that stick up off the board, so the 3D viewer and
+`File → Export → STEP` show what a case or stand actually has to clear.
 
-All three attach to that one footprint. Add them in Footprint Editor →
+| File | Footprint | Offset (mm) | Rotation (deg) |
+|---|---|---|---|
+| `Kailh_socket_PG1350.step` | `mesa1:Kailh_socket_PG1350` | 0, 0, 0 | 0, 0, 0 |
+| `SW_Kailh_Choc_V1.step` | `mesa1:Kailh_socket_PG1350` | 0, 0, 0 | 0, 0, **180** |
+| `MBK_Keycap_1u.step` | `mesa1:Kailh_socket_PG1350` | 0, 0, **6.65** | 0, 0, 0 |
+| `Pimoroni_Tiny2040.step` | `mesa1:Pimoroni_Tiny2040` | 0, 0, 0 | 0, 0, 0 |
+| `RJ45_Amphenol_54602-x08_Horizontal.step` | `Connector_RJ:RJ45_…` | 0, 0, 0 | 0, 0, 0 |
+
+Path prefix for all of them: `${KIPRJMOD}/../3dmodels/`. Use the variable, not
+an absolute path, or the references break for anyone who clones the repo.
+
+The first three all hang off the one key footprint — it is the whole key:
+switch on the front, hotswap socket on the back. Add them in Footprint Editor →
 Properties → 3D Models, then `Tools → Update Footprints from Library` in each
 PCB to push them to the placed instances.
 
-| File | Offset (mm) | Rotation (deg) |
-|---|---|---|
-| `Kailh_socket_PG1350.step` | 0, 0, 0 | 0, 0, 0 |
-| `SW_Kailh_Choc_V1.step` | 0, 0, 0 | 0, 0, **180** |
-| `MBK_Keycap_1u.step` | 0, 0, **6.65** | 0, 0, 0 |
-
-Path prefix for all three: `${KIPRJMOD}/../3dmodels/`.
+The RJ45 model has to go on the PCB instance rather than the library footprint,
+since that footprint comes from KiCad's stock `Connector_RJ` library.
 
 ## Why those numbers
 
@@ -48,6 +54,41 @@ at rest, shrouding it on the way down.
 
 Keycap outline is 17.45 × 16.45 mm against an 18 × 17 mm pitch, so 0.55 mm of
 air between neighbours in both directions.
+
+## Tiny 2040 and RJ45
+
+Neither is a real vendor model — both are envelope solids, enough to place a
+wall or a cutout against, not enough to render nicely.
+
+**Tiny 2040.** Built here in FreeCAD; see `Pimoroni_Tiny2040.step`. Pimoroni do
+not publish a STEP; SnapMagic and TraceParts have one but both want an account.
+The XY is exact, lifted from the F.Fab geometry of our own footprint, which came
+verbatim from Pimoroni's `pimoroni-boards.lbr`:
+
+- module PCB 20.32 × 18.0, 0.4 mm corner chamfers, from X 0 to 20.32, Y ±9
+- USB-C receptacle 7.82 × 8.64, X -2.175 to 5.645, overhanging the module end
+- underside components filling the footprint's 16.92 × 12.6 Edge.Cuts relief
+
+The Z split is derived, not measured. Pimoroni quote 22.9 × 18.2 × 6 mm overall;
+6.00 is reproduced exactly as 1.84 underside + 1.00 module PCB + 3.16 USB-C
+receptacle. Those three are a plausible decomposition of a figure that is only
+quoted as a total, so treat the individual numbers as approximate — in
+particular check the 1.84 before committing to a pocket depth. Overall L and W
+come out 22.50 × 18.00 against their quoted 22.9 × 18.2; the package geometry is
+the more trustworthy of the two.
+
+**RJ45.** `RJ45_Amphenol_54602-x08_Horizontal.step` is a plain 6-face box,
+15.31 × 17.74 × 13.5, already in this directory. It lines up with the stock
+footprint exactly — X -3.210…12.100 against an F.Fab of -3.205…12.095, and Y
+mirrored as KiCad's 3D convention requires.
+
+Note that KiCad 10 does **not** ship a model for this connector. Its
+`Connector_RJ.3dshapes` has only three RJ45s (`Amphenol_RJHSE538X`,
+`Molex_9346520x_Horizontal`, `Pulse_JK0654219NL_Horizontal`), so the
+`${KICAD10_3DMODEL_DIR}/…/RJ45_Amphenol_54602-x08_Horizontal.step` reference the
+footprint carries can never resolve. Point the instance at the local box
+instead. If a proper model is ever wanted, Amphenol's 54602 CAD is on SnapMagic
+and TraceParts, behind a signup.
 
 ## Keycap colour
 
