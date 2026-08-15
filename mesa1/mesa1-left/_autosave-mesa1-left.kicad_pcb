@@ -1307,7 +1307,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -1995,7 +2017,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -2683,7 +2727,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -3371,7 +3437,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -4059,7 +4147,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -4747,7 +4857,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -5435,7 +5567,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -6504,7 +6658,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -7192,7 +7368,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -8100,7 +8298,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -8788,7 +9008,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -9476,7 +9718,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -10715,7 +10979,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -11403,7 +11689,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -12311,7 +12619,29 @@
 				(xyz 1 1 1)
 			)
 			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "/Users/davidb/Documents/Keyboards/mesa1/3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
