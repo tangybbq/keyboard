@@ -6,3 +6,12 @@ gerber_to_order/
 
 # Cache of footprints.
 fp-info-cache
+
+# macOS.
+.DS_Store
+
+# Python bytecode from the layout scripts.
+__pycache__/
+
+# KiCad lock files for open projects.
+~*.lck
