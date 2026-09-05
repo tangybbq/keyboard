@@ -104,20 +104,28 @@ yet — capture it before anything changes.
 Starting point: mesa2 Rev A — 20 keys, routed (401 segments, 41 vias, one zone),
 outline drawn, `production/mesa2_A.zip` already exported.
 
-**Status:** the schematic is done. Everything left on the PCB side needs KiCad
-running with the IPC API enabled — Konnect's schematic path is file-based, but its
-PCB path talks to a live KiCad.
+**Status:** schematic and PCB both carry the Rev B netlist and placement. What is
+left is routing, the outline, and the fab-facing tidying.
+
+**Konnect's IPC path is unusable here** — it segfaults KiCad 10.0.5 on writes *and*
+on read-only queries. Footprint placement goes through `apply-revb.py`, which drives
+KiCad's own bundled `pcbnew` module (KiCad must be closed). Net changes still come
+from *Update PCB from Schematic* in the GUI.
 
 - [x] Remove the outermost pinky key
   - [x] Delete `SW_LR1`, `SW_RR1`, `D_LR1`, `D_RR1` from the schematic — with the
     eight wire stubs that tied those two cells to their row and column buses
   - [x] Update the matrix map in `LAYOUT.md` — the pinky column now carries one key
-  - [ ] Delete the four footprints from the PCB
-- [ ] Rotate the pinky keys 90° so that their orientation is similar to the other
-  finger keys. Computed: **+90 on the left, −90 on the right** (`SW_LA1` +62.9 →
-  +152.9, `SW_RA1` −62.9 → −152.9), keeping the negated-rotation convention so the
-  diodes stay mirrored. Targets in `revb-placement.json`
-- [ ] Move the Sp keys 1mm closer to the Bk key: 18.00 mm → **17.00 mm**. Checked — the
+  - [x] Delete the four footprints from the PCB — via *Update PCB from Schematic*,
+    which also re-applied the column nets
+- [x] Rotate the pinky keys 90° so that their orientation is similar to the other
+  finger keys. **−90 on the left, +90 on the right**: `SW_LA1` +62.9 → −27.1,
+  `SW_RA1` −62.9 → +27.1. The direction is not visible in the geometry — the two
+  options are 180° apart, so the cap lands identically and every clearance number
+  matches; only the socket body and diode change sides. Settled by looking at the
+  board, and written down in `LAYOUT.md` so the numbers don't argue for the wrong
+  one later
+- [x] Move the Sp keys 1mm closer to the Bk key: 18.00 mm → **17.00 mm**. Checked — the
   thumb pair is separated along the cap's 16.5 mm axis, same as the finger rows (the
   caps are rotated across the direction of travel), so Rev A's 18 mm leaves a 1.50 mm
   gap where every finger row has 0.50 mm. 17.00 mm makes the thumbs match everything
@@ -129,14 +137,16 @@ PCB path talks to a live KiCad.
   board-ID strap. **The two spare GPIOs are GP2 and GP3**, and Rev A already has
   dangling 0.0254 mm stubs on both at (54.61, 144.78) and (54.61, 147.32), so it
   reads them floating exactly as the scheme needs. Cannot be retrofitted after fab
-- [ ] Adjust the diodes of the moved keys. Mechanical: every diode sits at local
+- [x] Adjust the diodes of the moved keys. Mechanical: every diode sits at local
   (0, −4.876) mm in its switch's frame, rotated 180°, verified across all 20 Rev A
   keys — the targets in `revb-placement.json` already preserve it
 - [x] Generate the Rev B geometry (AI) — `revb.py` reads Rev A straight out of
   `mesa2.kicad_pcb` and writes `revb-placement.json`. Note `placement.json`,
   `sw.json` and `LAYOUT.md`'s original table all predate the 5° hand rotation and do
   **not** match the board; the PCB is the record of truth
-- [ ] Apply `revb-placement.json` to the PCB (needs KiCad running)
+- [x] Apply `revb-placement.json` to the PCB — `apply-revb.py`, via KiCad's bundled
+  `pcbnew` module. All 36 footprints verified against the target; board structure
+  unchanged (50 footprints, 401 segments, 41 vias, one zone)
 - [x] Re-run the cap clearance check over all remaining pairs (AI). Worst gap
   0.494 → 0.496 mm, and it is the ring column, untouched by any of this. The pinky's
   tightest neighbour goes 0.869 → 0.681 mm and the thumbs land on 0.503 mm, matching
@@ -156,7 +166,11 @@ PCB path talks to a live KiCad.
 - [x] ERC — no new violations. The 8 errors that remain are byte-identical in
   Rev A (dangling GP2/GP3 stubs, `LED4` DOUT, `J2` pin 6, and the Tiny2040's power
   pins having no driving output pin on a board it powers itself)
-- [ ] DRC clean, once the PCB is updated
+- [ ] DRC clean, after rerouting. Rev A was clean apart from 10 cosmetic
+  "footprint does not match library copy" notes; Rev B currently has 58 real
+  violations, all of them stale routing — shorts between the swapped column pairs,
+  tracks left dangling by the deleted and moved keys, and holes from the rotated
+  pinky sockets sitting on old vias. All of it goes away with the reroute
 - [ ] Design review
 - [ ] Git commit Rev B
 
