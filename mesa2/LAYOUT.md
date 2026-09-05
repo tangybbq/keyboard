@@ -207,13 +207,16 @@ Three changes from Rev A:
 
 1. **The outer pinky keys are gone** — `SW_LR1`/`SW_RR1` and `D_LR1`/`D_RR1`.
    18 keys, 9 per side.
-2. **The surviving pinky keys rotate 90°**, +90 on the left and −90 on the right.
-   That keeps the negated-rotation convention every other key pair follows, so the
-   diodes stay mirrored. The socket's long reach still lands on opposite sides of
-   the two halves — the same asymmetry mesa1 documents; orient by the silkscreen.
-   The alternative (+90 on both) buys 1.6 mm of board edge on the right, but the
-   socket sits inside the keycap envelope in every option, so the outline is
-   cap-driven and that 1.6 mm is not real.
+2. **The surviving pinky keys rotate 90°**, −90 on the left and +90 on the right,
+   landing on −27.1° and +27.1° — still negated like every other key pair, so the
+   diodes stay mirrored.
+
+   **The direction cannot be chosen from the geometry.** Both directions give the
+   same keycap orientation: they are 180° apart and the cap is a rectangle, so
+   every clearance number is identical either way. What changes is which side the
+   socket body and the diode land on. That was settled by looking at the board —
+   +90/−90 put both on the wrong side. If a future change makes this look
+   arbitrary, it is not; the clearance table cannot see the difference.
 3. **The SP thumb keys move 1 mm toward BK**, 18.003 → 17.003 mm. The thumb caps
    are turned across the direction of travel, so the pair is separated along the
    cap's 16.5 mm axis exactly as the finger rows are; 18 mm left a 1.50 mm gap
@@ -227,7 +230,7 @@ using it, so "adjust the diodes of the moved keys" is just preserving it.
 
 | key | x | y | rot | | key | x | y | rot |
 |---|---|---|---|---|---|---|---|---|
-| SW_LA1 |   44.486 |  60.217 | +152.9 | | SW_RA1 |  225.514 |  60.217 | -152.9 |
+| SW_LA1 |   44.486 |  60.217 |  -27.1 | | SW_RA1 |  225.514 |  60.217 |  +27.1 |
 | SW_LS1 |   64.733 |  40.136 |   +2.5 | | SW_RS1 |  205.268 |  40.136 |   -2.5 |
 | SW_LO1 |   65.484 |  57.115 |   +2.5 | | SW_RO1 |  204.516 |  57.115 |   -2.5 |
 | SW_LN1 |   86.880 |  38.690 |   -7.2 | | SW_RN1 |  183.119 |  38.690 |   +7.2 |

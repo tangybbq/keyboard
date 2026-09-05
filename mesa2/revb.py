@@ -27,7 +27,9 @@ CLR = 0.5                             # wanted air gap between caps
 
 # ------------------------------------------------------------------ read --
 def read_pcb(path):
-    s = open(path).read()
+    return parse_pcb(open(path).read())
+
+def parse_pcb(s):
     out = {}
     for m in re.finditer(r'\(footprint[\s"]', s):
         i = m.start(); d = 0
@@ -78,13 +80,28 @@ def worst_cap_gap(sw):
     return worst
 
 # ----------------------------------------------------------------- main --
+def rev_a_from_git():
+    """The working board is already Rev B, so recover Rev A from history.
+
+    Walks the board file's commits newest-first and takes the first one that
+    still has an outer pinky key. Keeps this script re-runnable without
+    hardcoding a commit that will drift.
+    """
+    import subprocess
+    log = subprocess.run(['git', 'log', '--format=%H', '--', PCB],
+                         capture_output=True, text=True, check=True).stdout.split()
+    for c in log:
+        blob = subprocess.run(['git', 'show', f'{c}:mesa2/{PCB}'],
+                              capture_output=True, text=True, cwd='..')
+        if blob.returncode == 0 and 'SW_LR1' in blob.stdout:
+            print(f"working board is already Rev B; reading Rev A from {c[:8]}\n")
+            return c, blob.stdout
+    sys.exit("no commit of the board still has SW_LR1 on it")
+
 rev_a = read_pcb(PCB)
 if 'SW_LR1' not in rev_a:
-    sys.exit("SW_LR1 is not on the board, so it is already Rev B. This script "
-             "transforms Rev A and is not idempotent -- re-running it would "
-             "rotate the pinky another 90 degrees and pull the thumbs in another "
-             "millimetre. revb-placement.json is the record; apply-revb.py is "
-             "safe to re-run.")
+    _, text = rev_a_from_git()
+    rev_a = parse_pcb(text)
 sw_a = {k: v for k, v in rev_a.items() if k.startswith('SW_')}
 
 # check the diode invariant before relying on it
@@ -99,14 +116,16 @@ for k, (sx, sy, st) in sw_a.items():
 DELETE = ['SW_LR1', 'SW_RR1', 'D_LR1', 'D_RR1']
 sw_b = {k: list(v) for k, v in sw_a.items() if k not in DELETE}
 
-# 2. pinky rotation. +90 on the left, -90 on the right, which keeps the
-#    negated-rotation convention every other key pair on this board follows and
-#    so keeps the diodes mirrored too. The alternative (+90 on both) was checked
-#    and rejected: it buys 1.6 mm of board edge on the right, but the socket sits
-#    inside the keycap envelope in every option, so the outline is cap-driven and
-#    that 1.6 mm is not real. The socket's long reach still lands on opposite
-#    sides of the two halves -- same asymmetry mesa1 documents, orient by silk.
-for ref, delta in [('SW_LA1', +90), ('SW_RA1', -90)]:
+# 2. pinky rotation. -90 on the left, +90 on the right: -27.1 and +27.1, still
+#    negated like every other key pair, so the diodes stay mirrored.
+#
+#    The two directions give the SAME keycap orientation -- they are 180 apart and
+#    the cap is a rectangle -- so no clearance number distinguishes them. What they
+#    change is which side the socket body and the diode land on, and that was
+#    settled by looking at the board: the other way round put both on the wrong
+#    side. Rotating +90/-90 instead is a one-line change here, but do not let the
+#    clearance table talk you back into it; it cannot see the difference.
+for ref, delta in [('SW_LA1', -90), ('SW_RA1', +90)]:
     x, y, r = sw_b[ref]
     sw_b[ref][2] = r + delta
     print(f"{ref}: rot {r:+.1f} -> {r+delta:+.1f}")
