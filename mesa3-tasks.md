@@ -166,17 +166,42 @@ from *Update PCB from Schematic* in the GUI.
 - [x] ERC — no new violations. The 8 errors that remain are byte-identical in
   Rev A (dangling GP2/GP3 stubs, `LED4` DOUT, `J2` pin 6, and the Tiny2040's power
   pins having no driving output pin on a board it powers itself)
-- [x] DRC clean, after rerouting. Rev A was clean apart from 10 cosmetic
-  "footprint does not match library copy" notes; Rev B currently has 58 real
-  violations, all of them stale routing — shorts between the swapped column pairs,
-  tracks left dangling by the deleted and moved keys, and holes from the rotated
-  pinky sockets sitting on old vias. All of it goes away with the reroute
-- [ ] Design review
+- [x] DRC clean — **0 errors**, down from 58 before the reroute. The 9 remaining
+  warnings are all the cosmetic "footprint does not match copy in library" note.
+  Schematic parity: 0 issues. One unconnected item, A1 pad `GND1`, which Rev A has
+  identically
+- [x] Design review — findings below
 - [ ] Git commit Rev B
 
 Rev B keeps `COL_1..5 × ROW_A..D` — 18 keys in 20 slots, the two empty ones being the
 deleted pinky `R` keys. Don't re-pack to free a GPIO: the Tiny2040 has pins to spare, and
-Mesa 3 needs this exact shape.
+Mesa 3 needs this exact shape. The columns ended up on **GP7..GP4** rather than GP4..GP7,
+reassigned once they paired by finger to make the fan-out to the MCU tidier.
+
+### Design review
+
+**Verdict: no defects. What is left is decisions, not fixes.**
+
+Checked and clean: DRC 0 errors · schematic parity 0 issues · ERC unchanged from Rev A ·
+all 36 footprints still exactly on `revb-placement.json` after routing · outline
+214.0 × 111.0 mm, centred on the mirror axis, and closed (it is an open chain by design,
+and A1's five Edge.Cuts segments meet both loose ends) · six M2 holes present with no
+edge or hole clearance violations · silkscreen carries the rev · track widths
+0.25/0.3/0.5 mm on 0.6/0.3 mm vias, all comfortably inside fab limits.
+
+Findings, in priority order:
+
+1. **The Rev A / Rev B distinction is still undecided** — the only item here that
+   cannot be fixed after fab. GP2 and GP3 are confirmed free on the board with their
+   stubs already drawn.
+2. **No decoupling on the four SK6812s.** One 100 nF per addressable LED is the usual
+   advice and this board has none. Pre-existing, and Rev A works, so it is a
+   robustness call rather than a defect — but Rev B is the cheap moment.
+3. A1's `3V3`/`5V` pins have no decoupling either. Ignorable: the Tiny2040 is a module
+   and carries its own.
+4. A1 pad `GND1` is unrouted, exactly as in Rev A. The module commons its grounds and
+   GND3 is routed, so it is cosmetic — but it sits in the DRC report permanently and
+   could mask a real unconnected item later. A short hop clears it.
 
 ## Mesa 2x Rev A
 
