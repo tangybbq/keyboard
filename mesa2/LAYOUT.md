@@ -81,13 +81,22 @@ time anyone looked at it.
 
 **Rev B pairs the columns by finger**, the same finger on both hands:
 
-| net | keys | pin |
+| net | keys | Tiny2040 pin |
 |---|---|---|
-| `COL_1` | pinky `A`, both hands | GP4 |
-| `COL_2` | ring `S`/`O`, both hands | GP5 |
-| `COL_3` | middle `N`/`T`, both hands | GP6 |
-| `COL_4` | index `I`/`E`, both hands | GP7 |
-| `COL_5` | thumb `SP`/`BK`, both hands | — |
+| `COL_1` | pinky `A`, both hands | GP7 |
+| `COL_2` | ring `S`/`O`, both hands | GP6 |
+| `COL_3` | middle `N`/`T`, both hands | GP5 |
+| `COL_4` | index `I`/`E`, both hands | GP4 |
+| `COL_5` | thumb `SP`/`BK`, both hands | A3/GP29 |
+| `ROW_A` | left far row | A2/GP28 |
+| `ROW_B` | left near row | A1/GP27 |
+| `ROW_C` | right far row | GP0 |
+| `ROW_D` | right near row | GP1 |
+
+The columns run GP7 down to GP4, not GP4 up to GP7: once the columns paired by
+finger, that order made the fan-out to the MCU tidier. **GP2 and GP3 are free**, and
+their wire stubs already exist at (54.61, 144.78) and (54.61, 147.32) — that is where
+a board-ID strap would go. `RGB` is on A0/GP26.
 
 - ROW_A (left) and ROW_C (right) are the **far** row, away from you.
   ROW_B / ROW_D are the **near** row.

@@ -151,11 +151,11 @@ from *Update PCB from Schematic* in the GUI.
   0.494 → 0.496 mm, and it is the ring column, untouched by any of this. The pinky's
   tightest neighbour goes 0.869 → 0.681 mm and the thumbs land on 0.503 mm, matching
   the finger rows. Nothing drops below the 0.5 mm target
-- [ ] Fix the routing (human)
-- [ ] Adjust the board outline (human)
-- [ ] Confirm the six M2 mounting holes are still inside the outline and clear of
+- [x] Fix the routing (human)
+- [x] Adjust the board outline (human)
+- [x] Confirm the six M2 mounting holes are still inside the outline and clear of
   sockets and caps
-- [ ] Fixup label for Rev B
+- [x] Fixup label for Rev B
 - [ ] Print the 1:1 placement sheet and check it against my hands before fab (human).
   This is the only physical check — no printed mockup. Rev A is in daily use, so the
   geometry is proven and the Rev B changes are small.
@@ -166,7 +166,7 @@ from *Update PCB from Schematic* in the GUI.
 - [x] ERC — no new violations. The 8 errors that remain are byte-identical in
   Rev A (dangling GP2/GP3 stubs, `LED4` DOUT, `J2` pin 6, and the Tiny2040's power
   pins having no driving output pin on a board it powers itself)
-- [ ] DRC clean, after rerouting. Rev A was clean apart from 10 cosmetic
+- [x] DRC clean, after rerouting. Rev A was clean apart from 10 cosmetic
   "footprint does not match library copy" notes; Rev B currently has 58 real
   violations, all of them stale routing — shorts between the swapped column pairs,
   tracks left dangling by the deleted and moved keys, and holes from the rotated
