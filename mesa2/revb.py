@@ -79,6 +79,12 @@ def worst_cap_gap(sw):
 
 # ----------------------------------------------------------------- main --
 rev_a = read_pcb(PCB)
+if 'SW_LR1' not in rev_a:
+    sys.exit("SW_LR1 is not on the board, so it is already Rev B. This script "
+             "transforms Rev A and is not idempotent -- re-running it would "
+             "rotate the pinky another 90 degrees and pull the thumbs in another "
+             "millimetre. revb-placement.json is the record; apply-revb.py is "
+             "safe to re-run.")
 sw_a = {k: v for k, v in rev_a.items() if k.startswith('SW_')}
 
 # check the diode invariant before relying on it
