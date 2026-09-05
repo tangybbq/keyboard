@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="196mm" height="268mm" viewBox="0 0 196 268">
+<rect width="100%" height="100%" fill="white"/>
+<text x="8.0" y="12" font-family="sans-serif" font-size="5">mesa2 - hand measurement sheet (LEFT hand; mirror for right)</text>
+<rect x="8.0" y="16" width="100" height="7" fill="none" stroke="#c00" stroke-width="0.25"/>
+<text x="110.0" y="21" font-family="sans-serif" font-size="3" fill="#c00">100.0 mm - print at 100%, no scaling</text>
+<text x="8.0" y="30" font-family="sans-serif" font-size="3.1" fill="#333">1. Tape this down. Sit as you type. The datum line at the bottom goes parallel to the desk edge.</text>
+<text x="8.0" y="34.2" font-family="sans-serif" font-size="3.1" fill="#333">2. Ink the pad of each fingertip (washable marker). Do NOT hold a pen - it changes the whole posture.</text>
+<text x="8.0" y="38.400000000000006" font-family="sans-serif" font-size="3.1" fill="#333">3. Rest the hand naturally, then TAP each finger straight down. That is the home row. Label the dots.</text>
+<text x="8.0" y="42.60000000000001" font-family="sans-serif" font-size="3.1" fill="#333">4. Curl each finger one row further and tap again. Two dots per finger = the column&#x27;s direction.</text>
+<text x="8.0" y="46.80000000000001" font-family="sans-serif" font-size="3.1" fill="#333">   The line through a finger&#x27;s two dots IS its splay angle. That is the measurement worth having.</text>
+<text x="8.0" y="51.000000000000014" font-family="sans-serif" font-size="3.1" fill="#333">5. Thumb: sweep it through its comfortable arc and tap 4-5 times along the way. Do not aim for a line -</text>
+<text x="8.0" y="55.20000000000002" font-family="sans-serif" font-size="3.1" fill="#333">   the thumb pivots at the base, so those dots fall on an arc, and the arc gives both angle and distance.</text>
+<text x="8.0" y="59.40000000000002" font-family="sans-serif" font-size="3.1" fill="#333">6. Mark where the heel of your palm rests. Repeat the whole thing twice more on fresh sheets.</text>
+<line x1="8.0" y1="68" x2="8.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="8.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">0</text>
+<line x1="13.0" y1="68" x2="13.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="18.0" y1="68" x2="18.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="23.0" y1="68" x2="23.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="28.0" y1="68" x2="28.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="28.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">20</text>
+<line x1="33.0" y1="68" x2="33.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="38.0" y1="68" x2="38.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="43.0" y1="68" x2="43.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="48.0" y1="68" x2="48.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="48.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">40</text>
+<line x1="53.0" y1="68" x2="53.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="58.0" y1="68" x2="58.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="63.0" y1="68" x2="63.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="68.0" y1="68" x2="68.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="68.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">60</text>
+<line x1="73.0" y1="68" x2="73.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="78.0" y1="68" x2="78.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="83.0" y1="68" x2="83.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="88.0" y1="68" x2="88.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="88.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">80</text>
+<line x1="93.0" y1="68" x2="93.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="98.0" y1="68" x2="98.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="103.0" y1="68" x2="103.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="108.0" y1="68" x2="108.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="108.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">100</text>
+<line x1="113.0" y1="68" x2="113.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="118.0" y1="68" x2="118.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="123.0" y1="68" x2="123.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="128.0" y1="68" x2="128.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="128.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">120</text>
+<line x1="133.0" y1="68" x2="133.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="138.0" y1="68" x2="138.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="143.0" y1="68" x2="143.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="148.0" y1="68" x2="148.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="148.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">140</text>
+<line x1="153.0" y1="68" x2="153.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="158.0" y1="68" x2="158.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="163.0" y1="68" x2="163.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="168.0" y1="68" x2="168.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="168.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">160</text>
+<line x1="173.0" y1="68" x2="173.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="178.0" y1="68" x2="178.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="183.0" y1="68" x2="183.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="68" x2="184.0" y2="68" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="69" font-family="sans-serif" font-size="2.6" fill="#777">0</text>
+<line x1="8.0" y1="73" x2="184.0" y2="73" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="78" x2="184.0" y2="78" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="83" x2="184.0" y2="83" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="88" x2="184.0" y2="88" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="89" font-family="sans-serif" font-size="2.6" fill="#777">20</text>
+<line x1="8.0" y1="93" x2="184.0" y2="93" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="98" x2="184.0" y2="98" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="103" x2="184.0" y2="103" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="108" x2="184.0" y2="108" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="109" font-family="sans-serif" font-size="2.6" fill="#777">40</text>
+<line x1="8.0" y1="113" x2="184.0" y2="113" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="118" x2="184.0" y2="118" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="123" x2="184.0" y2="123" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="128" x2="184.0" y2="128" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="129" font-family="sans-serif" font-size="2.6" fill="#777">60</text>
+<line x1="8.0" y1="133" x2="184.0" y2="133" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="138" x2="184.0" y2="138" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="143" x2="184.0" y2="143" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="148" x2="184.0" y2="148" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="149" font-family="sans-serif" font-size="2.6" fill="#777">80</text>
+<line x1="8.0" y1="153" x2="184.0" y2="153" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="158" x2="184.0" y2="158" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="163" x2="184.0" y2="163" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="168" x2="184.0" y2="168" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="169" font-family="sans-serif" font-size="2.6" fill="#777">100</text>
+<line x1="8.0" y1="173" x2="184.0" y2="173" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="178" x2="184.0" y2="178" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="183" x2="184.0" y2="183" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="188" x2="184.0" y2="188" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="189" font-family="sans-serif" font-size="2.6" fill="#777">120</text>
+<line x1="8.0" y1="193" x2="184.0" y2="193" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="198" x2="184.0" y2="198" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="203" x2="184.0" y2="203" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="208" x2="184.0" y2="208" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="209" font-family="sans-serif" font-size="2.6" fill="#777">140</text>
+<line x1="8.0" y1="213" x2="184.0" y2="213" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="218" x2="184.0" y2="218" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="223" x2="184.0" y2="223" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="228" x2="184.0" y2="228" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="229" font-family="sans-serif" font-size="2.6" fill="#777">160</text>
+<line x1="8.0" y1="233" x2="184.0" y2="233" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="238" x2="184.0" y2="238" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="243" x2="184.0" y2="243" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="248" x2="184.0" y2="248" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="249" font-family="sans-serif" font-size="2.6" fill="#777">180</text>
+<line x1="8.0" y1="253" x2="184.0" y2="253" stroke="#bbb" stroke-width="0.08"/>
+<line x1="4.0" y1="68" x2="12.0" y2="68" stroke="#c00" stroke-width="0.4"/>
+<line x1="8.0" y1="64" x2="8.0" y2="72" stroke="#c00" stroke-width="0.4"/>
+<text x="10.0" y="259" font-family="sans-serif" font-size="3" fill="#c00">origin (0,0) at the red cross - X to the right, Y toward you</text>
+<line x1="8.0" y1="254" x2="184.0" y2="254" stroke="#c00" stroke-width="0.6"/>
+<text x="112.0" y="252" font-family="sans-serif" font-size="3" fill="#c00">DATUM - line this up with the desk edge</text>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="258mm" height="196mm" viewBox="0 0 258 196">
+<rect width="100%" height="100%" fill="white"/>
+<text x="8" y="9" font-family="sans-serif" font-size="4.4">mesa2 - pinky splay comparison, LEFT hand, 1:1 (landscape)</text>
+<rect x="8" y="12" width="100" height="6" fill="none" stroke="#c00" stroke-width="0.25"/>
+<text x="110" y="16.5" font-family="sans-serif" font-size="3" fill="#c00">100.0 mm - print at 100%, no scaling</text>
+<text x="8" y="23" font-family="sans-serif" font-size="3" fill="#333">Only the pinky differs. Ring, middle and index are identical in all four. Rest your hand on each and rock each finger between its two keys.</text>
+<text x="8.0" y="31.5" font-family="sans-serif" font-size="3.6">pinky 40 deg</text>
+<polygon points="10.50,49.93 23.90,38.68 34.51,51.32 21.10,62.57" fill="none" stroke="#c00" stroke-width="0.4"/>
+<circle cx="22.50" cy="50.62" r="0.5" fill="#999"/>
+<polygon points="21.42,62.95 34.83,51.70 45.43,64.34 32.03,75.59" fill="none" stroke="#c00" stroke-width="0.4"/>
+<circle cx="33.43" cy="63.65" r="0.5" fill="#999"/>
+<polygon points="47.21,34.80 64.70,35.55 63.98,52.04 46.50,51.28" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="55.60" cy="43.42" r="0.5" fill="#999"/>
+<polygon points="46.48,51.78 63.96,52.54 63.25,69.02 45.77,68.27" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="54.86" cy="60.40" r="0.5" fill="#999"/>
+<polygon points="70.98,34.00 88.08,37.70 84.60,53.83 67.49,50.13" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="77.79" cy="43.91" r="0.5" fill="#999"/>
+<polygon points="67.39,50.62 84.49,54.32 81.00,70.44 63.90,66.74" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="74.19" cy="60.53" r="0.5" fill="#999"/>
+<polygon points="93.82,56.65 107.80,67.17 97.87,80.35 83.89,69.83" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="95.84" cy="68.50" r="0.5" fill="#999"/>
+<polygon points="83.59,70.23 97.57,80.75 87.65,93.94 73.67,83.41" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="85.62" cy="82.08" r="0.5" fill="#999"/>
+<text x="113.8" y="31.5" font-family="sans-serif" font-size="3.6">pinky 50 deg</text>
+<polygon points="114.46,53.07 125.70,39.67 138.34,50.27 127.09,63.68" fill="none" stroke="#c00" stroke-width="0.4"/>
+<circle cx="126.40" cy="51.67" r="0.5" fill="#999"/>
+<polygon points="127.48,64.00 138.73,50.59 151.37,61.20 140.12,74.61" fill="none" stroke="#c00" stroke-width="0.4"/>
+<circle cx="139.42" cy="62.60" r="0.5" fill="#999"/>
+<polygon points="153.01,34.80 170.49,35.55 169.78,52.04 152.30,51.28" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="161.39" cy="43.42" r="0.5" fill="#999"/>
+<polygon points="152.27,51.78 169.76,52.54 169.04,69.02 151.56,68.27" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="160.66" cy="60.40" r="0.5" fill="#999"/>
+<polygon points="176.78,34.00 193.88,37.70 190.39,53.83 173.29,50.13" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="183.58" cy="43.91" r="0.5" fill="#999"/>
+<polygon points="173.18,50.62 190.29,54.32 186.80,70.44 169.69,66.74" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="179.99" cy="60.53" r="0.5" fill="#999"/>
+<polygon points="199.61,56.65 213.59,67.17 203.67,80.35 189.69,69.83" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="201.64" cy="68.50" r="0.5" fill="#999"/>
+<polygon points="189.39,70.23 203.37,80.75 193.44,93.94 179.46,83.41" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="191.41" cy="82.08" r="0.5" fill="#999"/>
+<text x="8.0" y="102.4" font-family="sans-serif" font-size="3.6">pinky 58 deg   (on the board now)</text>
+<polygon points="8.00,126.62 17.27,111.77 31.27,120.52 21.99,135.36" fill="none" stroke="#c00" stroke-width="0.4"/>
+<circle cx="19.63" cy="123.57" r="0.5" fill="#999"/>
+<polygon points="22.42,135.62 31.69,120.78 45.68,129.53 36.41,144.37" fill="none" stroke="#c00" stroke-width="0.4"/>
+<circle cx="34.05" cy="132.58" r="0.5" fill="#999"/>
+<polygon points="47.21,105.73 64.70,106.49 63.98,122.97 46.50,122.22" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="55.60" cy="114.35" r="0.5" fill="#999"/>
+<polygon points="46.48,122.72 63.96,123.47 63.25,139.96 45.77,139.20" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="54.86" cy="131.34" r="0.5" fill="#999"/>
+<polygon points="70.98,104.94 88.08,108.63 84.60,124.76 67.49,121.06" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="77.79" cy="114.85" r="0.5" fill="#999"/>
+<polygon points="67.39,121.55 84.49,125.25 81.00,141.38 63.90,137.68" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="74.19" cy="131.46" r="0.5" fill="#999"/>
+<polygon points="93.82,127.58 107.80,138.11 97.87,151.29 83.89,140.76" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="95.84" cy="139.44" r="0.5" fill="#999"/>
+<polygon points="83.59,141.16 97.57,151.69 87.65,164.87 73.67,154.34" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="85.62" cy="153.02" r="0.5" fill="#999"/>
+<text x="113.8" y="102.4" font-family="sans-serif" font-size="3.6">pinky 66 deg</text>
+<polygon points="113.87,129.25 120.99,113.27 136.06,119.98 128.95,135.96" fill="none" stroke="#c00" stroke-width="0.4"/>
+<circle cx="124.97" cy="124.61" r="0.5" fill="#999"/>
+<polygon points="129.40,136.17 136.52,120.18 151.59,126.89 144.48,142.88" fill="none" stroke="#c00" stroke-width="0.4"/>
+<circle cx="140.50" cy="131.53" r="0.5" fill="#999"/>
+<polygon points="153.01,105.73 170.49,106.49 169.78,122.97 152.30,122.22" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="161.39" cy="114.35" r="0.5" fill="#999"/>
+<polygon points="152.27,122.72 169.76,123.47 169.04,139.96 151.56,139.20" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="160.66" cy="131.34" r="0.5" fill="#999"/>
+<polygon points="176.78,104.94 193.88,108.63 190.39,124.76 173.29,121.06" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="183.58" cy="114.85" r="0.5" fill="#999"/>
+<polygon points="173.18,121.55 190.29,125.25 186.80,141.38 169.69,137.68" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="179.99" cy="131.46" r="0.5" fill="#999"/>
+<polygon points="199.61,127.58 213.59,138.11 203.67,151.29 189.69,140.76" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="201.64" cy="139.44" r="0.5" fill="#999"/>
+<polygon points="189.39,141.16 203.37,151.69 193.44,164.87 179.46,154.34" fill="none" stroke="#222" stroke-width="0.4"/>
+<circle cx="191.41" cy="153.02" r="0.5" fill="#999"/>
+</svg>

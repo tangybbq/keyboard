@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="258mm" height="196mm" viewBox="0 0 258 196">
+<rect width="100%" height="100%" fill="white"/>
+<text x="9" y="10" font-family="sans-serif" font-size="4.6">mesa2 - two-hand measurement sheet</text>
+<rect x="9" y="13" width="100" height="6" fill="none" stroke="#c00" stroke-width="0.25"/>
+<text x="111" y="17.5" font-family="sans-serif" font-size="3" fill="#c00">100.0 mm - print at 100%, no scaling, LANDSCAPE</text>
+<text x="9" y="23" font-family="sans-serif" font-size="2.85" fill="#333">Both hands down as you would type, paper taped and NOT moved for the whole session. No desk-edge datum is needed: the</text>
+<text x="9" y="26.6" font-family="sans-serif" font-size="2.85" fill="#333">angle between your two hands IS the unibody angle, so it is internal to this sheet as long as the paper never moves.</text>
+<text x="9" y="30.200000000000003" font-family="sans-serif" font-size="2.85" fill="#333">Steno rest position: each finger sits BETWEEN its two keys, not on one of them. Mark three dots per finger -</text>
+<text x="9" y="33.800000000000004" font-family="sans-serif" font-size="2.85" fill="#333">(a) where it rests, (b) rocked forward, (c) rocked back. (a) is the column centre and (b)-(c) give the column ANGLE.</text>
+<text x="9" y="37.400000000000006" font-family="sans-serif" font-size="2.85" fill="#333">Do not try to set the row pitch from (b) and (c): it is fixed at 17 mm by the caps. Only note if the rock feels SHORT.</text>
+<text x="9" y="41.00000000000001" font-family="sans-serif" font-size="2.85" fill="#333">Keep the hand PLANTED and lift one finger at a time; the others hold the posture. Mark with a pen in the other hand.</text>
+<text x="9" y="44.60000000000001" font-family="sans-serif" font-size="2.85" fill="#333">Thumbs: sweep the comfortable arc and mark 4-5 spots along it - an arc, not two aimed dots. Then mark both palm heels.</text>
+<text x="9" y="48.20000000000001" font-family="sans-serif" font-size="2.85" fill="#333">Do the left hand this way, then re-place BOTH hands naturally and do the right. Re-placing both is what keeps the angle honest.</text>
+<line x1="9" y1="54" x2="9" y2="190" stroke="#999" stroke-width="0.35"/>
+<text x="9.7" y="52.6" font-family="sans-serif" font-size="2.6" fill="#777">0</text>
+<line x1="14" y1="54" x2="14" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="19" y1="54" x2="19" y2="190" stroke="#bbb" stroke-width="0.2"/>
+<line x1="24" y1="54" x2="24" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="29" y1="54" x2="29" y2="190" stroke="#999" stroke-width="0.35"/>
+<text x="29.7" y="52.6" font-family="sans-serif" font-size="2.6" fill="#777">20</text>
+<line x1="34" y1="54" x2="34" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="39" y1="54" x2="39" y2="190" stroke="#bbb" stroke-width="0.2"/>
+<line x1="44" y1="54" x2="44" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="49" y1="54" x2="49" y2="190" stroke="#999" stroke-width="0.35"/>
+<text x="49.7" y="52.6" font-family="sans-serif" font-size="2.6" fill="#777">40</text>
+<line x1="54" y1="54" x2="54" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="59" y1="54" x2="59" y2="190" stroke="#bbb" stroke-width="0.2"/>
+<line x1="64" y1="54" x2="64" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="69" y1="54" x2="69" y2="190" stroke="#999" stroke-width="0.35"/>
+<text x="69.7" y="52.6" font-family="sans-serif" font-size="2.6" fill="#777">60</text>
+<line x1="74" y1="54" x2="74" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="79" y1="54" x2="79" y2="190" stroke="#bbb" stroke-width="0.2"/>
+<line x1="84" y1="54" x2="84" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="89" y1="54" x2="89" y2="190" stroke="#999" stroke-width="0.35"/>
+<text x="89.7" y="52.6" font-family="sans-serif" font-size="2.6" fill="#777">80</text>
+<line x1="94" y1="54" x2="94" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="99" y1="54" x2="99" y2="190" stroke="#bbb" stroke-width="0.2"/>
+<line x1="104" y1="54" x2="104" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="109" y1="54" x2="109" y2="190" stroke="#999" stroke-width="0.35"/>
+<text x="109.7" y="52.6" font-family="sans-serif" font-size="2.6" fill="#777">100</text>
+<line x1="114" y1="54" x2="114" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="119" y1="54" x2="119" y2="190" stroke="#bbb" stroke-width="0.2"/>
+<line x1="124" y1="54" x2="124" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="129" y1="54" x2="129" y2="190" stroke="#999" stroke-width="0.35"/>
+<text x="129.7" y="52.6" font-family="sans-serif" font-size="2.6" fill="#777">120</text>
+<line x1="134" y1="54" x2="134" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="139" y1="54" x2="139" y2="190" stroke="#bbb" stroke-width="0.2"/>
+<line x1="144" y1="54" x2="144" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="149" y1="54" x2="149" y2="190" stroke="#999" stroke-width="0.35"/>
+<text x="149.7" y="52.6" font-family="sans-serif" font-size="2.6" fill="#777">140</text>
+<line x1="154" y1="54" x2="154" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="159" y1="54" x2="159" y2="190" stroke="#bbb" stroke-width="0.2"/>
+<line x1="164" y1="54" x2="164" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="169" y1="54" x2="169" y2="190" stroke="#999" stroke-width="0.35"/>
+<text x="169.7" y="52.6" font-family="sans-serif" font-size="2.6" fill="#777">160</text>
+<line x1="174" y1="54" x2="174" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="179" y1="54" x2="179" y2="190" stroke="#bbb" stroke-width="0.2"/>
+<line x1="184" y1="54" x2="184" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="189" y1="54" x2="189" y2="190" stroke="#999" stroke-width="0.35"/>
+<text x="189.7" y="52.6" font-family="sans-serif" font-size="2.6" fill="#777">180</text>
+<line x1="194" y1="54" x2="194" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="199" y1="54" x2="199" y2="190" stroke="#bbb" stroke-width="0.2"/>
+<line x1="204" y1="54" x2="204" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="209" y1="54" x2="209" y2="190" stroke="#999" stroke-width="0.35"/>
+<text x="209.7" y="52.6" font-family="sans-serif" font-size="2.6" fill="#777">200</text>
+<line x1="214" y1="54" x2="214" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="219" y1="54" x2="219" y2="190" stroke="#bbb" stroke-width="0.2"/>
+<line x1="224" y1="54" x2="224" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="229" y1="54" x2="229" y2="190" stroke="#999" stroke-width="0.35"/>
+<text x="229.7" y="52.6" font-family="sans-serif" font-size="2.6" fill="#777">220</text>
+<line x1="234" y1="54" x2="234" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="239" y1="54" x2="239" y2="190" stroke="#bbb" stroke-width="0.2"/>
+<line x1="244" y1="54" x2="244" y2="190" stroke="#bbb" stroke-width="0.08"/>
+<line x1="249" y1="54" x2="249" y2="190" stroke="#999" stroke-width="0.35"/>
+<text x="249.7" y="52.6" font-family="sans-serif" font-size="2.6" fill="#777">240</text>
+<line x1="9" y1="54" x2="249" y2="54" stroke="#999" stroke-width="0.35"/>
+<text x="2.5" y="55" font-family="sans-serif" font-size="2.6" fill="#777">0</text>
+<line x1="9" y1="59" x2="249" y2="59" stroke="#bbb" stroke-width="0.08"/>
+<line x1="9" y1="64" x2="249" y2="64" stroke="#bbb" stroke-width="0.2"/>
+<line x1="9" y1="69" x2="249" y2="69" stroke="#bbb" stroke-width="0.08"/>
+<line x1="9" y1="74" x2="249" y2="74" stroke="#999" stroke-width="0.35"/>
+<text x="2.5" y="75" font-family="sans-serif" font-size="2.6" fill="#777">20</text>
+<line x1="9" y1="79" x2="249" y2="79" stroke="#bbb" stroke-width="0.08"/>
+<line x1="9" y1="84" x2="249" y2="84" stroke="#bbb" stroke-width="0.2"/>
+<line x1="9" y1="89" x2="249" y2="89" stroke="#bbb" stroke-width="0.08"/>
+<line x1="9" y1="94" x2="249" y2="94" stroke="#999" stroke-width="0.35"/>
+<text x="2.5" y="95" font-family="sans-serif" font-size="2.6" fill="#777">40</text>
+<line x1="9" y1="99" x2="249" y2="99" stroke="#bbb" stroke-width="0.08"/>
+<line x1="9" y1="104" x2="249" y2="104" stroke="#bbb" stroke-width="0.2"/>
+<line x1="9" y1="109" x2="249" y2="109" stroke="#bbb" stroke-width="0.08"/>
+<line x1="9" y1="114" x2="249" y2="114" stroke="#999" stroke-width="0.35"/>
+<text x="2.5" y="115" font-family="sans-serif" font-size="2.6" fill="#777">60</text>
+<line x1="9" y1="119" x2="249" y2="119" stroke="#bbb" stroke-width="0.08"/>
+<line x1="9" y1="124" x2="249" y2="124" stroke="#bbb" stroke-width="0.2"/>
+<line x1="9" y1="129" x2="249" y2="129" stroke="#bbb" stroke-width="0.08"/>
+<line x1="9" y1="134" x2="249" y2="134" stroke="#999" stroke-width="0.35"/>
+<text x="2.5" y="135" font-family="sans-serif" font-size="2.6" fill="#777">80</text>
+<line x1="9" y1="139" x2="249" y2="139" stroke="#bbb" stroke-width="0.08"/>
+<line x1="9" y1="144" x2="249" y2="144" stroke="#bbb" stroke-width="0.2"/>
+<line x1="9" y1="149" x2="249" y2="149" stroke="#bbb" stroke-width="0.08"/>
+<line x1="9" y1="154" x2="249" y2="154" stroke="#999" stroke-width="0.35"/>
+<text x="2.5" y="155" font-family="sans-serif" font-size="2.6" fill="#777">100</text>
+<line x1="9" y1="159" x2="249" y2="159" stroke="#bbb" stroke-width="0.08"/>
+<line x1="9" y1="164" x2="249" y2="164" stroke="#bbb" stroke-width="0.2"/>
+<line x1="9" y1="169" x2="249" y2="169" stroke="#bbb" stroke-width="0.08"/>
+<line x1="9" y1="174" x2="249" y2="174" stroke="#999" stroke-width="0.35"/>
+<text x="2.5" y="175" font-family="sans-serif" font-size="2.6" fill="#777">120</text>
+<line x1="9" y1="179" x2="249" y2="179" stroke="#bbb" stroke-width="0.08"/>
+<line x1="9" y1="184" x2="249" y2="184" stroke="#bbb" stroke-width="0.2"/>
+<line x1="9" y1="189" x2="249" y2="189" stroke="#bbb" stroke-width="0.08"/>
+<line x1="5" y1="54" x2="13" y2="54" stroke="#c00" stroke-width="0.4"/>
+<line x1="9" y1="50" x2="9" y2="58" stroke="#c00" stroke-width="0.4"/>
+<text x="10.5" y="195" font-family="sans-serif" font-size="3" fill="#c00">origin (0,0) at the red cross - X runs right, Y runs toward you. Label every dot: hand, finger, and which of rest / forward / back.</text>
+</svg>

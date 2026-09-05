@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240.243mm" height="125.02499999999999mm" viewBox="0 0 240.243 125.02499999999999">
+<rect width="100%" height="100%" fill="white"/>
+<polygon points="38.30,23.90 38.28,24.47 35.66,22.83 18.30,11.92 6.00,31.53 20.40,40.56 37.76,51.47 42.07,44.59 72.53,45.92 72.57,44.89 80.27,46.55 71.75,57.86 90.24,71.79 92.41,68.91 92.41,75.40 92.16,75.13 75.34,91.04 87.71,104.12 101.79,119.02 120.12,102.67 138.46,119.02 152.54,104.13 164.90,91.04 148.08,75.13 147.83,75.40 147.83,68.91 150.00,71.79 168.49,57.86 159.97,46.55 167.67,44.89 167.72,45.92 198.17,44.59 202.49,51.47 219.85,40.57 234.24,31.53 221.94,11.92 204.57,22.82 201.96,24.47 201.94,23.90 197.95,24.08 197.21,7.10 170.06,6.00 147.43,10.89 150.38,24.54 126.42,42.60 113.82,42.60 89.86,24.54 92.81,10.89 70.19,6.00 43.03,7.10 42.29,24.08" fill="#f4f7fa" stroke="#c00" stroke-width="0.5"/>
+<polygon points="9.20,30.20 18.49,15.38 32.47,24.15 23.17,38.97" fill="none" stroke="#333" stroke-width="0.35"/>
+<text x="20.83" y="28.28" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#333">LR</text>
+<polygon points="221.75,15.38 231.05,30.20 217.07,38.97 207.77,24.15" fill="none" stroke="#333" stroke-width="0.35"/>
+<text x="219.41" y="28.28" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#333">RR</text>
+<polygon points="23.59,39.24 32.88,24.42 46.86,33.19 37.56,48.01" fill="none" stroke="#333" stroke-width="0.35"/>
+<text x="35.22" y="37.32" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#333">LA</text>
+<polygon points="207.36,24.42 216.66,39.24 202.68,48.01 193.38,33.19" fill="none" stroke="#333" stroke-width="0.35"/>
+<text x="205.02" y="37.32" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#333">RA</text>
+<polygon points="48.76,9.35 66.25,10.11 65.53,26.60 48.04,25.84" fill="none" stroke="#333" stroke-width="0.35"/>
+<text x="57.14" y="19.07" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#333">LS</text>
+<polygon points="174.00,10.11 191.48,9.35 192.20,25.84 174.72,26.60" fill="none" stroke="#333" stroke-width="0.35"/>
+<text x="183.10" y="19.07" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#333">RS</text>
+<polygon points="48.03,26.33 65.52,27.09 64.80,43.58 47.31,42.82" fill="none" stroke="#333" stroke-width="0.35"/>
+<text x="56.41" y="36.05" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#333">LO</text>
+<polygon points="174.73,27.09 192.21,26.33 192.93,42.82 175.45,43.58" fill="none" stroke="#333" stroke-width="0.35"/>
+<text x="183.83" y="36.05" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#333">RO</text>
+<polygon points="72.52,8.55 89.63,12.25 86.14,28.38 69.04,24.68" fill="none" stroke="#333" stroke-width="0.35"/>
+<text x="79.33" y="19.57" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#333">LN</text>
+<polygon points="150.61,12.25 167.72,8.55 171.20,24.68 154.10,28.38" fill="none" stroke="#333" stroke-width="0.35"/>
+<text x="160.91" y="19.57" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#333">RN</text>
+<polygon points="68.93,25.17 86.04,28.87 82.55,45.00 65.45,41.30" fill="none" stroke="#333" stroke-width="0.35"/>
+<text x="75.74" y="36.18" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#333">LT</text>
+<polygon points="154.20,28.87 171.31,25.17 174.79,41.30 157.69,45.00" fill="none" stroke="#333" stroke-width="0.35"/>
+<text x="164.50" y="36.18" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#333">RT</text>
+<polygon points="95.37,31.20 109.35,41.73 99.42,54.91 85.44,44.38" fill="none" stroke="#333" stroke-width="0.35"/>
+<text x="97.39" y="44.16" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#333">LI</text>
+<polygon points="130.90,41.73 144.87,31.20 154.80,44.38 140.83,54.91" fill="none" stroke="#333" stroke-width="0.35"/>
+<text x="142.85" y="44.16" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#333">RI</text>
+<polygon points="85.14,44.78 99.12,55.31 89.19,68.49 75.21,57.96" fill="none" stroke="#333" stroke-width="0.35"/>
+<text x="87.16" y="57.73" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#333">LE</text>
+<polygon points="141.13,55.31 155.10,44.78 165.03,57.96 151.06,68.49" fill="none" stroke="#333" stroke-width="0.35"/>
+<text x="153.08" y="57.73" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#333">RE</text>
+<polygon points="78.77,90.55 91.48,78.53 102.82,90.52 90.10,102.54" fill="none" stroke="#39c" stroke-width="0.35"/>
+<text x="90.79" y="91.63" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#39c">LSP</text>
+<polygon points="148.76,78.53 161.48,90.55 150.14,102.54 137.42,90.52" fill="none" stroke="#39c" stroke-width="0.35"/>
+<text x="149.45" y="91.63" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#39c">RBK</text>
+<polygon points="91.13,103.64 103.84,91.62 115.18,103.61 102.46,115.63" fill="none" stroke="#39c" stroke-width="0.35"/>
+<text x="103.15" y="104.72" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#39c">LBK</text>
+<polygon points="136.40,91.62 149.12,103.64 137.78,115.63 125.06,103.61" fill="none" stroke="#39c" stroke-width="0.35"/>
+<text x="137.09" y="104.72" font-size="3" text-anchor="middle" font-family="sans-serif" fill="#39c">RSP</text>
+<polygon points="111.12,39.17 129.12,39.17 129.12,59.49 111.12,59.49" fill="none" stroke="#7a3" stroke-width="0.4" stroke-dasharray="2 1.5"/>
+<polyline points="113.82,39.88 113.82,55.80 114.82,56.80 125.42,56.80 126.42,55.80 126.42,39.88" fill="white" stroke="#c00" stroke-width="0.5"/>
+<text x="120.12" y="63.17" font-size="3.2" text-anchor="middle" font-family="sans-serif" fill="#7a3">A1</text>
+<text x="6" y="123.02499999999999" font-size="3.2" font-family="sans-serif" fill="#666">mesa2 outline - 51 vertices, 228 x 113 mm</text>
+</svg>

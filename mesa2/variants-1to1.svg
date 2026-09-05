@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="196mm" height="268mm" viewBox="0 0 196 268">
+<rect width="100%" height="100%" fill="white"/>
+<text x="10" y="12" font-family="sans-serif" font-size="5">mesa2 - finger variants, LEFT hand, hand-local (unibody angle removed)</text>
+<rect x="10" y="16" width="100" height="7" fill="none" stroke="#c00" stroke-width="0.25"/>
+<text x="112" y="21" font-family="sans-serif" font-size="3" fill="#c00">100.0 mm - print at 100%, no fit-to-page</text>
+<text x="10" y="30" font-family="sans-serif" font-size="3.1" fill="#333">Columns are anchored and splayed about their CENTRE - the point the finger rests on between</text>
+<text x="10" y="34.2" font-family="sans-serif" font-size="3.1" fill="#333">the two keys - not about either key. Rest a finger on the ridge between a column&#x27;s two caps.</text>
+<text x="10" y="38.400000000000006" font-family="sans-serif" font-size="3.1" fill="#333">Both are chouchou with your corrections applied, bracketing the amount: spread down, pinky and</text>
+<text x="10" y="42.60000000000001" font-family="sans-serif" font-size="3.1" fill="#333">index staggered toward the palm, pinky rotated harder. 1u caps. Thumb pairs are placeholders -</text>
+<text x="10" y="46.80000000000001" font-family="sans-serif" font-size="3.1" fill="#333">use thumb-1to1 for those. You already have chouchou printed; compare against that.</text>
+<text x="10" y="59.00" font-family="sans-serif" font-size="3.8">V1 modest   spread 19.0/19.5/21.0   stagger 24.0/6.8/0/12.0   splay +21/+5/0/-5   rock 17</text>
+<polygon points="16.09,107.12 32.43,100.85 38.34,116.25 22.01,122.52" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="27.22" cy="111.69" r="0.5" fill="#888"/>
+<polygon points="10.00,91.25 26.34,84.98 32.25,100.38 15.91,106.65" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="21.13" cy="95.81" r="0.5" fill="#888"/>
+<polygon points="34.48,87.60 51.91,86.08 53.35,102.51 35.91,104.04" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="43.91" cy="95.06" r="0.5" fill="#888"/>
+<polygon points="32.99,70.67 50.43,69.14 51.87,85.58 34.43,87.10" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="42.43" cy="78.12" r="0.5" fill="#888"/>
+<polygon points="53.92,80.00 71.42,80.00 71.42,96.50 53.92,96.50" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="62.67" cy="88.25" r="0.5" fill="#888"/>
+<polygon points="53.92,63.00 71.42,63.00 71.42,79.50 53.92,79.50" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="62.67" cy="71.25" r="0.5" fill="#888"/>
+<polygon points="74.93,91.24 92.37,92.76 90.93,109.20 73.49,107.67" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="82.93" cy="100.22" r="0.5" fill="#888"/>
+<polygon points="76.41,74.30 93.85,75.83 92.41,92.26 74.98,90.74" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="84.41" cy="83.28" r="0.5" fill="#888"/>
+<polygon points="87.74,145.10 87.13,127.61 103.62,127.03 104.23,144.52" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="95.68" cy="136.06" r="0.5" fill="#888"/>
+<polygon points="105.73,144.47 105.12,126.98 121.61,126.40 122.22,143.89" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="113.67" cy="135.44" r="0.5" fill="#888"/>
+<text x="10" y="157.10" font-family="sans-serif" font-size="3.8">V2 stronger spread 18.0/19.2/19.5   stagger 27.0/7.0/0/15.0   splay +26/+6/0/-6   rock 17</text>
+<polygon points="17.45,208.91 33.18,201.24 40.41,216.07 24.69,223.74" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="28.93" cy="212.49" r="0.5" fill="#888"/>
+<polygon points="10.00,193.63 25.73,185.96 32.96,200.79 17.23,208.46" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="21.48" cy="197.21" r="0.5" fill="#888"/>
+<polygon points="34.53,186.01 51.94,184.18 53.66,200.59 36.26,202.42" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="44.10" cy="193.30" r="0.5" fill="#888"/>
+<polygon points="32.75,169.10 50.16,167.27 51.88,183.68 34.48,185.51" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="42.32" cy="176.39" r="0.5" fill="#888"/>
+<polygon points="53.66,178.10 71.16,178.10 71.16,194.60 53.66,194.60" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="62.41" cy="186.35" r="0.5" fill="#888"/>
+<polygon points="53.66,161.10 71.16,161.10 71.16,177.60 53.66,177.60" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="62.41" cy="169.35" r="0.5" fill="#888"/>
+<polygon points="73.18,192.18 90.58,194.01 88.86,210.42 71.45,208.59" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="81.02" cy="201.30" r="0.5" fill="#888"/>
+<polygon points="74.96,175.27 92.36,177.10 90.64,193.51 73.23,191.68" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="82.80" cy="184.39" r="0.5" fill="#888"/>
+<polygon points="85.47,247.19 84.86,229.70 101.35,229.13 101.96,246.62" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="93.41" cy="238.16" r="0.5" fill="#888"/>
+<polygon points="103.46,246.57 102.85,229.08 119.34,228.50 119.95,245.99" fill="none" stroke="#222" stroke-width="0.35"/>
+<circle cx="111.40" cy="237.53" r="0.5" fill="#888"/>
+</svg>

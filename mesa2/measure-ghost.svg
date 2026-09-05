@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="196mm" height="268mm" viewBox="0 0 196 268">
+<rect width="100%" height="100%" fill="white"/>
+<text x="8.0" y="12" font-family="sans-serif" font-size="5">mesa2 - chouchou reference, hand-local (LEFT hand)</text>
+<rect x="8.0" y="16" width="100" height="7" fill="none" stroke="#c00" stroke-width="0.25"/>
+<text x="110.0" y="21" font-family="sans-serif" font-size="3" fill="#c00">100.0 mm - print at 100%, no scaling</text>
+<text x="8.0" y="30" font-family="sans-serif" font-size="3.1" fill="#333">Chouchou&#x27;s 10 left-hand keys, drawn 1:1 with its unibody angle removed (hand-local frame).</text>
+<text x="8.0" y="34.2" font-family="sans-serif" font-size="3.1" fill="#333">This is the layout you already printed - use it to mark CORRECTIONS rather than absolute positions.</text>
+<text x="8.0" y="38.400000000000006" font-family="sans-serif" font-size="3.1" fill="#333">1. Tape down. Ink the fingertips. Rest the hand over the ghosted keys as if typing, and tap.</text>
+<text x="8.0" y="42.60000000000001" font-family="sans-serif" font-size="3.1" fill="#333">2. Where each dot falls relative to its cap centre is the correction, read straight off the grid.</text>
+<text x="8.0" y="46.80000000000001" font-family="sans-serif" font-size="3.1" fill="#333">3. For the thumbs, tap the comfortable arc rather than aiming at the two drawn keys.</text>
+<text x="8.0" y="51.000000000000014" font-family="sans-serif" font-size="3.1" fill="#333">Cap centres in this sheet&#x27;s grid coordinates are listed in CHOUCHOU.md. Leave the palm area below clear.</text>
+<line x1="8.0" y1="68" x2="8.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="8.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">0</text>
+<line x1="13.0" y1="68" x2="13.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="18.0" y1="68" x2="18.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="23.0" y1="68" x2="23.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="28.0" y1="68" x2="28.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="28.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">20</text>
+<line x1="33.0" y1="68" x2="33.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="38.0" y1="68" x2="38.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="43.0" y1="68" x2="43.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="48.0" y1="68" x2="48.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="48.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">40</text>
+<line x1="53.0" y1="68" x2="53.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="58.0" y1="68" x2="58.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="63.0" y1="68" x2="63.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="68.0" y1="68" x2="68.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="68.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">60</text>
+<line x1="73.0" y1="68" x2="73.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="78.0" y1="68" x2="78.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="83.0" y1="68" x2="83.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="88.0" y1="68" x2="88.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="88.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">80</text>
+<line x1="93.0" y1="68" x2="93.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="98.0" y1="68" x2="98.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="103.0" y1="68" x2="103.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="108.0" y1="68" x2="108.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="108.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">100</text>
+<line x1="113.0" y1="68" x2="113.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="118.0" y1="68" x2="118.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="123.0" y1="68" x2="123.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="128.0" y1="68" x2="128.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="128.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">120</text>
+<line x1="133.0" y1="68" x2="133.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="138.0" y1="68" x2="138.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="143.0" y1="68" x2="143.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="148.0" y1="68" x2="148.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="148.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">140</text>
+<line x1="153.0" y1="68" x2="153.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="158.0" y1="68" x2="158.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="163.0" y1="68" x2="163.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="168.0" y1="68" x2="168.0" y2="254" stroke="#999" stroke-width="0.35"/>
+<text x="168.7" y="66.5" font-family="sans-serif" font-size="2.6" fill="#777">160</text>
+<line x1="173.0" y1="68" x2="173.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="178.0" y1="68" x2="178.0" y2="254" stroke="#bbb" stroke-width="0.2"/>
+<line x1="183.0" y1="68" x2="183.0" y2="254" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="68" x2="184.0" y2="68" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="69" font-family="sans-serif" font-size="2.6" fill="#777">0</text>
+<line x1="8.0" y1="73" x2="184.0" y2="73" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="78" x2="184.0" y2="78" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="83" x2="184.0" y2="83" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="88" x2="184.0" y2="88" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="89" font-family="sans-serif" font-size="2.6" fill="#777">20</text>
+<line x1="8.0" y1="93" x2="184.0" y2="93" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="98" x2="184.0" y2="98" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="103" x2="184.0" y2="103" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="108" x2="184.0" y2="108" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="109" font-family="sans-serif" font-size="2.6" fill="#777">40</text>
+<line x1="8.0" y1="113" x2="184.0" y2="113" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="118" x2="184.0" y2="118" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="123" x2="184.0" y2="123" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="128" x2="184.0" y2="128" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="129" font-family="sans-serif" font-size="2.6" fill="#777">60</text>
+<line x1="8.0" y1="133" x2="184.0" y2="133" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="138" x2="184.0" y2="138" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="143" x2="184.0" y2="143" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="148" x2="184.0" y2="148" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="149" font-family="sans-serif" font-size="2.6" fill="#777">80</text>
+<line x1="8.0" y1="153" x2="184.0" y2="153" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="158" x2="184.0" y2="158" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="163" x2="184.0" y2="163" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="168" x2="184.0" y2="168" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="169" font-family="sans-serif" font-size="2.6" fill="#777">100</text>
+<line x1="8.0" y1="173" x2="184.0" y2="173" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="178" x2="184.0" y2="178" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="183" x2="184.0" y2="183" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="188" x2="184.0" y2="188" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="189" font-family="sans-serif" font-size="2.6" fill="#777">120</text>
+<line x1="8.0" y1="193" x2="184.0" y2="193" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="198" x2="184.0" y2="198" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="203" x2="184.0" y2="203" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="208" x2="184.0" y2="208" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="209" font-family="sans-serif" font-size="2.6" fill="#777">140</text>
+<line x1="8.0" y1="213" x2="184.0" y2="213" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="218" x2="184.0" y2="218" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="223" x2="184.0" y2="223" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="228" x2="184.0" y2="228" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="229" font-family="sans-serif" font-size="2.6" fill="#777">160</text>
+<line x1="8.0" y1="233" x2="184.0" y2="233" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="238" x2="184.0" y2="238" stroke="#bbb" stroke-width="0.2"/>
+<line x1="8.0" y1="243" x2="184.0" y2="243" stroke="#bbb" stroke-width="0.08"/>
+<line x1="8.0" y1="248" x2="184.0" y2="248" stroke="#999" stroke-width="0.35"/>
+<text x="2.0" y="249" font-family="sans-serif" font-size="2.6" fill="#777">180</text>
+<line x1="8.0" y1="253" x2="184.0" y2="253" stroke="#bbb" stroke-width="0.08"/>
+<line x1="4.0" y1="68" x2="12.0" y2="68" stroke="#c00" stroke-width="0.4"/>
+<line x1="8.0" y1="64" x2="8.0" y2="72" stroke="#c00" stroke-width="0.4"/>
+<text x="10.0" y="259" font-family="sans-serif" font-size="3" fill="#c00">origin (0,0) at the red cross - X to the right, Y toward you</text>
+<line x1="8.0" y1="254" x2="184.0" y2="254" stroke="#c00" stroke-width="0.6"/>
+<text x="112.0" y="252" font-family="sans-serif" font-size="3" fill="#c00">DATUM - line this up with the desk edge</text>
+<polygon points="13.83,130.98 30.74,126.45 35.01,142.38 18.10,146.91" fill="none" stroke="#39c" stroke-width="0.35" stroke-dasharray="1.6 1.2"/>
+<circle cx="24.42" cy="136.68" r="0.6" fill="#39c"/>
+<text x="17.42" y="127.68" font-family="sans-serif" font-size="2.4" fill="#39c">pinky-up</text>
+<polygon points="18.23,147.41 35.14,142.88 39.41,158.81 22.50,163.34" fill="none" stroke="#39c" stroke-width="0.35" stroke-dasharray="1.6 1.2"/>
+<circle cx="28.82" cy="153.11" r="0.6" fill="#39c"/>
+<text x="21.82" y="144.11" font-family="sans-serif" font-size="2.4" fill="#39c">pinky-lo</text>
+<polygon points="38.04,115.03 55.48,113.51 56.92,129.95 39.48,131.47" fill="none" stroke="#39c" stroke-width="0.35" stroke-dasharray="1.6 1.2"/>
+<circle cx="47.48" cy="122.49" r="0.6" fill="#39c"/>
+<text x="40.48" y="113.49" font-family="sans-serif" font-size="2.4" fill="#39c">ring-up</text>
+<polygon points="39.52,131.96 56.96,130.44 58.40,146.88 40.96,148.40" fill="none" stroke="#39c" stroke-width="0.35" stroke-dasharray="1.6 1.2"/>
+<circle cx="48.96" cy="139.42" r="0.6" fill="#39c"/>
+<text x="41.96" y="130.42" font-family="sans-serif" font-size="2.4" fill="#39c">ring-lo</text>
+<polygon points="60.70,107.36 78.20,107.36 78.20,123.86 60.70,123.86" fill="none" stroke="#39c" stroke-width="0.35" stroke-dasharray="1.6 1.2"/>
+<circle cx="69.45" cy="115.61" r="0.6" fill="#39c"/>
+<text x="62.45" y="106.61" font-family="sans-serif" font-size="2.4" fill="#39c">middle-up</text>
+<polygon points="60.70,124.36 78.20,124.36 78.20,140.86 60.70,140.86" fill="none" stroke="#39c" stroke-width="0.35" stroke-dasharray="1.6 1.2"/>
+<circle cx="69.45" cy="132.61" r="0.6" fill="#39c"/>
+<text x="62.45" y="123.61" font-family="sans-serif" font-size="2.4" fill="#39c">middle-lo</text>
+<polygon points="85.93,114.70 103.37,116.22 101.93,132.66 84.49,131.14" fill="none" stroke="#39c" stroke-width="0.35" stroke-dasharray="1.6 1.2"/>
+<circle cx="93.93" cy="123.68" r="0.6" fill="#39c"/>
+<text x="86.93" y="114.68" font-family="sans-serif" font-size="2.4" fill="#39c">index-up</text>
+<polygon points="84.45,131.63 101.89,133.15 100.45,149.59 83.01,148.07" fill="none" stroke="#39c" stroke-width="0.35" stroke-dasharray="1.6 1.2"/>
+<circle cx="92.45" cy="140.61" r="0.6" fill="#39c"/>
+<text x="85.45" y="131.61" font-family="sans-serif" font-size="2.4" fill="#39c">index-lo</text>
+<polygon points="96.66,184.27 97.27,166.78 113.76,167.35 113.15,184.84" fill="none" stroke="#39c" stroke-width="0.35" stroke-dasharray="1.6 1.2"/>
+<circle cx="105.21" cy="175.81" r="0.6" fill="#39c"/>
+<text x="98.21" y="166.81" font-family="sans-serif" font-size="2.4" fill="#39c">thumb1</text>
+<polygon points="114.64,184.90 115.25,167.41 131.74,167.98 131.13,185.47" fill="none" stroke="#39c" stroke-width="0.35" stroke-dasharray="1.6 1.2"/>
+<circle cx="123.19" cy="176.44" r="0.6" fill="#39c"/>
+<text x="116.19" y="167.44" font-family="sans-serif" font-size="2.4" fill="#39c">thumb2</text>
+</svg>
