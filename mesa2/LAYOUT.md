@@ -72,16 +72,29 @@ key inboard) and ring-near vs middle-near. After nudging, the worst gap across a
 
 ## Matrix → finger
 
-The netlist fixes this and it is worth recording, because the two hands number
-their columns in opposite order:
+**Rev A** numbered the two hands' columns in opposite order, so a shared column
+joined *different* fingers — `COL_1` was the left pinky and the right index,
+`COL_4` the left index and the right pinky, and `COL_2`/`COL_3` swapped ring and
+middle the same way. It worked, since every column still carried four keys and the
+firmware maps (column, row) to a key regardless, but it read as a mistake every
+time anyone looked at it.
 
-- **Left** COL_A..D = pinky, ring, middle, index. **Right** COL_A..D = index,
-  middle, ring, pinky. That mirror-ordering is what makes each finger carry the
-  same key pair on both hands: pinky R/A, ring S/O, middle N/T, index I/E.
+**Rev B pairs the columns by finger**, the same finger on both hands:
+
+| net | keys | pin |
+|---|---|---|
+| `COL_1` | pinky `A`, both hands | GP4 |
+| `COL_2` | ring `S`/`O`, both hands | GP5 |
+| `COL_3` | middle `N`/`T`, both hands | GP6 |
+| `COL_4` | index `I`/`E`, both hands | GP7 |
+| `COL_5` | thumb `SP`/`BK`, both hands | — |
+
 - ROW_A (left) and ROW_C (right) are the **far** row, away from you.
   ROW_B / ROW_D are the **near** row.
-- COL_E is the thumb pair. LSP/RBK are the outer position, LBK/RSP the inner —
-  LSP inherits mesa1's outer thumb position, and the rest follows the mirror.
+- With the outer pinky `R` gone, `COL_1` holds two keys and the far cells
+  (`COL_1`, ROW_A) and (`COL_1`, ROW_C) are empty. Every other column holds four.
+- LSP/RBK are the outer thumb position, LBK/RSP the inner — LSP inherits mesa1's
+  outer thumb position, and the rest follows the mirror.
 
 ## Open, in rough priority order
 
@@ -180,3 +193,59 @@ import is refused. The page is only the drawing sheet; it does not affect fab.
 ### Still outside the outline
 
 LED1-4, J2 and RESET1 are parked at x ~283-311. The solid centre is their home.
+
+---
+
+## Rev B geometry
+
+**The board is the record of truth.** `placement.json`, `sw.json` and the *Placed
+positions* table above all predate the 5° hand rotation and no longer match
+`mesa2.kicad_pcb`. `revb.py` reads the positions straight out of the board, applies
+the Rev B changes and writes `revb-placement.json`; nothing else is authoritative.
+
+Three changes from Rev A:
+
+1. **The outer pinky keys are gone** — `SW_LR1`/`SW_RR1` and `D_LR1`/`D_RR1`.
+   18 keys, 9 per side.
+2. **The surviving pinky keys rotate 90°**, +90 on the left and −90 on the right.
+   That keeps the negated-rotation convention every other key pair follows, so the
+   diodes stay mirrored. The socket's long reach still lands on opposite sides of
+   the two halves — the same asymmetry mesa1 documents; orient by the silkscreen.
+   The alternative (+90 on both) buys 1.6 mm of board edge on the right, but the
+   socket sits inside the keycap envelope in every option, so the outline is
+   cap-driven and that 1.6 mm is not real.
+3. **The SP thumb keys move 1 mm toward BK**, 18.003 → 17.003 mm. The thumb caps
+   are turned across the direction of travel, so the pair is separated along the
+   cap's 16.5 mm axis exactly as the finger rows are; 18 mm left a 1.50 mm gap
+   where every finger row has 0.50 mm.
+
+Diodes ride at a fixed local offset of **(0, −4.876) mm** in their switch's frame,
+rotated 180°. `revb.py` verifies that invariant across all 20 Rev A keys before
+using it, so "adjust the diodes of the moved keys" is just preserving it.
+
+### Target positions
+
+| key | x | y | rot | | key | x | y | rot |
+|---|---|---|---|---|---|---|---|---|
+| SW_LA1 |   44.486 |  60.217 | +152.9 | | SW_RA1 |  225.514 |  60.217 | -152.9 |
+| SW_LS1 |   64.733 |  40.136 |   +2.5 | | SW_RS1 |  205.268 |  40.136 |   -2.5 |
+| SW_LO1 |   65.484 |  57.115 |   +2.5 | | SW_RO1 |  204.516 |  57.115 |   -2.5 |
+| SW_LN1 |   86.880 |  38.690 |   -7.2 | | SW_RN1 |  183.119 |  38.690 |   +7.2 |
+| SW_LT1 |   84.752 |  55.560 |   -7.2 | | SW_RT1 |  185.248 |  55.560 |   +7.2 |
+| SW_LI1 |  107.014 |  61.613 |  -32.0 | | SW_RI1 |  162.986 |  61.613 |  +32.0 |
+| SW_LE1 |   98.007 |  76.032 |  -32.0 | | SW_RE1 |  171.993 |  76.032 |  +32.0 |
+| SW_LSP1 |  105.326 | 110.151 |  +48.4 | | SW_RSP1 |  164.674 | 110.151 |  -48.4 |
+| SW_LBK1 |  118.032 | 121.450 |  +48.4 | | SW_RBK1 |  151.968 | 121.450 |  -48.4 |
+
+### Clearance
+
+Worst keycap gap over all pairs: **Rev A 0.494 mm → Rev B 0.496 mm** (ring column,
+untouched by any of this). The pairs the changes actually affect:
+
+| pair | Rev A | Rev B |
+|---|---|---|
+| pinky `A` vs ring `O` | 0.869 | 0.681 |
+| pinky `A` vs ring `S` | 6.854 | 7.354 |
+| thumb `SP` vs `BK` | 1.503 | **0.503** |
+
+Nothing drops below the 0.5 mm target, and the thumbs now match the finger rows.

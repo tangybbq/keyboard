@@ -104,25 +104,43 @@ yet — capture it before anything changes.
 Starting point: mesa2 Rev A — 20 keys, routed (401 segments, 41 vias, one zone),
 outline drawn, `production/mesa2_A.zip` already exported.
 
-- [ ] Remove the outermost pinky key
-  - [ ] Delete `SW_LR1`, `SW_RR1`, `D_LR1`, `D_RR1` from the schematic
-  - [ ] Update the matrix map in `LAYOUT.md` — the pinky column now carries one key
-- [ ] Rotate the pinky keys 90° so that their orientation is similar to the other finger keys
+**Status:** the schematic is done. Everything left on the PCB side needs KiCad
+running with the IPC API enabled — Konnect's schematic path is file-based, but its
+PCB path talks to a live KiCad.
+
+- [x] Remove the outermost pinky key
+  - [x] Delete `SW_LR1`, `SW_RR1`, `D_LR1`, `D_RR1` from the schematic — with the
+    eight wire stubs that tied those two cells to their row and column buses
+  - [x] Update the matrix map in `LAYOUT.md` — the pinky column now carries one key
+  - [ ] Delete the four footprints from the PCB
+- [ ] Rotate the pinky keys 90° so that their orientation is similar to the other
+  finger keys. Computed: **+90 on the left, −90 on the right** (`SW_LA1` +62.9 →
+  +152.9, `SW_RA1` −62.9 → −152.9), keeping the negated-rotation convention so the
+  diodes stay mirrored. Targets in `revb-placement.json`
 - [ ] Move the Sp keys 1mm closer to the Bk key: 18.00 mm → **17.00 mm**. Checked — the
   thumb pair is separated along the cap's 16.5 mm axis, same as the finger rows (the
   caps are rotated across the direction of travel), so Rev A's 18 mm leaves a 1.50 mm
   gap where every finger row has 0.50 mm. 17.00 mm makes the thumbs match everything
   else exactly.
-- [ ] Fix the mirrored column pairing — one column per finger, the same finger on both
-  sides (see *What the firmware sees*). Clarity fix, not a functional one
-- [ ] Decide and implement the Rev A / Rev B distinction — compile-time, or a board-ID
-  strap on one of the two spare Tiny2040 GPIOs. It cannot be retrofitted after fab
-- [ ] Adjust the diodes of the moved keys
-- [ ] Update `layout.py` / `placement.json` for all of the above and re-emit to the PCB (AI)
-- [ ] Re-run the cap clearance check (`clearance.py`, `fit.py`) over all remaining pairs.
-  Rev A's worst gap was +0.50 mm; the 90° pinky rotation swings a different cap corner
-  and the asymmetric `Kailh_socket_PG1350` reaches 9.575 mm one way, so this is not a
-  formality (AI)
+- [x] Fix the mirrored column pairing — one column per finger, the same finger on
+  both sides (see *What the firmware sees*). Done by moving the right-hand symbols
+  between grid cells, so every wire stayed put: index ↔ pinky and middle ↔ ring
+- [ ] Decide and implement the Rev A / Rev B distinction — compile-time, or a
+  board-ID strap. **The two spare GPIOs are GP2 and GP3**, and Rev A already has
+  dangling 0.0254 mm stubs on both at (54.61, 144.78) and (54.61, 147.32), so it
+  reads them floating exactly as the scheme needs. Cannot be retrofitted after fab
+- [ ] Adjust the diodes of the moved keys. Mechanical: every diode sits at local
+  (0, −4.876) mm in its switch's frame, rotated 180°, verified across all 20 Rev A
+  keys — the targets in `revb-placement.json` already preserve it
+- [x] Generate the Rev B geometry (AI) — `revb.py` reads Rev A straight out of
+  `mesa2.kicad_pcb` and writes `revb-placement.json`. Note `placement.json`,
+  `sw.json` and `LAYOUT.md`'s original table all predate the 5° hand rotation and do
+  **not** match the board; the PCB is the record of truth
+- [ ] Apply `revb-placement.json` to the PCB (needs KiCad running)
+- [x] Re-run the cap clearance check over all remaining pairs (AI). Worst gap
+  0.494 → 0.496 mm, and it is the ring column, untouched by any of this. The pinky's
+  tightest neighbour goes 0.869 → 0.681 mm and the thumbs land on 0.503 mm, matching
+  the finger rows. Nothing drops below the 0.5 mm target
 - [ ] Fix the routing (human)
 - [ ] Adjust the board outline (human)
 - [ ] Confirm the six M2 mounting holes are still inside the outline and clear of
@@ -131,10 +149,14 @@ outline drawn, `production/mesa2_A.zip` already exported.
 - [ ] Print the 1:1 placement sheet and check it against my hands before fab (human).
   This is the only physical check — no printed mockup. Rev A is in daily use, so the
   geometry is proven and the Rev B changes are small.
-- [ ] Update `LAYOUT.md` to the Rev B geometry
+- [x] Update `LAYOUT.md` to the Rev B geometry — target positions, the rotation
+  reasoning, the diode invariant and the clearance table
 - [ ] Write the shared matrix map — column/row net to key for both Rev B and Mesa 3, plus
   scan order and debounce expectations. This is what the firmware agent implements from
-- [ ] ERC clean, DRC clean
+- [x] ERC — no new violations. The 8 errors that remain are byte-identical in
+  Rev A (dangling GP2/GP3 stubs, `LED4` DOUT, `J2` pin 6, and the Tiny2040's power
+  pins having no driving output pin on a board it powers itself)
+- [ ] DRC clean, once the PCB is updated
 - [ ] Design review
 - [ ] Git commit Rev B
 
