@@ -275,17 +275,22 @@ Per column: pinky 2 keys, ring 4, middle 4, index 4, thumb 4.
   too, and is the source of the long-standing "symbol library 'mesa1' was not found"
   ERC warning. It wants `${KIPRJMOD}/../../mesa1/mesa1.kicad_sym`, the shape
   `fp-lib-table` already uses. Fixing it here stops it propagating further
-- [ ] Manually create the split (human) — left keeps the Tiny2040, all four SK6812s, the
-  Tag-Connect and the reset pad; right is switches, diodes and the RJ-45 only
-- [ ] Assign the 7 matrix nets to RJ-45 pins, then cross-check the pinout is identical at
-  both ends so a straight-through cable is correct (AI, as in `mesa1/DESIGN.md`)
-- [ ] Manually layout design (human). The unibody rotation and the fixed hand separation
-  stop mattering — each half is positioned independently on the desk — so the only thing
-  left to choose is how the outline sits around the keys
-- [ ] Draw new left outline (human)
-- [ ] Reflect and generate right outline (AI)
-- [ ] Place the RJ-45 and its edge relief notch (mesa1 learned to put it on B.Cu so the
-  relief moves with it)
+- [x] Manually create the split (human) — left keeps the Tiny2040, all four SK6812s, the
+  Tag-Connect and the reset pad; right is switches, diodes and the RJ-45 only. The right
+  half came out genuinely passive: 23 components, 17 nets, no power, no ground
+- [x] Assign the 7 matrix nets to RJ-45 pins, then cross-check the pinout is identical at
+  both ends so a straight-through cable is correct (AI, as in `mesa1/DESIGN.md`).
+  **Verified identical**: pin 2 `COL_1`, 3 `COL_2`, 4 `COL_3`, 5 `COL_4`, 6 `ROW_D`,
+  7 `ROW_C`, 8 `COL_5`, pin 1 spare. Pin order runs opposite between the halves, which
+  is what a part that cannot be mirrored does, and does not matter since the nets match
+- [x] Manually layout design (human). Both halves kept the mesa2 coordinate frame, so
+  every key pair still sums to x = 270.000 with matching y and negated rotation
+- [x] Draw new left outline (human) — 124 × 111 mm
+- [x] Reflect and generate right outline (human) — also 124 × 111 mm. Both are closed
+  loops: the left closes through A1's cutout as mesa2 did, the right closes on its own
+  with a straight inner edge where the MCU cutout was. The relief notches mirror exactly
+- [x] Place the RJ-45 and its edge relief notch — B.Cu on both halves, notches mirrored
+  exactly (147-152 on the left, 118-123 on the right, y 106-111)
 
   **On the jack.** It is `54602`, not `54601` — 54601 is the RJ12 6P6C part, and KiCad
   ships footprints under both numbers. `54602-908LF` is **Active**, not discontinued;
@@ -306,15 +311,41 @@ Per column: pinky 2 keys, ring 4, middle 4, index 4, thumb 4.
   drawing asks for 0.9 ±0.1. If the Amphenol ever does go away, widening the drills is
   the whole migration. The shielded options additionally want two 1.6 mm tab holes —
   at y 9.4 for RCH and Ninigi, y 3.3 for HALO, so those two cannot both be covered.
-- [ ] Mounting holes and feet — reuse `davidb-keyboard-foot.pretty`; decide standoffs
-  vs. adhesive feet
-- [ ] Reroute
-- [ ] ERC clean, DRC clean on both halves
+- [x] Mounting holes — four per half, mirrored exactly (every pair sums to 270.0)
+- [ ] Feet — reuse `davidb-keyboard-foot.pretty`; decide standoffs vs. adhesive feet
+- [x] Reroute (human)
+- [x] ERC and DRC on both halves — **DRC has no errors on either board**, schematic
+  parity is clean on both, and the right half has nothing unrouted
 - [ ] Write `mesa3/LAYOUT.md` and `mesa3/DESIGN.md` in the mesa1 style
-- [ ] Check the built halves against the shared matrix map from Rev B — same net at the
-  same key, no board-specific exceptions
-- [ ] Design review
-- [ ] Git commit
+- [x] Check the built halves against the shared matrix map from Rev B — **all 18 keys
+  keep their exact mesa2 (column, row)**, so one keymap still serves Rev B and both
+  halves and the firmware cannot tell them apart
+- [x] Design review — findings below
+- [x] Git commit
+
+### Design review — findings, all accepted as-is
+
+Nothing blocking, and none of it is being fixed: reviewed and deliberately left.
+
+- **`J1` pin 1 unconnected on both boards**, one ERC error each. Deliberate — 7 signals
+  over 8 conductors. The spare conductor could have carried GND to the right half; the
+  call was to leave that half fully passive, as mesa1 does.
+- **Silkscreen clipped by the board edge in 4 places** — A1's front silk at the left's
+  inner edge, `J1`'s back silk on both boards. Cosmetic.
+- **Mounting hole designators disagree between the halves** — H1/H2/H3/H5 on the left,
+  H2/H4/H5/H6 on the right, left over from deleting different subsets of mesa2's six.
+  The holes themselves are mirrored exactly; only the names differ.
+- **The RJ-45 sits 0.300 mm off exact mirror**, uniformly, where the keys, holes and
+  notches mirror to the micron. Harmless inside a 5 mm relief notch.
+- **Four dangling 0.0254 mm wire stubs** — three on the left, one on the right. They are
+  in the *schematic*, not on the boards, so they cost an ERC line each and nothing more.
+- Inherited from mesa2 Rev B on the left: GP2/GP3 floating, `A1` GND2 on no net,
+  `LED4` DOUT, `J2` pin 6, and `GND` without a `PWR_FLAG`.
+
+**The "unconnected GND" DRC item is a false positive — do not chase it.** The symbol
+ties the Tiny2040's GND pads into one net, so DRC wants copper between them, but the
+module commons them internally and the board does not need to. The same item appears on
+mesa2. A DRC exclusion is the only thing that would silence it.
 
 Deferred until the boards exist: the case/plate models, and the keymap itself.
 

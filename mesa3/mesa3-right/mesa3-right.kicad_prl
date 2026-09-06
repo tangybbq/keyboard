@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 2,
+    "active_layer": 25,
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_netclasses": [],
@@ -62,7 +62,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "mesa2.kicad_prl",
+    "filename": "mesa3-right.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {

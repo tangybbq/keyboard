@@ -308,12 +308,15 @@ What still reports, all of it inherited from Rev A and none of it electrical:
 - **`A1` `GND2`: unconnected, twice** (once as a floating pin, once as undriven power).
   The pad is not on any net. Tying it to `GND` clears both — the Tiny2040 commons its
   grounds internally, so it is free to do.
-- **`A1` `GND1` again, in DRC**: the pad is on `GND` but has no copper reaching it. A
-  short hop from the existing `GND` track clears the board's only unconnected item.
+- **`A1` `GND1` in DRC: a false positive, leave it.** The symbol ties the Tiny2040's
+  three GND pads into one net, so DRC wants copper joining them — but the module commons
+  them internally and the board does not need to. The same item turns up on both Mesa 3
+  halves. A DRC exclusion is the only way to silence it; routing to satisfy it would be
+  adding copper for no reason.
 - `GP2`/`GP3` floating with their 0.0254 mm stubs — spare pins, and they stay spare: the
   firmware identifies the board from a flashed CBOR model blob, not from the hardware,
   so no board-ID strap is needed. `LED4` DOUT and `J2` pin 6 are chain-end and
   no-connect respectively.
 
-Doing the three `GND` items together would take ERC to six and DRC to zero unconnected,
-which is worth it mainly so a real problem cannot hide in the noise later.
+Clearing the two real `GND` items would take ERC to six. DRC's unconnected count cannot
+reach zero without an exclusion, since what remains is the false positive above.
