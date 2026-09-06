@@ -156,9 +156,9 @@ from *Update PCB from Schematic* in the GUI.
 - [x] Confirm the six M2 mounting holes are still inside the outline and clear of
   sockets and caps
 - [x] Fixup label for Rev B
-- [ ] Print the 1:1 placement sheet and check it against my hands before fab (human).
-  This is the only physical check — no printed mockup. Rev A is in daily use, so the
-  geometry is proven and the Rev B changes are small.
+- [~] Print the 1:1 placement sheet and check it against my hands before fab (human).
+  Mockup printing now. Low stakes: Rev A is in daily use and the geometry barely moved
+  — one key gone, one cap rotated in place, thumbs in by 1 mm.
 - [x] Update `LAYOUT.md` to the Rev B geometry — target positions, the rotation
   reasoning, the diode invariant and the clearance table
 - [ ] Write the shared matrix map — column/row net to key for both Rev B and Mesa 3, plus
@@ -171,7 +171,11 @@ from *Update PCB from Schematic* in the GUI.
   Schematic parity: 0 issues. One unconnected item, A1 pad `GND1`, which Rev A has
   identically
 - [x] Design review — findings below
-- [ ] Git commit Rev B
+- [x] Git commit Rev B
+
+Two cosmetic loose ends, both documented in `LAYOUT.md` and neither worth reopening
+the board on its own: `D_RE2` is named like a matrix diode, and the new `+4V5` rail
+wants a `PWR_FLAG` to keep ERC quiet.
 
 Rev B keeps `COL_1..5 × ROW_A..D` — 18 keys in 20 slots, the two empty ones being the
 deleted pinky `R` keys. Don't re-pack to free a GPIO: the Tiny2040 has pins to spare, and
@@ -194,9 +198,10 @@ Findings, in priority order:
 1. **The Rev A / Rev B distinction is still undecided** — the only item here that
    cannot be fixed after fab. GP2 and GP3 are confirmed free on the board with their
    stubs already drawn.
-2. **No decoupling on the four SK6812s.** One 100 nF per addressable LED is the usual
-   advice and this board has none. Pre-existing, and Rev A works, so it is a
-   robustness call rather than a defect — but Rev B is the cheap moment.
+2. ~~No decoupling on the four SK6812s.~~ **Done** — `C1`-`C4`, one 100 nF per LED
+   across `+4V5`/`GND`. Along with it, the LED supply diode Rev A needed as a hand
+   rework is now designed in: `D_RE2` in series, `JP1` open across it to bypass.
+   See *Rev B — the SK6812 supply* in `LAYOUT.md`.
 3. A1's `3V3`/`5V` pins have no decoupling either. Ignorable: the Tiny2040 is a module
    and carries its own.
 4. A1 pad `GND1` is unrouted, exactly as in Rev A. The module commons its grounds and

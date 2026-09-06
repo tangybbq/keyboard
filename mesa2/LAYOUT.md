@@ -261,3 +261,45 @@ untouched by any of this). The pairs the changes actually affect:
 | thumb `SP` vs `BK` | 1.503 | **0.503** |
 
 Nothing drops below the 0.5 mm target, and the thumbs now match the finger rows.
+
+---
+
+## Rev B — the SK6812 supply
+
+**The LED chain needs a series diode, and this board is the one that proves it.**
+Rev A shipped without one and had to be reworked by hand: cut the +5 V feed, solder a
+diode in. A dozen other boards of mine with the same trick have not needed it, so do
+not carry "it'll be fine" over from them — this combination of the -HS part, this 5 V
+source and a 3.3 V data line does not work without the drop.
+
+Why: an SK6812 wants its data high above **0.7 × VDD**. At 5.0 V that is 3.5 V, and the
+RP2040 drives 3.3 V — under the threshold. Dropping VDD to ~4.3 V puts the threshold at
+3.0 V and the 3.3 V logic clears it.
+
+Only **LED1** is actually marginal. LED2-4 are driven by the previous LED's DOUT, which
+swings to its own VDD, so they are in spec either way. The diode still sits in the
+common feed rather than LED1's alone, because that reproduces the Rev A rework exactly
+and keeps all four LEDs at matching brightness.
+
+As built in Rev B:
+
+| part | role |
+|---|---|
+| `D_RE2` (1N4148W) | series diode, anode on `+5V`, cathode on the new `+4V5` rail |
+| `JP1` (SolderJumper_2_Open) | across the diode; **open by default**, so the diode is in circuit. Solder it closed to bypass |
+| `C1`-`C4` (100nF) | one per LED, across `+4V5`/`GND` |
+
+The jumper defaults to the configuration that is known to work here, and the escape
+hatch is for a future LED lot that does not need the drop.
+
+**Mesa 3 inherits this circuit**, LEDs and all, on its left half. Carry the diode, the
+jumper and the caps across with it.
+
+### Two loose ends, both cosmetic
+
+- `D_RE2` reads like a matrix diode for the right index key — `D_RE1` is one, and they
+  will sit next to each other in the BOM. Something like `D1` or `D_LED` would be
+  clearer at assembly time.
+- `+4V5` has no power-output pin on it, so ERC reports "Input Power pin not driven" for
+  LED1's VDD. A `PWR_FLAG` on the rail silences it. Left alone it is one more line of
+  permanent ERC noise, alongside the `GND1` item.
