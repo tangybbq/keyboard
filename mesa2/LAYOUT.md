@@ -285,7 +285,7 @@ As built in Rev B:
 
 | part | role |
 |---|---|
-| `D_RE2` (1N4148W) | series diode, anode on `+5V`, cathode on the new `+4V5` rail |
+| `D1` (1N4148W) | series diode, anode on `+5V`, cathode on the new `+4V5` rail |
 | `JP1` (SolderJumper_2_Open) | across the diode; **open by default**, so the diode is in circuit. Solder it closed to bypass |
 | `C1`-`C4` (100nF) | one per LED, across `+4V5`/`GND` |
 
@@ -295,11 +295,23 @@ hatch is for a future LED lot that does not need the drop.
 **Mesa 3 inherits this circuit**, LEDs and all, on its left half. Carry the diode, the
 jumper and the caps across with it.
 
-### Two loose ends, both cosmetic
+### ERC noise, and what is left of it
 
-- `D_RE2` reads like a matrix diode for the right index key — `D_RE1` is one, and they
-  will sit next to each other in the BOM. Something like `D1` or `D_LED` would be
-  clearer at assembly time.
-- `+4V5` has no power-output pin on it, so ERC reports "Input Power pin not driven" for
-  LED1's VDD. A `PWR_FLAG` on the rail silences it. Left alone it is one more line of
-  permanent ERC noise, alongside the `GND1` item.
+The LED diode is `D1`, renamed out of the matrix-diode naming it first landed in, and
+`PWR_FLAG`s on `+5V` and `+4V5` cleared the "Input Power pin not driven" reports that
+inserting a series element in a rail produces. ERC is down from 12 entries to 10.
+
+What still reports, all of it inherited from Rev A and none of it electrical:
+
+- **`A1` `GND1`: "Input Power pin not driven".** `GND` is the one rail with no
+  `PWR_FLAG` on it. One more flag clears this.
+- **`A1` `GND2`: unconnected, twice** (once as a floating pin, once as undriven power).
+  The pad is not on any net. Tying it to `GND` clears both — the Tiny2040 commons its
+  grounds internally, so it is free to do.
+- **`A1` `GND1` again, in DRC**: the pad is on `GND` but has no copper reaching it. A
+  short hop from the existing `GND` track clears the board's only unconnected item.
+- `GP2`/`GP3` floating with their 0.0254 mm stubs — deliberate, that is where a board-ID
+  strap goes. `LED4` DOUT and `J2` pin 6 are chain-end and no-connect respectively.
+
+Doing the three `GND` items together would take ERC to six and DRC to zero unconnected,
+which is worth it mainly so a real problem cannot hide in the noise later.

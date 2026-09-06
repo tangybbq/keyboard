@@ -173,9 +173,11 @@ from *Update PCB from Schematic* in the GUI.
 - [x] Design review — findings below
 - [x] Git commit Rev B
 
-Two cosmetic loose ends, both documented in `LAYOUT.md` and neither worth reopening
-the board on its own: `D_RE2` is named like a matrix diode, and the new `+4V5` rail
-wants a `PWR_FLAG` to keep ERC quiet.
+Both cosmetic loose ends are closed: the LED diode is `D1` now, and `PWR_FLAG`s on
+`+5V` and `+4V5` took ERC from 12 entries to 10. What remains is all inherited from
+Rev A — `GND` wants a flag of its own, `A1`'s `GND2` is on no net, and `GND1` has no
+copper reaching it on the board. See *ERC noise* in `LAYOUT.md`; worth doing before
+fab only so a real problem cannot hide in the noise.
 
 Rev B keeps `COL_1..5 × ROW_A..D` — 18 keys in 20 slots, the two empty ones being the
 deleted pinky `R` keys. Don't re-pack to free a GPIO: the Tiny2040 has pins to spare, and
