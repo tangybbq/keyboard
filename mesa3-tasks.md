@@ -328,8 +328,10 @@ Per column: pinky 2 keys, ring 4, middle 4, index 4, thumb 4.
 Nothing blocking, and none of it is being fixed: reviewed and deliberately left.
 
 - **`J1` pin 1 unconnected on both boards**, one ERC error each. Deliberate — 7 signals
-  over 8 conductors. The spare conductor could have carried GND to the right half; the
-  call was to leave that half fully passive, as mesa1 does.
+  over 8 conductors, and the eighth has no job to do. Running GND down it would achieve
+  nothing: the right half has no ground net, so the wire would terminate in nothing. The
+  return path for a scanned row is the column conductor it is switched into, so every
+  loop already closes through two wires of the same cable. mesa1 runs the same way.
 - **Silkscreen clipped by the board edge in 4 places** — A1's front silk at the left's
   inner edge, `J1`'s back silk on both boards. Cosmetic.
 - **Mounting hole designators disagree between the halves** — H1/H2/H3/H5 on the left,
