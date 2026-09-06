@@ -286,6 +286,26 @@ Per column: pinky 2 keys, ring 4, middle 4, index 4, thumb 4.
 - [ ] Reflect and generate right outline (AI)
 - [ ] Place the RJ-45 and its edge relief notch (mesa1 learned to put it on B.Cu so the
   relief moves with it)
+
+  **On the jack.** It is `54602`, not `54601` — 54601 is the RJ12 6P6C part, and KiCad
+  ships footprints under both numbers. `54602-908LF` is **Active**, not discontinued;
+  what looked like an EOL was a stock gap, with 3,120 landing at DigiKey on 16 Sep 2026
+  and thousands more on Marketplace. Standard lead time is 22 weeks, so it is worth
+  knowing the escape hatch:
+
+  Its pin pattern is an industry standard — 8 pins staggered 1.27 mm in two rows 2.54 mm
+  apart, 8.89 mm span, two posts 11.43 mm apart sitting 6.35 mm from the near row. The
+  TE **1705951-1** matches it exactly (checked against TE's customer drawing), as do
+  `RJ45_RCH_RC01937` (LCSC C708652), `RJ45_Ninigi_GE` and `RJ45_HALO_HFJ11-x2450HRL`,
+  all already in KiCad's library. Not `RJ45_Bel_SI-60062-F` — that one is a magjack, and
+  its magnetics would block the DC the matrix needs.
+
+  So a jack swap is **not a layout change**: same pins, same posts, same position. The
+  only difference is drill size. KiCad's 54602 footprint uses 0.76 mm signal holes and
+  3.2 mm posts; every other footprint in that list uses 0.89-0.9 and 3.25, and TE's
+  drawing asks for 0.9 ±0.1. If the Amphenol ever does go away, widening the drills is
+  the whole migration. The shielded options additionally want two 1.6 mm tab holes —
+  at y 9.4 for RCH and Ninigi, y 3.3 for HALO, so those two cannot both be covered.
 - [ ] Mounting holes and feet — reuse `davidb-keyboard-foot.pretty`; decide standoffs
   vs. adhesive feet
 - [ ] Reroute
