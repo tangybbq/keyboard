@@ -310,8 +310,10 @@ What still reports, all of it inherited from Rev A and none of it electrical:
   grounds internally, so it is free to do.
 - **`A1` `GND1` again, in DRC**: the pad is on `GND` but has no copper reaching it. A
   short hop from the existing `GND` track clears the board's only unconnected item.
-- `GP2`/`GP3` floating with their 0.0254 mm stubs — deliberate, that is where a board-ID
-  strap goes. `LED4` DOUT and `J2` pin 6 are chain-end and no-connect respectively.
+- `GP2`/`GP3` floating with their 0.0254 mm stubs — spare pins, and they stay spare: the
+  firmware identifies the board from a flashed CBOR model blob, not from the hardware,
+  so no board-ID strap is needed. `LED4` DOUT and `J2` pin 6 are chain-end and
+  no-connect respectively.
 
 Doing the three `GND` items together would take ERC to six and DRC to zero unconnected,
 which is worth it mainly so a real problem cannot hide in the noise later.

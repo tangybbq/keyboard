@@ -74,13 +74,11 @@ other way round. The requirement on this batch:
 - **Rows are already right**: `ROW_A`/`ROW_B` are the left's far and near rows,
   `ROW_C`/`ROW_D` the right's. Unchanged from Rev A, unchanged in Mesa 3.
 - **Rev A is the one board it has to tell apart**, because Rev A has the outer pinky `R`
-  and Taipo makes sense on it, and Rev B/Mesa 3 have neither. Decide how before fab — a
-  compile-time build is free, but if one binary should cover everything, the cheap
-  hardware version is a board-ID strap on a spare GPIO. The Tiny2040 breaks out twelve
-  (GP0–GP7, A0–A3) and the matrix plus RGB use ten, so two are free. Rev A leaves such a
-  pin floating, so *new* boards tie it and the default state reads as "Rev A" — which is
-  the only version of this that works, since Rev A is already fabbed and cannot be
-  changed.
+  and Taipo makes sense on it, and Rev B/Mesa 3 have neither. **Already solved in
+  software:** each keyboard is flashed with a small CBOR blob naming its model, so the
+  firmware reads the model rather than probing the hardware. No board-ID strap, no
+  GPIO, nothing to design in — and it works on Rev A, which is already fabbed and could
+  not have been changed anyway. GP2 and GP3 simply stay free.
 - **mesa2x is deliberately its own thing** — different scan algorithm, separate build,
   spec'd in `mesa2x/SCANNING.md`.
 - The matrix map is written once and shared by Rev B and Mesa 3. Two copies would drift.
@@ -133,10 +131,9 @@ from *Update PCB from Schematic* in the GUI.
 - [x] Fix the mirrored column pairing — one column per finger, the same finger on
   both sides (see *What the firmware sees*). Done by moving the right-hand symbols
   between grid cells, so every wire stayed put: index ↔ pinky and middle ↔ ring
-- [ ] Decide and implement the Rev A / Rev B distinction — compile-time, or a
-  board-ID strap. **The two spare GPIOs are GP2 and GP3**, and Rev A already has
-  dangling 0.0254 mm stubs on both at (54.61, 144.78) and (54.61, 147.32), so it
-  reads them floating exactly as the scheme needs. Cannot be retrofitted after fab
+- [x] Decide and implement the Rev A / Rev B distinction — **nothing to do on the
+  board.** Each keyboard carries a flashed CBOR blob naming its model, so the firmware
+  reads the model directly. GP2 and GP3 stay free
 - [x] Adjust the diodes of the moved keys. Mechanical: every diode sits at local
   (0, −4.876) mm in its switch's frame, rotated 180°, verified across all 20 Rev A
   keys — the targets in `revb-placement.json` already preserve it
@@ -197,9 +194,9 @@ edge or hole clearance violations · silkscreen carries the rev · track widths
 
 Findings, in priority order:
 
-1. **The Rev A / Rev B distinction is still undecided** — the only item here that
-   cannot be fixed after fab. GP2 and GP3 are confirmed free on the board with their
-   stubs already drawn.
+1. ~~The Rev A / Rev B distinction is undecided.~~ **Resolved in software** — the
+   flashed CBOR model blob already identifies the board, so no strap is needed and
+   GP2/GP3 stay free.
 2. ~~No decoupling on the four SK6812s.~~ **Done** — `C1`-`C4`, one 100 nF per LED
    across `+4V5`/`GND`. Along with it, the LED supply diode Rev A needed as a hand
    rework is now designed in: `D_RE2` in series, `JP1` open across it to bypass.
@@ -264,9 +261,20 @@ alike from the firmware's point of view.
 
 Per column: pinky 2 keys, ring 4, middle 4, index 4, thumb 4.
 
-- [ ] Make a mesa3 directory
-- [ ] Copy the mesa2 **Rev B** design project to mesa3/mesa3-left and mesa3/mesa3-right,
-  renaming projects and refs
+- [x] Make a mesa3 directory — with a `3dmodels` symlink to `../mesa1/3dmodels`, so the
+  boards' `${KIPRJMOD}/../3dmodels/…` model paths resolve the same way mesa2's do
+- [x] Copy the mesa2 **Rev B** design project to mesa3/mesa3-left and mesa3/mesa3-right,
+  renaming projects and refs. Both halves start as the *complete* 18-key board, to be
+  cut down rather than built up. Verified identical to mesa2: same 55 components, 43
+  nets, 55 footprints at identical positions, 409 segments, 41 vias, 26 outline lines.
+  Only the names, the rev (each half starts at Rev A) and the silkscreen differ.
+  Not carried over: `production/`, the freerouting `.dsn`/`.ses`, the stale `.step`
+  export, `fpdiff.py`
+- [ ] Fix `sym-lib-table` in both halves. It says `${KIPRJMOD}/../mesa1.kicad_sym`,
+  which resolves to `mesa3/mesa1.kicad_sym` and does not exist — it is wrong in mesa2
+  too, and is the source of the long-standing "symbol library 'mesa1' was not found"
+  ERC warning. It wants `${KIPRJMOD}/../../mesa1/mesa1.kicad_sym`, the shape
+  `fp-lib-table` already uses. Fixing it here stops it propagating further
 - [ ] Manually create the split (human) — left keeps the Tiny2040, all four SK6812s, the
   Tag-Connect and the reset pad; right is switches, diodes and the RJ-45 only
 - [ ] Assign the 7 matrix nets to RJ-45 pins, then cross-check the pinout is identical at
