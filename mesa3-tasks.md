@@ -217,26 +217,57 @@ Branches from **Rev B**, so the two boards share one geometry and only the wirin
 differs. 18 keys needs the smallest m with m(m−1)/2 ≥ 18, which is **m = 7** (21 pairs,
 3 spare) — down from the 9 pins the grid uses.
 
-- [ ] Copy the mesa2 Rev B dir to mesa2x, rename the project files and internal refs,
-  and check the `${KIPRJMOD}`-relative lib tables still resolve
-- [ ] Assign the 18 keys to GPIO pairs, chosen to keep the routing sane (AI)
-- [ ] Fix the diode polarity convention (cathode toward the higher-numbered pin) and
-  record it in the design notes and on the silkscreen
-- [ ] Rewire keys (human)
-- [ ] AI analysis, especially checking for ghosting with arbitrary chords.
-  Dosh is a chorded layout, so multi-key presses are the normal case, not the corner
-  case — the analysis has to cover arbitrary N-key chords, the scan sequence, and the
-  pull direction on the read pins.
-- [ ] Write `mesa2x/SCANNING.md` — the spec the Rust + Embassy firmware gets implemented
-  from. It has to state the pin roles, which pin drives and which read at each step, the
-  full scan order, pull configuration, settling time, the pair → key table, and how a
-  chord is decoded. Write it before the board goes to fab: if the algorithm doesn't come
-  out clean on paper, the board is wrong, not the firmware.
-- [ ] Make the silkscreen clearly distinguish this board from the Rev B one
-- [ ] Reroute
-- [ ] ERC clean, DRC clean
-- [ ] Design review
-- [ ] Git commit
+- [x] Copy the mesa2 Rev B dir to mesa2x (it lives at `mesa2/mesa2x`), rename the
+  project files and internal refs
+- [x] Assign the 18 keys to GPIO pairs — `SCAN_1..7` on GP0-GP4, GP27, GP28. All 21
+  pairs available, 18 used, `5-4`/`6-1`/`7-1` spare. GP5, GP6, GP7 and GP29 freed
+- [x] Fix the diode polarity convention — as built it is **cathode toward the
+  lower-numbered pin**, the opposite of the guess here, applied consistently to all 18
+  keys. Recorded in `SCANNING.md`
+- [x] Rewire keys (human)
+- [x] AI analysis of ghosting with arbitrary chords. **The result is negative and it is
+  structural.** Two pressed keys `a→c` and `c→b` forge `a→b` through a two-diode sneak
+  path, and **21 two-key chords forge a third real key** — `LA1`+`LBK1` reads as `LT1`,
+  and so on. The forged key is electrically identical to a real one, so no scan order or
+  timing resolves it. It is not the assignment's fault: 18 keys on 7 pins is 18 edges on
+  7 vertices, and Mantel's theorem caps a triangle-free graph there at 12 edges, so
+  triangles — and therefore ghosts — are unavoidable. The first pin count that fits 18
+  keys triangle-free is **9**, where the optimum is the complete bipartite 4 × 5 graph:
+  the conventional matrix mesa2 Rev B already uses. The pin saving and the ghosting are
+  the same fact. Full analysis and the chord tables are in `mesa2x/SCANNING.md`
+- [x] Write `mesa2x/SCANNING.md` — pin map, key table, the six strobe steps, pull
+  configuration, settle and debounce, the ghost tables, and the hardware change that
+  would fix it. The algorithm did **not** come out clean on paper, which per this task's
+  own terms means the board is wrong rather than the firmware — see the decision below
+- [x] Make the silkscreen clearly distinguish this board from the Rev B one
+- [x] Reroute (human)
+- [x] ERC and DRC — **DRC has no errors**, schematic parity is clean, and the single
+  unconnected item is the Tiny2040 GND false positive. ERC carries the inherited noise
+  plus four now-unused pins (GP5, GP6, GP7, A3)
+- [x] Design review — findings below
+- [x] Git commit
+
+### Design review
+
+The board is built correctly and does what it was drawn to do. The experiment answers
+its question, and the answer is no.
+
+- **DRC clean, parity clean.** 18 keys, 18 diodes, all on distinct pin pairs with a
+  consistent polarity. The LED supply work from Rev B came across intact: `D1`, `JP1`,
+  `C1`-`C4`.
+- **It buys back four GPIOs** — GP5, GP6, GP7, GP29 — exactly as advertised.
+- **It cannot resolve chords**, and cannot be made to in firmware. See above.
+- The two-diode voltage difference between a real press and a ghost is real but
+  unusable: the RP2040's input thresholds are characterisation data, not guaranteed, and
+  a ghost lands in the indeterminate band between V_IL and V_IH.
+- **Seven 1 kΩ series resistors would fix it**, by letting the scan drive non-read pins
+  high instead of leaving them floating. That is the change to make if this ever becomes
+  more than an experiment.
+
+**Recommendation: fab it anyway.** It is one board in a shipping-dominated order, the
+layout is done, and the negative result is worth having in hand. But do not plan a
+keyboard around it, and do not let the pin saving tempt Mesa 4 — the saving *is* the
+ghosting.
 
 ## Mesa 3
 
