@@ -310,11 +310,20 @@ Per column: pinky 2 keys, ring 4, middle 4, index 4, thumb 4.
   Only the names, the rev (each half starts at Rev A) and the silkscreen differ.
   Not carried over: `production/`, the freerouting `.dsn`/`.ses`, the stale `.step`
   export, `fpdiff.py`
-- [ ] Fix `sym-lib-table` in both halves. It says `${KIPRJMOD}/../mesa1.kicad_sym`,
-  which resolves to `mesa3/mesa1.kicad_sym` and does not exist — it is wrong in mesa2
-  too, and is the source of the long-standing "symbol library 'mesa1' was not found"
-  ERC warning. It wants `${KIPRJMOD}/../../mesa1/mesa1.kicad_sym`, the shape
-  `fp-lib-table` already uses. Fixing it here stops it propagating further
+- [ ] Fix `sym-lib-table` in **four** projects: `mesa2/mesa2`, `mesa2/mesa2x`,
+  `mesa3/mesa3-left`, `mesa3/mesa3-right`. All four say
+  `${KIPRJMOD}/../mesa1.kicad_sym`, inherited from mesa1 where that path is correct —
+  mesa1's own projects sit inside `mesa1/`, so `../` finds the symbol file. The copies
+  do not, so it resolves to `mesa2/mesa1.kicad_sym` and `mesa3/mesa1.kicad_sym`, neither
+  of which exists. That is the long-standing "symbol library 'mesa1' was not found"
+  ERC warning.
+
+  The fix is the same one string in all four, matching what `fp-lib-table` already uses:
+
+      ${KIPRJMOD}/../../mesa1/mesa1.kicad_sym
+
+  In the GUI: **Preferences → Manage Symbol Libraries → Project Specific Libraries**,
+  edit the `mesa1` row's path. Leave mesa1's own two projects alone — they are correct
 - [x] Manually create the split (human) — left keeps the Tiny2040, all four SK6812s, the
   Tag-Connect and the reset pad; right is switches, diodes and the RJ-45 only. The right
   half came out genuinely passive: 23 components, 17 nets, no power, no ground
@@ -356,7 +365,8 @@ Per column: pinky 2 keys, ring 4, middle 4, index 4, thumb 4.
 - [x] Reroute (human)
 - [x] ERC and DRC on both halves — **DRC has no errors on either board**, schematic
   parity is clean on both, and the right half has nothing unrouted
-- [ ] Write `mesa3/LAYOUT.md` and `mesa3/DESIGN.md` in the mesa1 style
+- [x] Write `mesa3/LAYOUT.md` and `mesa3/DESIGN.md` in the mesa1 style — geometry and
+  verification in the first, decisions in the second
 - [x] Check the built halves against the shared matrix map from Rev B — **all 18 keys
   keep their exact mesa2 (column, row)**, so one keymap still serves Rev B and both
   halves and the firmware cannot tell them apart
