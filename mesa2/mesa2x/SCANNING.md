@@ -142,13 +142,43 @@ squarely in the indeterminate band. It is neither guaranteed to read low nor hig
 where it lands varies with part, temperature and diode lot. Designing on it produces
 false keys that appear on one board and not another.
 
-### What would actually fix it, in hardware
+### Series resistors do not fix it — checked numerically
 
-Add a series resistor (about 1 kΩ) on each of the seven scan pins. Then the scan can
-drive every non-read pin **high** instead of leaving it floating, which removes the
-intermediate node the sneak path needs, and the resulting diode short becomes
-(3.3 − 0.7)/2 kΩ ≈ 1.3 mA instead of tens of milliamps. Seven resistors, and the
-topology becomes sound.
+An earlier draft of this document claimed that adding ~1 kΩ series resistors on the
+seven scan pins, and driving every non-read pin high instead of leaving it floating,
+would make the topology sound. **That is wrong.** A DC solve of the actual network with
+a real diode model says otherwise.
+
+Strobing pin 2 and reading pin 6, where the real key is `LBK1` (6→2) and the ghost comes
+from `LE1`+`RT1` (6→4→2):
+
+| configuration | real press alone | ghost | real press **plus** another key into the same strobe |
+|---|---|---|---|
+| as built (pull-ups, no R) | 0.41 V ✓ low | 0.84 V — indeterminate | — |
+| 220 Ω + drive high | 0.43 V ✓ | 2.33 V ✓ high | **1.73 V — missed** |
+| 1 kΩ + drive high | 0.50 V ✓ | 2.32 V ✓ high | **1.79 V — missed** |
+| 4.7 kΩ + drive high | 0.80 V ✓ | 2.36 V ✓ high | **1.94 V — missed** |
+| stiff strobe, 1 kΩ on the driven pins | 0.46 V ✓ | **1.15 V — indeterminate** | 0.58 V ✓ |
+
+Driving the non-read pins high does block the ghost. But it also injects current into the
+strobe node through every *other* pressed key on that strobe, lifting the node about a
+diode drop — and the real press you are trying to read rides up with it, out of the low
+band. So the resistors trade a false key for a missed key. Making the strobe stiff
+instead recovers detection and hands the ghost straight back.
+
+**The reason is structural, not a matter of component values.** The read pin always
+clamps one diode drop above the strobe node for a real press, and two drops above it for
+a ghost. Resistors only move where the strobe node sits; they never change that the
+separation is exactly **one Vf ≈ 0.6 V**. To read reliably through the RP2040's
+guaranteed levels you need the real press at or below V_IL = 0.8 V *and* the ghost at or
+above V_IH = 2.0 V — a separation of at least 1.2 V, or two diode drops. One diode cannot
+straddle that band, and choosing a higher-Vf part does not help, because it raises the
+real press by exactly as much as it raises the ghost.
+
+Measuring the level with the ADC does not rescue it either: the table shows the same real
+press reading 0.41 V alone and 1.79 V with one more key down. The level depends on the
+rest of the chord, so there is no fixed threshold to compare against — and only four of
+the seven scan pins are ADC-capable anyway.
 
 ### Why no rewiring helps
 
@@ -167,15 +197,15 @@ returns to the same side, where no key exists.
 
 So the pin saving and the ghosting are the same fact seen from two directions.
 
-## What to implement now
+## Verdict
 
-The board is worth building and typing on, but scope the firmware honestly:
+**Do not build firmware against this board expecting it to work as a keyboard.** The
+scan above is correct and complete for what the hardware can do, and what the hardware
+can do is not enough: 21 two-key chords forge a third real key, the forged key is
+indistinguishable from a real one, and no resistor, drive mode, diode choice or ADC trick
+separates them.
 
-- **Single keys and any chord not in the tables above: correct.** Most of Dosh's chord
-  set is unaffected.
-- **The 21 listed chords: wrong**, in a way no amount of firmware care will fix.
-- Implement the unused-pair check. It is nearly free and it turns an invisible failure
-  into a loud one during bring-up.
-- If the board is to become more than an experiment, fit the seven series resistors and
-  switch the scan to driving non-read pins high. That version is sound, and the spec
-  above changes only in step 1.
+If the board is fabbed anyway as a curiosity, the scan above works for single keys and
+for chords outside the tables, and the unused-pair check is worth implementing because it
+turns an invisible failure into a loud one. But the useful output of this experiment is
+this document, not a working keyboard.

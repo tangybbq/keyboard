@@ -14,11 +14,11 @@ middle `N`/`T`, index `I`/`E`, thumbs `SP`/`BK`. **9 keys per side, 18 total.**
 No ref renaming is needed anywhere — `SW_LR1`, `SW_RR1` and their diodes are simply
 deleted.
 
-**Everything here ends in one fab order of four PCBs** — mesa2 Rev B, mesa2x Rev A,
-mesa3-left, mesa3-right. Fab cost is dominated by shipping, so all four designs must
-be finished and reviewed before anything is ordered. The 2x board is an experiment for
-possible future use; the Mesa 3 does **not** wait on its results and uses the same
-conventional scanned matrix as Rev B.
+**Everything here ends in one fab order.** It was planned as four PCBs — mesa2 Rev B,
+mesa2x Rev A, mesa3-left, mesa3-right — and is now **three**: the 2x experiment was
+completed, analysed and dropped, because the pairwise matrix cannot resolve chords and no
+hardware change short of more pins fixes it. Fab cost is dominated by shipping, so the
+remaining three designs must be finished and reviewed before anything is ordered.
 
 ## Conventions
 
@@ -40,7 +40,7 @@ conventional scanned matrix as Rev B.
 | board | dir | keys | matrix | controller |
 |---|---|---|---|---|
 | mesa2 Rev B | `mesa2/mesa2` | 18 | 5 × 4, per-finger columns | Tiny2040, unibody |
-| mesa2x Rev A | `mesa2x/mesa2x` | 18 | pairwise (experiment) | Tiny2040, unibody |
+| ~~mesa2x Rev A~~ | `mesa2/mesa2x` | 18 | pairwise — **not being fabbed**, see below | Tiny2040, unibody |
 | mesa3-left | `mesa3/mesa3-left` | 9 | the same 5 × 4, spanning both halves | Tiny2040 + RJ-45 |
 | mesa3-right | `mesa3/mesa3-right` | 9 | " | passive, RJ-45 only |
 
@@ -260,14 +260,23 @@ its question, and the answer is no.
 - The two-diode voltage difference between a real press and a ghost is real but
   unusable: the RP2040's input thresholds are characterisation data, not guaranteed, and
   a ghost lands in the indeterminate band between V_IL and V_IH.
-- **Seven 1 kΩ series resistors would fix it**, by letting the scan drive non-read pins
-  high instead of leaving them floating. That is the change to make if this ever becomes
-  more than an experiment.
+- **Series resistors do not fix it.** Checked with a DC solve of the real network, not
+  by argument. Driving the non-read pins high does block the ghost, but it lifts the
+  strobe node by a diode drop for every *other* key pressed on that strobe, and the real
+  press rides up out of the low band with it — 1.79 V where it needs to be under 0.8 V.
+  Trading a false key for a missed key. Making the strobe stiff instead recovers
+  detection and hands the ghost back. The read pin sits one diode drop above the strobe
+  for a real press and two for a ghost; resistors move the strobe node but never change
+  that the separation is one Vf ≈ 0.6 V, where the RP2040's guaranteed levels need 1.2 V.
+  A higher-Vf part raises both sides equally, and the ADC cannot help because the real
+  press reads 0.41 V alone and 1.79 V with one more key down.
 
-**Recommendation: fab it anyway.** It is one board in a shipping-dominated order, the
-layout is done, and the negative result is worth having in hand. But do not plan a
-keyboard around it, and do not let the pin saving tempt Mesa 4 — the saving *is* the
-ghosting.
+**Recommendation: drop it from the fab batch.** Reversing the earlier call to fab it
+anyway. There is no configuration of this board that resolves chords, so a physical copy
+would only demonstrate what the analysis already establishes, and the analysis is
+structural rather than empirical. The useful output of the experiment is
+`mesa2x/SCANNING.md`. Keep the project in the tree — it is finished, reviewed and
+routed — and if the curiosity is ever worth a board, it is one file change to add back.
 
 ## Mesa 3
 
