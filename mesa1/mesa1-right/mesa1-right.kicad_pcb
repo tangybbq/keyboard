@@ -182,12 +182,6 @@
 		(path "/4c29bfc1-abda-4820-88dd-f982b17bf06b")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7 -6)
@@ -808,6 +802,39 @@
 			(uuid "f92d2d49-1a96-409b-857c-b66ad673ea2f")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "mesa1:Kailh_socket_PG1350"
 		(layer "F.Cu")
@@ -865,12 +892,6 @@
 		(path "/2b3ab174-5151-4465-916a-4ef1c4b879d8")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 7 7)
@@ -1491,6 +1512,39 @@
 			(uuid "c681f5ae-41d3-485c-9053-620651f05d96")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "mesa1:Kailh_socket_PG1350"
 		(layer "F.Cu")
@@ -1548,12 +1602,6 @@
 		(path "/88bcab3a-347f-4914-9086-4bb99d1cd027")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 7 7)
@@ -2174,6 +2222,39 @@
 			(uuid "2a8b1f6b-9b6e-4a70-8515-35fe25a9f818")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "mesa1:Kailh_socket_PG1350"
 		(layer "F.Cu")
@@ -2231,12 +2312,6 @@
 		(path "/5f518d1c-6a26-4f92-a0e6-45f8d8145070")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7 -6)
@@ -2857,6 +2932,39 @@
 			(uuid "94d35581-f354-451f-abef-b71c880f6985")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "mesa1:Kailh_socket_PG1350"
 		(layer "F.Cu")
@@ -2914,12 +3022,6 @@
 		(path "/469d6389-7ee8-4ff4-9f9e-3ce729329423")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 7 7)
@@ -3540,6 +3642,39 @@
 			(uuid "7d35587f-d41d-44c7-ae8a-daba701a1846")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "mesa1:Kailh_socket_PG1350"
 		(layer "F.Cu")
@@ -3597,12 +3732,6 @@
 		(path "/2c7ee05a-e3d7-483f-a90e-58155be25095")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7 -6)
@@ -4223,6 +4352,39 @@
 			(uuid "18d75b2b-eb6b-4b55-b8a0-753210c8e147")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "mesa1:Kailh_socket_PG1350"
 		(layer "F.Cu")
@@ -4280,12 +4442,6 @@
 		(path "/576b7e8e-fa96-428f-89ed-6a54d419fb6b")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7 -6)
@@ -4906,6 +5062,39 @@
 			(uuid "c54f5234-513f-460f-a7d9-0dbb5408556f")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "mesa1:Kailh_socket_PG1350"
 		(layer "F.Cu")
@@ -4963,12 +5152,6 @@
 		(path "/821136cf-da7c-4a09-82a6-075c8ec3fc9f")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7 -6)
@@ -5589,6 +5772,39 @@
 			(uuid "1da99a93-8eea-4671-81de-cb1c04d69799")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "mesa1:Kailh_socket_PG1350"
 		(layer "F.Cu")
@@ -5646,12 +5862,6 @@
 		(path "/782143d4-26eb-4388-aefa-49d13855b589")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7 -6)
@@ -6272,6 +6482,39 @@
 			(uuid "97fe763a-4d42-44e2-b815-849b818a2019")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "mesa1:Kailh_socket_PG1350"
 		(layer "F.Cu")
@@ -6329,12 +6572,6 @@
 		(path "/18f711bd-9f78-4b38-a8b3-ee02fd7efe5a")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7 -6)
@@ -6955,6 +7192,39 @@
 			(uuid "83336428-d6fa-4974-868a-40cf3a9d1e8d")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "mesa1:Kailh_socket_PG1350"
 		(layer "F.Cu")
@@ -7012,12 +7282,6 @@
 		(path "/fe16cf3d-6bde-4d68-a482-ac2acff2bc09")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7 -6)
@@ -7638,6 +7902,39 @@
 			(uuid "40eb99ad-ac4b-454f-bba8-93ec509a7362")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "mesa1:Kailh_socket_PG1350"
 		(layer "F.Cu")
@@ -7695,12 +7992,6 @@
 		(path "/60cf612c-150e-4c7a-928b-db49ed310f52")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7 -6)
@@ -8321,6 +8612,39 @@
 			(uuid "c4531129-51d8-4951-b481-e367aca7aeb5")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "mesa1:Kailh_socket_PG1350"
 		(layer "F.Cu")
@@ -8378,12 +8702,6 @@
 		(path "/2e90f4cb-90c7-42f8-9cf0-807bc5000ec4")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7 -6)
@@ -9004,6 +9322,39 @@
 			(uuid "ddfeff9f-a5f7-41e5-93a7-d26761090056")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "mesa1:Kailh_socket_PG1350"
 		(layer "F.Cu")
@@ -9061,12 +9412,6 @@
 		(path "/b85967cd-00c2-4635-ade6-3f3c59430015")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7 -6)
@@ -9687,6 +10032,39 @@
 			(uuid "c6042704-5f20-4440-aadd-613c24bc67c9")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "mesa1:Kailh_socket_PG1350"
 		(layer "F.Cu")
@@ -9744,12 +10122,6 @@
 		(path "/c96e7626-a26b-4393-b6ad-59cc010d831d")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7 -6)
@@ -10370,6 +10742,39 @@
 			(uuid "9470ef1f-c110-46dd-8c9b-41f59a778442")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../3dmodels/Kailh_socket_PG1350.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/SW_Kailh_Choc_V1.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/../3dmodels/MBK_Keycap_1u.step"
+			(offset
+				(xyz 0 0 6.65)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "Diode_SMD:D_SOD-123"
 		(layer "B.Cu")
@@ -10433,12 +10838,6 @@
 		(path "/dc9f01a4-0bc2-4f92-b2b0-a3609b7550db")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10728,12 +11127,6 @@
 		(path "/f2af0cdb-c0fb-466a-9a2a-206712dbf291")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11023,12 +11416,6 @@
 		(path "/44cdebdc-4d45-4ad9-8ad6-75435093d97b")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "8" "7" "6" "5" "4" "3" "2" "1")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11372,12 +11759,6 @@
 		(path "/4e33399f-c1e3-47a6-beca-3ba1faa30c10")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11667,12 +12048,6 @@
 		(path "/7eff9342-a86f-4346-b8ff-2c86035e625e")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11962,12 +12337,6 @@
 		(path "/ff39a6fd-40a6-42cb-a2db-71ed81920850")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12257,12 +12626,6 @@
 		(path "/d9488b30-7ce0-427e-8a49-7b9d6e162e02")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12552,12 +12915,6 @@
 		(path "/75a83fbd-f86c-4584-9f0b-bbdc0c4f7c00")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12847,12 +13204,6 @@
 		(path "/6c3998e5-2510-4c56-a142-022a4f48daf1")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13142,12 +13493,6 @@
 		(path "/bfce0c75-e351-4098-b3b7-b84af1212ed2")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13437,12 +13782,6 @@
 		(path "/7505f9a3-3285-4e3f-990c-e222b7ea7296")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13732,12 +14071,6 @@
 		(path "/6069a197-6635-4fb2-be04-3fda7a2df9fe")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14027,12 +14360,6 @@
 		(path "/c8d85a61-2436-4c14-a6c7-4a868d0725b8")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14322,12 +14649,6 @@
 		(path "/dc672f31-5b9f-484b-a73f-1c7f47a7327e")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14617,12 +14938,6 @@
 		(path "/e154e7ee-11a1-4e63-9f98-5c730119edf7")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14912,12 +15227,6 @@
 		(path "/9d664d84-a480-4b73-95b5-b83602b4499d")
 		(sheetname "/")
 		(sheetfile "mesa1-right.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
