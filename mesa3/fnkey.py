@@ -51,6 +51,9 @@ KEYS = [('SW_LE1', 'SW_LFN1', +1)]
 
 
 # ------------------------------------------------------------------ read --
+LAYER = {}                            # ref -> "F.Cu" / "B.Cu", filled by parse_pcb
+
+
 def parse_pcb(s):
     out = {}
     for m in re.finditer(r'\(footprint[\s"]', s):
@@ -62,9 +65,12 @@ def parse_pcb(s):
                 if d == 0: blk = s[i:j+1]; break
         r = re.search(r'"Reference" "([^"]+)"', blk)
         at = re.search(r'\(at ([\d.-]+) ([\d.-]+)(?: ([\d.-]+))?\)', blk)
+        ly = re.search(r'\(layer "([^"]+)"', blk)
         if r and at:
             out[r.group(1)] = (float(at.group(1)), float(at.group(2)),
                                float(at.group(3) or 0))
+            if ly:
+                LAYER[r.group(1)] = ly.group(1)
     return out
 
 
@@ -167,17 +173,24 @@ for _, new, _sign in KEYS:
     flag = '' if worst[0] >= CLR - 0.005 else '   <-- BELOW TARGET'
     print(f"{new}: worst cap gap {worst[0]:.3f} mm (vs {worst[1]}){flag}")
 
-# and against everything that is not a key, which is where the real risk is
+# Non-key neighbours. Only same-side parts can foul a keycap or the switch
+# body -- a part on the other copper layer is on the far side of the board and
+# is not a mechanical conflict however close it looks in x/y. Both are listed,
+# because the far side still matters for routing, but only the near side is
+# flagged.
 print()
 others = {k: v for k, v in board.items()
           if not k.startswith(('SW_', 'D_', 'H'))}
 for _, new, _sign in KEYS:
     x, y, _r = final[new]
+    side = LAYER.get(new, 'F.Cu')
     near = sorted(((math.dist((x, y), (v[0], v[1])), k)
-                   for k, v in others.items()))[:4]
-    print(f"{new}: nearest non-key parts (centre to centre)")
+                   for k, v in others.items()))[:6]
+    print(f"{new} is on {side}; nearest non-key parts (centre to centre):")
     for dist, k in near:
-        print(f"    {k:8s} {dist:7.2f} mm")
+        other = LAYER.get(k, '?')
+        note = 'same side' if other == side else 'far side, not a clearance issue'
+        print(f"    {k:8s} {dist:7.2f} mm  {other:5s}  {note}")
 
 json.dump(out, open(OUT, 'w'), indent=1)
 print(f"\nwrote {os.path.basename(OUT)} ({len(out)} footprints)")

@@ -70,9 +70,13 @@ Positive would throw the key off the board rather than merely misplace it. With 
 right it lands at `SW_RFN1` (156.728, 85.571) @ +32.0 and `D_RFN1` (154.144, 81.436),
 which sum with the left pair to 270.000 in x for both the switch and the diode.
 
-**Clearance to watch:** `JP1` clears the new keycap edge by only **0.52 mm**. Nothing sits
-under the cap or the switch body, but `JP1` is the bypass jumper across `D1` and a soldering
-iron has to reach it, so check that before the layout is frozen.
+**Clearance.** The switches are on `F.Cu` and the keycaps stand above that face, so only
+same-side parts can foul them. `JP1` passes within 0.52 mm of the new keycap edge in x/y
+but sits on `B.Cu`, on the far side of the board, and is not a conflict — nor are `D1`,
+`C1`-`C4`, `J1` or the diodes, all of which are back-side. The nearest part that shares
+the front face is `LED1` at 15.67 mm centre to centre, well clear of the 12.03 mm cap
+half-diagonal. `fnkey.py` reports the layer beside each neighbour so this distinction is
+visible rather than inferred.
 
 ### What the positions inherit from mesa2 Rev B
 
