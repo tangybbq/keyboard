@@ -15,3 +15,34 @@ __pycache__/
 
 # KiCad lock files for open projects.
 ~*.lck
+
+# Upstream footprint/symbol libraries and reference designs, cloned in place
+# rather than vendored.  Re-clone with:
+#   git clone https://github.com/keebio/Keebio-Parts.pretty
+#   git clone https://github.com/daprice/keyswitches.pretty
+#   git clone https://github.com/keebio/keebio-components
+#   git clone https://github.com/dlip/chouchou
+Keebio-Parts.pretty/
+keyswitches.pretty/
+keebio-components/
+chouchou/
+
+# The RP2040 minimal reference design, downloaded from the vendor.
+minimal/
+Minimal-KiCAD.zip
+
+# Downloaded tools, not sources.  Freerouting is
+# https://github.com/freerouting/freerouting/releases, konnect is the KiCad MCP
+# plugin distribution.
+freerouting-*.jar
+konnect/
+
+# Machine-local MCP server config; it holds an absolute path to the konnect
+# binary on this machine.
+.mcp.json
+
+# KiCad scratch files written when a board is exported without being saved.
+*-unsaved-export-*.kicad_prl
+
+# FreeCAD backups.
+*.FCBak
