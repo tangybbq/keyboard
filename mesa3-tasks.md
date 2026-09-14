@@ -483,15 +483,26 @@ Decide this before routing, not after.
   right, and the left is what to solve first.
 - [ ] Keycap gap against the 0.5 mm target, as for every other key pair.
 
-### The interconnect, and whether it stays RJ-45
+### The interconnect stays RJ-45 — settled 2026-09-14
 
 **The signal count does not change.** Seven still cross — five columns plus `ROW_C` and
 `ROW_D` — because the new right-hand key reuses nets that already make the trip. Any
 replacement connector therefore still needs **seven usable conductors**, the same bar
 RJ-45 clears today with one pin spare.
 
-USB-C is being considered for the cable. The pin count is the thing to settle first, and
-it turns on which kind of cable, not which brand:
+**Decision: RJ-45 stays for Rev B.** USB-C was considered and set aside. The reasoning
+below is kept because it is the argument, not just the answer, and because mesa3w will
+have to make the same call.
+
+The deciding point is not the pin count at all — it is **what is on the other end**. A
+USB-C cable only starts to make sense if the right half gains an MCU of its own, because
+then the link becomes a serial one between two smart halves, needing two or three
+conductors rather than seven, and orientation stops mattering. Carrying a passive matrix
+over USB-C is using a connector for something it was never shaped for. So the connector
+question is really a topology question, and it should be reopened only if the right half
+stops being passive.
+
+The pin analysis, for when that question comes back:
 
 - **A USB 2.0 C-to-C cable carries about five usable conductors** — `VBUS`, `GND`, `D+`,
   `D-` and one `CC`, plus shield. That is **fewer than the seven needed**, so if the
@@ -512,10 +523,11 @@ it turns on which kind of cable, not which brand:
   negotiation, straight onto matrix lines. Nobody plugs an RJ-45 into a charger. This is
   the strongest argument for staying put.
 
-The Keebio cables specifically could not be checked — their site refuses automated
-fetches. Two ways to settle it: whether the product is sold as USB 2.0 or full-featured
-answers it outright, and failing that a continuity test end to end on one cable gives the
-real conductor list, which is the only answer that can be trusted anyway.
+On sourcing: Keebio is not a useful supplier for this kind of question. They publish no
+datasheets to speak of — their surface-mount USB-C connector is listed with no part
+number at all — because they are selling to people building from published kits rather
+than designing boards. Anything of theirs would have to be characterised by continuity
+test before it could be designed against, which is a poor foundation for an interconnect.
 
-- [ ] Determine what the candidate cable actually connects, then decide
-- [ ] If USB-C survives that, decide how orientation is handled before any layout work
+- [x] Determine what the candidate cable actually connects, then decide — moot; RJ-45
+  stays, and the question is deferred to whether the right half ever gains an MCU

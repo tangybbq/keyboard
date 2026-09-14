@@ -199,11 +199,15 @@ already carries `A1`, the reset pad, `J2` and `J1`; the right half's inner regio
 only two mounting holes and its `J1`. Solve the left position first and the right will
 follow.
 
-The interconnect is also under review — USB-C instead of RJ-45 — but the requirement is
-unchanged at seven conductors, since the new key adds none. `mesa3-tasks.md` has the
-analysis; the short version is that a USB 2.0 C-to-C cable carries too few conductors,
-a full-featured one carries plenty but is not orientation-safe without a mux, and a
-USB-C receptacle invites being plugged into a charger in a way an RJ-45 never is.
+**The interconnect stays RJ-45.** USB-C was considered on 2026-09-14 and set aside. The
+requirement never moved off seven conductors, since the new key adds none, and a USB 2.0
+C-to-C cable carries about five; a full-featured cable has enough but is not
+orientation-safe without a CC-sensing mux, and a USB-C receptacle invites being plugged
+into a charger in a way an RJ-45 never is. The real point is that the connector question
+is a **topology** question: USB-C only makes sense if the right half gains an MCU, at
+which point the link is a two- or three-wire serial one between smart halves rather than
+a passive matrix stretched over a cable. Reopen it only if that changes.
+`mesa3-tasks.md` has the full argument.
 
 ## Still to do
 
