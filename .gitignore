@@ -46,3 +46,8 @@ konnect/
 
 # FreeCAD backups.
 *.FCBak
+
+# Per-machine Claude Code permissions, at the root and in jolt3.  Already
+# covered by ~/.config/git/ignore on this machine; repeated here so the repo
+# explains itself.
+**/.claude/settings.local.json
