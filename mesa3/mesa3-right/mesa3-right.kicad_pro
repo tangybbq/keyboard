@@ -559,7 +559,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "mesa2.dsn",
-      "step": "mesa2.step",
+      "step": "mesa3-right.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
