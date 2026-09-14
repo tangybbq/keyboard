@@ -20,7 +20,9 @@ Each half is **124.0 × 111.0 mm**.
 
 ## Key positions
 
-Nine keys per side, 18 in total. Rotations are negated between the halves; y is identical.
+Nine keys per side, 18 in total in Rev A. Rotations are negated between the halves; y is
+identical. Rev B adds the `FN` mode key on the left only, listed separately below because
+it is the one key that does not yet have a mirror partner.
 
 | finger | left | x | y | rot | right | x | y | rot |
 |---|---|---|---|---|---|---|---|---|
@@ -36,6 +38,41 @@ Nine keys per side, 18 in total. Rotations are negated between the halves; y is 
 
 Verified on the boards, not in a model: every pair sums to 270.000 in x, shares a y, and
 has negated rotation.
+
+### The FN mode key — Rev B, left half only
+
+| key | ref | x | y | rot |
+|---|---|---|---|---|
+| mode | `SW_LFN1` | 113.272 | 85.571 | -32.0 |
+| its diode | `D_LFN1` | 115.856 | 81.436 | +148.0 |
+
+**Computed, not placed.** `mesa3/fnkey.py` derives it from `SW_LE1` and writes
+`fn-placement.json`; `apply-fnkey.py` puts it on the board. The rule is a local offset of
+**(18.000, 0) in `SW_LE1`'s own frame**, carrying `SW_LE1`'s rotation unchanged, so the
+new cap sits parallel to the index near key and one place inboard of it.
+
+The 18.000 mm is not chosen, it is forced: the 1u choc cap is **17.5 mm across local X**
+and the board's air-gap target is **0.5 mm**, so 18.0 is the tightest pitch that does not
+overlap. The resulting cap gap against `SW_LE1` is 0.500 mm exactly — the new worst gap on
+the board, against the 0.496 mm the thumb pair already had.
+
+`D_LFN1` follows at the same `(0, -4.876)` local offset and 180° rotation as every other
+diode, and `fnkey.py` verifies that invariant across the existing keys before it relies
+on it.
+
+**No mirror partner yet.** Whether the right half gets one is still open. Until it does,
+the "every pair sums to 270.000" invariant simply does not apply to this key — it is not
+a violation, it is an absence.
+
+If the right key is added, note the **sign**: local +X points *outboard* on the right
+half, so the offset there is `SW_RE1` + **(-18, 0)** in that key's frame, not (+18, 0).
+Positive would throw the key off the board rather than merely misplace it. With the sign
+right it lands at `SW_RFN1` (156.728, 85.571) @ +32.0 and `D_RFN1` (154.144, 81.436),
+which sum with the left pair to 270.000 in x for both the switch and the diode.
+
+**Clearance to watch:** `JP1` clears the new keycap edge by only **0.52 mm**. Nothing sits
+under the cap or the switch body, but `JP1` is the bypass jumper across `D1` and a soldering
+iron has to reach it, so check that before the layout is frozen.
 
 ### What the positions inherit from mesa2 Rev B
 
