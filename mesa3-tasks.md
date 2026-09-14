@@ -401,15 +401,121 @@ mesa2. A DRC exclusion is the only thing that would silence it.
 
 Deferred until the boards exist: the case/plate models, and the keymap itself.
 
-## Fab batch
+## Fab batch — ordered
 
-One order, four boards, after every design above is reviewed.
+**Ordered 2026-09-07**, immediately after the export, and the boards are in transit.
+Three boards, not four: mesa2x was dropped before the order.
 
-- [ ] Same `.kicad_dru` and stackup across all four boards
-- [ ] Each board's silkscreen carries its name and rev, so the bare boards are
-  distinguishable on arrival
-- [ ] Fabrication Toolkit outputs for each board; bare PCBs, not assembly — the sockets
+- [x] Same `.kicad_dru` and stackup across all boards — the three `.kicad_dru` files are
+  byte-identical, and all three are 1.6 mm two-layer
+- [x] Each board's silkscreen carries its name and rev, so the bare boards are
+  distinguishable on arrival — `Mesa2/Rev B`, `Mesa3-left/Rev A`, `Mesa3-right/Rev A`
+- [x] Fabrication Toolkit outputs for each board; bare PCBs, not assembly — the sockets
   and 1N4148Ws are hand-soldered (confirm at order time)
-- [ ] 3D viewer sanity check on each board
-- [ ] Place the order
-- [ ] Git commit the production outputs with the order date
+- [ ] 3D viewer sanity check on each board — done or skipped at order time, not recorded
+- [x] Place the order
+- [x] Git commit the production outputs with the order date — `mesa2_B.zip`,
+  `mesa3-left_A.zip` and `mesa3-right_A.zip` are committed
+
+Note that `mesa2x`'s silkscreen still reads `Mesa2 / Rev B` rather than naming itself.
+It was never fabbed, so nothing came of it, but a revival would have to fix that first.
+
+## Mesa 3 Rev B
+
+Opened 2026-09-14, once Rev A had shipped. The letter was bumped on both halves before
+any design change, so the boards arriving from the fab stay identifiable as Rev A.
+
+### The change: a mode key per hand
+
+**One extra key per half, immediately inboard of the near-row index key** (`SW_LE1` /
+`SW_RE1`), for mode switching. It is a layer key, momentary or toggle, and it is
+explicitly **not** part of chording — the lateral reach from the index home position is
+too uncomfortable to chord from. This is the standing intent for every future board,
+recorded before Rev A was routed and deliberately left out of it.
+
+**It costs no GPIO and no cable conductor.** The Dosh layout dropped mesa2's outer pinky
+`R`, leaving one empty slot per half in the 5 × 4 grid — 18 keys in 20 slots. Checked
+against the Rev A netlists rather than assumed:
+
+| half | pinky `A` sits at | free slot | conductors added |
+|---|---|---|---|
+| left | `COL_1` × `ROW_B` | **`COL_1` × `ROW_A`** | none — both local to the left |
+| right | `COL_1` × `ROW_D` | **`COL_1` × `ROW_C`** | none — `COL_1` and `ROW_C` already cross |
+
+Physical position and matrix position need not agree; the pinky column simply runs a
+trace over to the index side. The right half's new key is free across the cable because
+every net it needs is already one of the seven that cross.
+
+Each new key still needs **its own diode**. "Does not chord" is a statement about chord
+resolution in firmware, not licence to skip ghosting isolation.
+
+### What this does to the firmware invariant
+
+Rev A's hard constraint was that *the firmware must not be able to tell a mesa2 Rev B
+from a Mesa 3* — one keymap, one build, no board-specific code. Adding these keys does
+**not** break it, but it does bend it, and the distinction is worth stating:
+
+- The grid is still 5 × 4, and all 18 existing keys keep their exact mesa2 `(column,
+  row)`. Nothing is renumbered and no existing key moves.
+- The two new keys land in slots that mesa2 Rev B and Mesa 3 Rev A simply **never
+  assert**. One keymap therefore still serves every board; the mode key is unreachable
+  on the boards that lack it, rather than wrong.
+- So the invariant survives in the direction that matters (one build), but the keyboards
+  are no longer feature-identical. A mesa2 Rev B has no mode key and whatever the mode
+  key unlocks has to stay reachable some other way, or that board loses the function.
+
+Decide this before routing, not after.
+
+### Open before anything is routed
+
+- [ ] **Name the key.** Every other ref follows the Dosh key name (`SW_LA1`, `SW_LE1`).
+  Reusing `R` would be actively confusing — that was the outer pinky the layout deleted.
+- [ ] **One hand or both.** Symmetry argues for both, and both are free; the input method
+  may only want one. If only one, the other half's slot stays empty and mirroring breaks.
+- [ ] **Placement, generated not nudged.** Geometry comes from the layout script, and the
+  `LAYOUT.md` invariant (every left/right pair sums to 270.000 in x, shares a y, negates
+  rotation) has to hold for the new pair too.
+- [ ] **Mechanical clearance — the left half is the constrained one.** Inboard of
+  `SW_LE1` at (98.007, 76.032) the left board already carries `A1` at (135, 59.7), the
+  reset pad at (130, 85), `J2` at (139.835, 95.83) and `J1` at (137.7, 104). The right
+  half's inner region is nearly empty by comparison — only `H5` (152, 63), `H6`
+  (151, 105) and `J1` (132, 113.12) — so a position that clears the left will clear the
+  right, and the left is what to solve first.
+- [ ] Keycap gap against the 0.5 mm target, as for every other key pair.
+
+### The interconnect, and whether it stays RJ-45
+
+**The signal count does not change.** Seven still cross — five columns plus `ROW_C` and
+`ROW_D` — because the new right-hand key reuses nets that already make the trip. Any
+replacement connector therefore still needs **seven usable conductors**, the same bar
+RJ-45 clears today with one pin spare.
+
+USB-C is being considered for the cable. The pin count is the thing to settle first, and
+it turns on which kind of cable, not which brand:
+
+- **A USB 2.0 C-to-C cable carries about five usable conductors** — `VBUS`, `GND`, `D+`,
+  `D-` and one `CC`, plus shield. That is **fewer than the seven needed**, so if the
+  cable is USB 2.0 the idea is dead on arrival regardless of how nice it is. Most cables
+  sold for split keyboards are USB 2.0, because carrying one serial link is all they are
+  asked to do.
+- **A full-featured USB 3.x C-to-C cable** adds `SBU1`, `SBU2` and two SuperSpeed lanes
+  (four pairs, eight wires), so conductors are not the constraint — there are well over
+  seven.
+- **Reversibility is the real problem.** A USB-C plug goes in either way up. The
+  receptacle ties `A6/A7` to `B6/B7`, so `D+`/`D-` survive a flip, but `CC1`/`CC2` swap
+  and the SuperSpeed lanes land on different pins depending on orientation. Devices
+  normally resolve this with a CC-sensing mux. Without one, a passive matrix wired to
+  those pins is a **different circuit depending on which way the user plugged it in** —
+  and a matrix has no way to detect or correct that.
+- **The failure mode is worse than RJ-45's.** A USB-C receptacle on a keyboard half
+  invites plugging it into a real host or charger, which would put 5 V, or a PD
+  negotiation, straight onto matrix lines. Nobody plugs an RJ-45 into a charger. This is
+  the strongest argument for staying put.
+
+The Keebio cables specifically could not be checked — their site refuses automated
+fetches. Two ways to settle it: whether the product is sold as USB 2.0 or full-featured
+answers it outright, and failing that a continuity test end to end on one cable gives the
+real conductor list, which is the only answer that can be trusted anyway.
+
+- [ ] Determine what the candidate cable actually connects, then decide
+- [ ] If USB-C survives that, decide how orientation is handled before any layout work

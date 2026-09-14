@@ -3,7 +3,8 @@
 Companion to `LAYOUT.md`, which holds the geometry. This file holds the decisions: what
 changes from mesa2, why, and what was checked.
 
-Status: **both halves complete, routed and reviewed. Not yet fabbed.**
+Status: **Rev A ordered 2026-09-07 and in transit. Rev B is open** — see *Rev B* below.
+Everything in this file describes Rev A unless a section says otherwise.
 
 ## What the Mesa 3 is
 
@@ -159,6 +160,50 @@ None of these are being fixed:
 three GND pads into one net, so DRC wants copper joining them, but the module commons
 them internally and the board does not need to. It appears on mesa2 as well. A DRC
 exclusion is the only thing that silences it — do not add copper to satisfy it.
+
+## Rev B
+
+Opened 2026-09-14, the moment Rev A shipped, so the delivered boards keep a stable name.
+The bump to Rev B touched the two title blocks, `sch_revision` and the silkscreen on each
+half, and nothing else — no geometry, netlist or routing moved with it.
+
+**The change is one extra key per hand, immediately inboard of the near-row index key,
+for mode switching.** A layer key, momentary or toggle, deliberately outside the chording
+set because the lateral reach from index home is uncomfortable. It was a standing intent
+before Rev A was routed and was left out of Rev A on purpose, that board already being on
+its way to fab.
+
+It is nearly free, which is why it was worth waiting for a revision rather than
+retrofitting. Checked against the Rev A netlists:
+
+| half | pinky `A` occupies | slot left free by dropping `R` |
+|---|---|---|
+| left | `COL_1` × `ROW_B` | `COL_1` × `ROW_A` |
+| right | `COL_1` × `ROW_D` | `COL_1` × `ROW_C` |
+
+No GPIO is consumed, and **no new conductor crosses the cable** — `COL_1` and `ROW_C`
+are already two of the seven that make the trip, so the right half's key is free on the
+interconnect as well as in the matrix. The pinky column just runs a trace across to the
+index side; matrix position and physical position need not agree. Each key still gets its
+own diode.
+
+The *firmware must not be able to tell a Rev B from a Mesa 3* constraint above bends
+rather than breaks. All 18 existing keys keep their exact mesa2 `(column, row)`, and the
+two new slots are ones the older boards never assert — so one keymap still serves every
+board, with the mode key simply unreachable where it is absent. What is lost is
+feature-identity: a mesa2 Rev B has no mode key, so whatever that key unlocks must stay
+reachable another way on boards without it.
+
+**The left half is the mechanically constrained one.** Inboard of `SW_LE1` the left board
+already carries `A1`, the reset pad, `J2` and `J1`; the right half's inner region holds
+only two mounting holes and its `J1`. Solve the left position first and the right will
+follow.
+
+The interconnect is also under review — USB-C instead of RJ-45 — but the requirement is
+unchanged at seven conductors, since the new key adds none. `mesa3-tasks.md` has the
+analysis; the short version is that a USB 2.0 C-to-C cable carries too few conductors,
+a full-featured one carries plenty but is not orientation-safe without a mux, and a
+USB-C receptacle invites being plugged into a charger in a way an RJ-45 never is.
 
 ## Still to do
 
