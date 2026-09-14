@@ -10,7 +10,7 @@
 	(title_block
 		(title "mesa3-right")
 		(date "2026-08-09")
-		(rev "A")
+		(rev "B")
 	)
 	(layers
 		(0 "F.Cu" signal)
@@ -10164,7 +10164,7 @@
 		(layer "Edge.Cuts")
 		(uuid "562417eb-1eac-435b-aa88-4d08d87ff367")
 	)
-	(gr_text "Mesa3-right\nRev A\ntangybbq/keyboards"
+	(gr_text "Mesa3-right\nRev B\ntangybbq/keyboards"
 		(at 142 90 0)
 		(layer "F.SilkS")
 		(uuid "7c30cf02-198b-4268-b42d-8468a5fe5dd5")

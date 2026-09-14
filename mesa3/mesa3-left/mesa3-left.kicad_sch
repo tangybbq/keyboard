@@ -6,7 +6,7 @@
 	(paper "USLetter")
 	(title_block
 		(title "mesa3-left")
-		(rev "A")
+		(rev "B")
 	)
 	(lib_symbols
 		(symbol "Connector:RJ45"
