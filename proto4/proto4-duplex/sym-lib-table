@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "proto4-duplex-eagle-import") (type "KiCad") (uri "${KIPRJMOD}/proto4-duplex-eagle-import.kicad_sym") (options "") (descr ""))
+)
