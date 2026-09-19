@@ -706,7 +706,7 @@
         "uuid": "6762c7a5-6197-445d-9eb4-2a300e3d331b"
       }
     ],
-    "used_designators": "SW_LT2,H1-6,D_RE2,SW_LSP1-2,D_LA2-3,S_LE2,S_LBK1-2,S_LI2,D_LW1,SW_LS2,D_LT1,SW_LR2,D_LS2-3,SW_LA2,A1,SW_LO2,#FLG1-2,SW_LN2,D_LNUM1,D_LR2-3,D_LP1,C1-4,J1,JP1",
+    "used_designators": "SW_RA2,SW_LT2,H1-6,SW_LSP1-2,D_LA2-3,S_LE2,S_LBK1-2,S_LI2,D_LW1,SW_LS2,D_LT1,SW_LR2,D_LS2-3,SW_LA2,A1,SW_LO2,#FLG1-2,SW_LN2,D_LNUM1,D_LR2-3,C1-4,D_LP1,JP1,D_RA2,J1,D_RE2",
     "variants": []
   },
   "sheets": [

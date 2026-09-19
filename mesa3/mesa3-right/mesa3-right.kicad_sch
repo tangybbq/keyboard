@@ -835,6 +835,12 @@
 		(uuid "7348275a-0c0d-41eb-80ce-de44884d0d5c")
 	)
 	(junction
+		(at 54.61 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1ab14b8-e516-415b-8f4d-4f1ad0e5a357")
+	)
+	(junction
 		(at 73.66 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -936,7 +942,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 63.5) (xy 54.61 109.22)
+			(xy 54.61 63.5) (xy 54.61 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1003,6 +1009,16 @@
 			(type default)
 		)
 		(uuid "3b7070a2-f1fc-4018-a42c-e3f181b7ee39")
+	)
+	(wire
+		(pts
+			(xy 22.86 83.82) (xy 22.86 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b8fec36-70a6-4a37-bcd8-f92f220745ba")
 	)
 	(wire
 		(pts
@@ -1396,6 +1412,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 83.82) (xy 44.45 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0c05d64-75dc-49be-b6d4-956f908e7c29")
+	)
+	(wire
+		(pts
 			(xy 135.89 85.09) (xy 146.05 85.09)
 		)
 		(stroke
@@ -1413,6 +1439,36 @@
 			(type default)
 		)
 		(uuid "dd5d890d-3137-4cb9-9df8-e86820ea16cd")
+	)
+	(wire
+		(pts
+			(xy 25.4 83.82) (xy 22.86 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3c97ce6-ddab-4714-9dfe-98e3a880c86d")
+	)
+	(wire
+		(pts
+			(xy 52.07 83.82) (xy 54.61 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb4ff923-de7c-4b92-93eb-ade20a93b91a")
+	)
+	(wire
+		(pts
+			(xy 54.61 83.82) (xy 54.61 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efefff98-4bd1-4b56-a495-6822199f5bf3")
 	)
 	(wire
 		(pts
@@ -2237,6 +2293,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 30.48 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "67e673fd-d9ae-4141-8b23-769bf4202887")
+		(property "Reference" "SW_RFN1"
+			(at 30.48 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PG1350"
+			(at 30.48 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mesa1:Kailh_socket_PG1350"
+			(at 30.48 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "418efabe-3713-4c22-ad8a-c2977d799e0e")
+		)
+		(pin "1"
+			(uuid "da17687d-8028-41e6-98c2-f310e5fa765a")
+		)
+		(instances
+			(project "mesa3-right"
+				(path "/6762c7a5-6197-445d-9eb4-2a300e3d331b"
+					(reference "SW_RFN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 199.39 152.4 0)
 		(unit 1)
@@ -2559,6 +2693,84 @@
 			(project "mesa3-right"
 				(path "/6762c7a5-6197-445d-9eb4-2a300e3d331b"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 48.26 83.82 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "90a8d681-8aa1-4720-9254-80ffc1433643")
+		(property "Reference" "D_RFN1"
+			(at 48.26 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 48.26 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 48.26 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9b234c1b-1af4-4433-bf7f-a922a3966c5b")
+		)
+		(pin "1"
+			(uuid "e10c7710-0271-4213-866c-6be5aa935b4a")
+		)
+		(instances
+			(project "mesa3-right"
+				(path "/6762c7a5-6197-445d-9eb4-2a300e3d331b"
+					(reference "D_RFN1")
 					(unit 1)
 				)
 			)
